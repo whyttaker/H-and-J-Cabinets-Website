@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
+<title>Custom Cabinets Built to Last | H &amp; J Cabinets | Orange County, CA</title>
+<meta name="description" content="H &amp; J Cabinets designs and builds custom cabinetry using premium hardwoods and proven framed construction. Serving Newport Beach, Irvine, Corona del Mar, and Orange County.">
+<link rel="canonical" href="https://handjcabinets.com/custom-cabinets/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Cabinets",
+  "description": "H & J Cabinets designs and builds custom cabinetry using premium hardwoods and framed construction methods. Every cabinet is built to last for decades.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "H & J Cabinets",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1369 S Lyon St",
+      "addressLocality": "Santa Ana",
+      "addressRegion": "CA",
+      "postalCode": "92705",
+      "addressCountry": "US"
+    },
+    "telephone": "+17143493522",
+    "url": "https://handjcabinets.com"
+  },
+  "areaServed": [
+    "Newport Beach", "Corona del Mar", "Irvine", "Orange County", "Southern California"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:   #000000;
+    --gold:    #d4a843;
+    --cream:   #f2ede6;
+    --grey:    #7a7672;
+    --gap:     clamp(48px, 6vw, 80px);
+    --inset:   clamp(24px, 5vw, 72px);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  /* ─── HEADER ─────────────────────────────────────────────────── */
+  .site-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px var(--inset);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%);
+    transition: background 0.4s, backdrop-filter 0.4s;
+  }
+
+  .site-header.scrolled {
+    background: rgba(0,0,0,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212,168,67,0.12);
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+
+  .site-logo img {
+    width: 28px; height: 28px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid rgba(212,168,67,0.35);
+  }
+
+  .logo-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.3vw, 20px);
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cream);
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.55);
+    transition: text-shadow 0.4s;
+  }
+
+  .site-header.scrolled .logo-name { text-shadow: none; }
+
+  .logo-name span {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 40px);
+    list-style: none;
+  }
+
+  .site-nav a {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(242,237,230,0.9);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.65);
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+    position: relative;
+    padding-bottom: 3px;
+  }
+
+  .site-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 1px;
+    background: transparent;
+    transition: width 0.35s ease;
+  }
+
+  .site-nav a:hover,
+  .site-nav a.active { color: var(--gold); text-shadow: 0 1px 6px rgba(0,0,0,0.4); }
+  .site-nav a:hover::after,
+  .site-nav a.active::after { width: 100%; }
+
+  .site-header.scrolled .site-nav a { color: var(--grey); text-shadow: none; }
+  .site-header.scrolled .site-nav a::after { background: var(--gold); }
+  .site-header.scrolled .site-nav a:hover,
+  .site-header.scrolled .site-nav a.active { color: var(--gold); }
+
+  /* ─── HERO ───────────────────────────────────────────────────── */
+  .page-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 640px;
+    max-height: 980px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .hero-img-wrap { position: absolute; inset: 0; }
+
+  .hero-img-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    animation: heroZoom 9s ease-out forwards;
+  }
+
+  @keyframes heroZoom {
+    from { transform: scale(1.07); }
+    to   { transform: scale(1.00); }
+  }
+
+  .hero-img-wrap::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      170deg,
+      rgba(0,0,0,0.08) 0%,
+      rgba(0,0,0,0.0) 35%,
+      rgba(0,0,0,0.55) 70%,
+      rgba(0,0,0,0.96) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 56px 80px;
+    max-width: 820px;
+    animation: fadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 42px; height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold));
+  }
+
+  .hero-content h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(3.4rem, 6.5vw, 6.2rem);
+    font-weight: 300;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    color: var(--cream);
+    margin-bottom: 22px;
+  }
+
+  .hero-content h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: rgba(242,237,230,0.7);
+    letter-spacing: 0.03em;
+    max-width: 520px;
+    line-height: 1.7;
+  }
+
+  /* ─── SECTION LABEL ──────────────────────────────────────────── */
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 var(--inset);
+    margin-bottom: var(--gap);
+  }
+
+  .section-label span {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--grey);
+    white-space: nowrap;
+  }
+
+  .section-label::before,
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(212,168,67,0.2);
+  }
+
+  /* ─── ARTICLE BODY ───────────────────────────────────────────── */
+  .article-body {
+    padding: 0 var(--inset) var(--gap);
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(56px, 8vw, 96px);
+  }
+
+  .article-section { }
+
+  .article-section .section-eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .article-section .section-eyebrow::after {
+    content: '';
+    width: 40px; height: 1px;
+    background: rgba(212,168,67,0.35);
+  }
+
+  .article-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+  }
+
+  .article-section h2 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .article-section p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    color: rgba(242,237,230,0.75);
+    line-height: 1.85;
+    margin-bottom: 18px;
+  }
+
+  .article-section p:last-child { margin-bottom: 0; }
+
+  /* ─── FEATURE LIST ────────────────────────────────────────────── */
+  .feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 24px;
+  }
+
+  .feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(15px, 1.05vw, 17px);
+    color: rgba(242,237,230,0.75);
+    line-height: 1.7;
+  }
+
+  .feature-list li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 24px; height: 1px;
+    background: var(--gold);
+    margin-top: 13px;
+  }
+
+  .feature-list li strong {
+    display: block;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(17px, 1.2vw, 20px);
+    font-weight: 500;
+    color: var(--cream);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+
+  /* ─── PROCESS STEPS ──────────────────────────────────────────── */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 32px;
+  }
+
+  .process-step {
+    padding: clamp(28px, 3.5vw, 48px) clamp(20px, 2.5vw, 36px);
+    background: rgba(255,255,255,0.025);
+    border-top: 2px solid rgba(212,168,67,0.22);
+  }
+
+  .process-step-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: rgba(212,168,67,0.22);
+    line-height: 1;
+    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+  }
+
+  .process-step h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 10px;
+  }
+
+  .process-step p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(14px, 1vw, 16px);
+    color: rgba(242,237,230,0.55);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* ─── LOCATIONS ───────────────────────────────────────────────── */
+  .locations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .location-tag {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(212,168,67,0.28);
+    padding: 8px 18px;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a.location-tag:hover {
+    background: rgba(212,168,67,0.08);
+    border-color: rgba(212,168,67,0.55);
+  }
+
+  /* ─── CTA STRIP ──────────────────────────────────────────────── */
+  .cta-strip {
+    padding: clamp(64px, 10vw, 120px) var(--inset);
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(212,168,67,0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .cta-strip h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.15;
+    max-width: 600px;
+  }
+
+  .cta-strip p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    font-style: italic;
+    color: rgba(242,237,230,0.6);
+    max-width: 480px;
+    line-height: 1.7;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary, .btn-ghost {
+    display: inline-block;
+    padding: 14px 32px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #000000;
+    border: 1px solid var(--gold);
+  }
+
+  .btn-primary:hover { background: #c9973a; border-color: #c9973a; }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(242,237,230,0.35);
+  }
+
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ─── FOOTER ─────────────────────────────────────────────────── */
+  .site-footer {
+    border-top: 1px solid rgba(212,168,67,0.15);
+    padding: 48px var(--inset);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .footer-logo img {
+    width: 32px; height: 32px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid rgba(212,168,67,0.25);
+    opacity: 0.7;
+  }
+
+  .footer-logo span {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 32px;
+  }
+
+  .footer-links a {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-links a:hover { color: var(--gold); }
+
+  .footer-copy {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: rgba(122,118,114,0.5);
+  }
+
+  /* ─── SCROLL REVEAL ──────────────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .process-steps { grid-template-columns: 1fr; gap: 2px; }
+  }
+
+  @media (max-width: 768px) {
+    .site-nav { display: none; }
+    .hero-content { padding: 0 28px 60px; }
+  }
+
+  /* ─── FAQ ────────────────────────────────────────────────────── */
+  .faq-section {
+    padding: 0 var(--inset) var(--gap);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .faq-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 40px;
+    letter-spacing: 0.01em;
+  }
+
+  .faq-item {
+    border-top: 1px solid rgba(212,168,67,0.12);
+    padding: 28px 0;
+  }
+
+  .faq-item:last-of-type {
+    border-bottom: 1px solid rgba(212,168,67,0.12);
+  }
+
+  .faq-question {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+    font-weight: 400;
+    color: var(--cream);
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .faq-answer {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(15px, 1.05vw, 17px);
+    color: rgba(242,237,230,0.7);
+    line-height: 1.8;
+    max-width: 800px;
+  }
+
+  .faq-closing {
+    margin-top: 40px;
+    padding: 28px 32px;
+    border-left: 3px solid rgba(212,168,67,0.4);
+    background: rgba(255,255,255,0.025);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(15px, 1.05vw, 17px);
+    color: rgba(242,237,230,0.75);
+    line-height: 1.8;
+  }
+
+  @media (max-width: 480px) {
+    .cta-group, .contact-btn-row, .btn-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .btn-primary, .btn-ghost { width: auto; align-self: flex-start; }
+    .locations-grid { flex-direction: column; align-items: center; }
+    .location-tag { text-align: center; width: 100%; max-width: 240px; }
+  }
+</style>
+</head>
+<body>
+<script src="/content/nav.js"></script>
+<section class="page-hero" aria-label="Custom Cabinets hero">
+  <div class="hero-img-wrap">
+    <img src="/content/pictures/hj-2.png"
+         alt="Luxury custom kitchen cabinets Orange County California" fetchpriority="high">
+  </div>
+  <div class="hero-content">
+    <div class="eyebrow">H &amp; J Cabinets</div>
+    <h1>Custom Cabinets<br><em>Built to Last</em></h1>
+    <p class="hero-sub">Premium materials, proven construction, and a process refined over 30 years. Every cabinet built with intention, to perform beautifully for decades.</p>
+  </div>
+</section>
+
+<div class="section-label" aria-hidden="true">
+  <span>Custom Cabinetry</span>
+</div>
+
+<main class="article-body">
+
+  <!-- Section 1: Intro -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Our Approach</div>
+    <h2>Built with intention.<br><em>Built to endure.</em></h2>
+    <p>At H &amp; J Cabinets, we design and build custom cabinetry using premium materials and proven construction methods. Every cabinet is built with intention, ensuring long-term durability, precise fit, and a finish that holds its quality over time.</p>
+    <p>We work directly with homeowners, interior designers, and architects across Orange County and Southern California to create cabinetry that is singular to each project, no catalogue, no compromises, no shortcuts. The result is cabinetry that not only looks exceptional on day one, but continues to perform and look exceptional for decades.</p>
+  </div>
+
+  <!-- Section 2: Why Custom Cabinets Matter -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Why It Matters</div>
+    <h2>The case for<br><em>custom cabinetry</em></h2>
+    <p>Stock and semi-custom cabinets are built to general dimensions for a general customer. Custom cabinets are built for your specific space, your specific lifestyle, and your specific vision. The difference is felt every single day.</p>
+    <ul class="feature-list">
+      <li><span><strong>Durability</strong>Custom cabinets are built from higher-grade materials with superior joinery techniques, resulting in a product that holds up under real daily use for decades rather than years.</span></li>
+      <li><span><strong>Precision fit</strong>Every inch of your space is used intentionally. No filler panels, no awkward gaps, no wasted space. Cabinetry that was made for the room it lives in.</span></li>
+      <li><span><strong>Long-term value</strong>Quality cabinetry is one of the highest-return investments in a home. It drives resale value, enhances livability, and does not need to be replaced when trends shift, because it was built around your space, not a catalogue.</span></li>
+    </ul>
+  </div>
+
+  <!-- Section 3: Our Construction -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Construction Methods</div>
+    <h2>Where we win:<br><em>framed construction</em></h2>
+    <p>H &amp; J Cabinets builds using traditional face-frame construction, the method that has defined premium cabinetry for generations, and the method that continues to outperform modern frameless alternatives in structural integrity and long-term performance.</p>
+    <p>The face frame, a solid hardwood frame attached to the front of the cabinet box, reinforces the entire structure. It keeps the cabinet square and stable as a home settles over time. It provides a secure mounting surface for doors and hardware. And it ensures that doors and drawers stay aligned and operate smoothly for the life of the cabinet.</p>
+    <ul class="feature-list">
+      <li>Face-frame construction provides structural integrity that frameless systems cannot match</li>
+      <li>Cabinets remain square and stable as the home naturally settles over the years</li>
+      <li>Doors and drawers maintain alignment and smooth operation with daily use</li>
+      <li>Longevity built into the construction method, not just the materials</li>
+    </ul>
+  </div>
+
+  <!-- Section 4: Materials -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Materials</div>
+    <h2>No MDF.<br><em>No low-grade shortcuts.</em></h2>
+    <p>The materials inside your cabinets matter as much as what you see on the surface. At H &amp; J Cabinets, we never use MDF or low-grade plywood in critical areas, the structural components that determine how well your cabinetry holds up over time.</p>
+    <ul class="feature-list">
+      <li>Premium hardwoods selected for grain, figure, and structural integrity</li>
+      <li>High-quality plywood for cabinet boxes, dimensionally stable and resistant to warping</li>
+      <li>Superior resistance to moisture, humidity, and the conditions of real kitchen and bathroom environments</li>
+      <li>No swelling, no delaminating, no premature breakdown, because the materials chosen do not allow for it</li>
+    </ul>
+    <p>Every material decision is made with the end product in mind: cabinetry that holds its quality across decades of use, not just the first few years.</p>
+  </div>
+
+  <!-- Section 5: Our Process -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">The Process</div>
+    <h2>Design. Build.<br><em>Install.</em></h2>
+    <p>Our process is straightforward because we have refined it over 30 years. No subcontractors. No handoffs. Our team handles every phase, which means accountability at every step and a final product that reflects our standards, not a third party's.</p>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-step-num">01</div>
+        <h3>Design</h3>
+        <p>We meet, we listen, and we draw. Every project begins with a detailed design phase, hand-drawn renderings and precision drawings that give you a clear picture of the final result before a single board is cut.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">02</div>
+        <h3>Build</h3>
+        <p>Your cabinetry is built in our shop by master craftsmen using hand-selected materials. Each piece is built exclusively for your project, no stock components, no catalogue pulls.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">03</div>
+        <h3>Install</h3>
+        <p>Our own team installs every project. Precise fit, clean finish, and a final walkthrough to ensure everything meets our standard, and yours. We also offer a lifetime adjustment guarantee for any settling that occurs after installation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: Locations -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Where We Work</div>
+    <h2>Serving Orange County<br><em>and beyond</em></h2>
+    <p>H &amp; J Cabinets is based in Santa Ana, California, and serves clients across Orange County, Southern California, and select projects nationwide. We work closely with homeowners, architects, and interior designers on high-end residential projects from initial concept through final installation.</p>
+    <p>Our primary service area includes Newport Beach, Corona del Mar, Irvine, Laguna Beach, Huntington Beach, Mission Viejo, and the broader Orange County region. We also serve clients throughout Southern California, Northern California, Arizona, Nevada, Texas, and Hawaii for exceptional projects.</p>
+    <div class="locations-grid">
+      <a href="./newport-beach/" class="location-tag">Newport Beach</a>
+      <a href="./corona-del-mar/" class="location-tag">Corona del Mar</a>
+      <a href="./irvine/" class="location-tag">Irvine</a>
+      <a href="./laguna-beach/" class="location-tag">Laguna Beach</a>
+      <a href="./huntington-beach/" class="location-tag">Huntington Beach</a>
+      <a href="./mission-viejo/" class="location-tag">Mission Viejo</a>
+      <a href="./orange-county/" class="location-tag">Orange County</a>
+      <a href="./southern-california/" class="location-tag">Southern California</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ─── FAQ ─────────────────────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are custom cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custom cabinets are built specifically for your space rather than using standard sizes. Every dimension, material, and finish is tailored to fit your home precisely, resulting in a better fit, improved functionality, and a higher level of overall quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between framed and frameless cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Framed cabinets use a face frame on the front of the cabinet box, which adds strength, stability, and long-term durability. Frameless cabinets, often referred to as European-style cabinets, do not have this frame and rely on thicker box construction for support. While frameless designs can offer a more modern appearance, framed cabinets are generally more rigid and better suited for long-term performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are framed cabinets more durable than frameless cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Framed cabinets are typically more durable because the face frame reinforces the structure of the cabinet. This added support helps prevent shifting, sagging, and misalignment over time, especially in high-use areas like kitchens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What materials are best for high-quality cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High-quality cabinets are built using durable materials such as high-grade plywood and solid wood components. These materials resist moisture, wear, and long-term stress better than alternatives like MDF or low-grade particle board, which are more prone to swelling and deterioration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use MDF in your cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We avoid using MDF and low-quality materials in critical structural areas. Our focus is on using materials that maintain their integrity over time and perform well in real living environments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do custom cabinets last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When built with proper construction methods and high-quality materials, custom cabinets can last for decades. Longevity depends on both the materials used and the precision of the build and installation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer custom cabinets in Orange County and Newport Beach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we design and build custom cabinetry throughout Orange County, including Newport Beach, Corona del Mar, Irvine, and surrounding areas. We also take on projects throughout Southern California and beyond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the process for getting custom cabinets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process typically begins with design and planning, followed by material selection, fabrication, and installation. We guide you through each phase to ensure the final result aligns with your vision and performs as expected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are custom cabinets worth the investment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custom cabinets offer long-term value through better materials, precise fit, and improved durability. While the initial investment may be higher than pre-built options, they are designed to last longer and perform better over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can custom cabinets be designed for my exact space and needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Custom cabinetry is built specifically for your layout, allowing for complete flexibility in sizing, storage solutions, and overall design. This ensures that your cabinets not only look refined but function exactly as needed."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="section-label reveal" aria-hidden="true" style="margin-top:var(--gap)">
+  <span>FAQ</span>
+</div>
+
+<section class="faq-section reveal" aria-label="Frequently asked questions about custom cabinets">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <p class="faq-question">What are custom cabinets?</p>
+    <p class="faq-answer">Custom cabinets are built specifically for your space rather than using standard sizes. Every dimension, material, and finish is tailored to fit your home precisely, resulting in a better fit, improved functionality, and a higher level of overall quality.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">What is the difference between framed and frameless cabinets?</p>
+    <p class="faq-answer">Framed cabinets use a face frame on the front of the cabinet box, which adds strength, stability, and long-term durability. Frameless cabinets, often referred to as European-style cabinets, do not have this frame and rely on thicker box construction for support. While frameless designs can offer a more modern appearance, framed cabinets are generally more rigid and better suited for long-term performance.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Are framed cabinets more durable than frameless cabinets?</p>
+    <p class="faq-answer">Framed cabinets are typically more durable because the face frame reinforces the structure of the cabinet. This added support helps prevent shifting, sagging, and misalignment over time, especially in high-use areas like kitchens.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">What materials are best for high-quality cabinets?</p>
+    <p class="faq-answer">High-quality cabinets are built using durable materials such as high-grade plywood and solid wood components. These materials resist moisture, wear, and long-term stress better than alternatives like MDF or low-grade particle board, which are more prone to swelling and deterioration.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Do you use MDF in your cabinets?</p>
+    <p class="faq-answer">We avoid using MDF and low-quality materials in critical structural areas. Our focus is on using materials that maintain their integrity over time and perform well in real living environments.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">How long do custom cabinets last?</p>
+    <p class="faq-answer">When built with proper construction methods and high-quality materials, custom cabinets can last for decades. Longevity depends on both the materials used and the precision of the build and installation.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Do you offer custom cabinets in Orange County and Newport Beach?</p>
+    <p class="faq-answer">Yes, we design and build custom cabinetry throughout Orange County, including Newport Beach, Corona del Mar, Irvine, and surrounding areas. We also take on projects throughout Southern California and beyond.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">What is the process for getting custom cabinets?</p>
+    <p class="faq-answer">The process typically begins with design and planning, followed by material selection, fabrication, and installation. We guide you through each phase to ensure the final result aligns with your vision and performs as expected.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Are custom cabinets worth the investment?</p>
+    <p class="faq-answer">Custom cabinets offer long-term value through better materials, precise fit, and improved durability. While the initial investment may be higher than pre-built options, they are designed to last longer and perform better over time.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Can custom cabinets be designed for my exact space and needs?</p>
+    <p class="faq-answer">Yes. Custom cabinetry is built specifically for your layout, allowing for complete flexibility in sizing, storage solutions, and overall design. This ensures that your cabinets not only look refined but function exactly as needed.</p>
+  </div>
+
+  <div class="faq-closing">
+    If you are considering custom cabinetry and want a solution built to a higher standard, we are here to help guide the process from design through installation.
+  </div>
+</section>
+
+<!-- Section 7: CTA -->
+<section class="cta-strip">
+  <h2>Ready to build to a higher standard?</h2>
+  <p>If you are planning a project and want cabinetry built to a higher standard, contact H &amp; J Cabinets to get started.</p>
+  <div class="cta-buttons">
+    <a href="../contact/" class="btn-primary">Get in Touch &rarr;</a>
+    <a href="../difference/" class="btn-ghost">The H &amp; J Difference</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <a href="../" class="footer-logo">
+    <img src="/content/pictures/logo.png" alt="H &amp; J Cabinets logo, fine custom cabinetry Orange County California since 1988">
+    <span>H &amp; J Cabinets</span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../featured-homes/">Projects</a></li>
+    <li><a href="../about/">About</a></li>
+    <li><a href="../contact/">Contact</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
+</footer>
+
+<script>
+  // Header scroll
+  const _hdr = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    _hdr.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

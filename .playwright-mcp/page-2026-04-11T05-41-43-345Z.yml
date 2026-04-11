@@ -1,0 +1,236 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]
+  - region "Testimonials hero" [ref=e11]:
+    - img "H & J Cabinets, design sketch" [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]: Client Stories
+      - heading "Told by Those Who Live There" [level=1] [ref=e16]:
+        - text: Told by Those
+        - emphasis [ref=e17]: Who Live There
+      - paragraph [ref=e18]: From homeowners to interior designers, each voice here reflects the same commitment, to craft spaces that feel as personal as they are precise. These are their stories.
+    - generic [ref=e20]: Listen
+  - generic [ref=e23]: Client Testimonials
+  - generic [ref=e24]:
+    - article [ref=e25]:
+      - generic [ref=e27]:
+        - iframe [ref=e28]:
+          
+        - button [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+      - generic [ref=e33]:
+        - generic [ref=e34]: Harbor Ridge
+        - heading "The Brown Family" [level=2] [ref=e35]
+        - paragraph [ref=e36]: Jeff and Diane share their journey of creating their dream home in Harbor Ridge. They recount the meticulous attention to detail, the superb craftsmanship, and the personalized service that made their experience truly exceptional, highlighting features like the solid wood doors, Mozambique accents, and reclaimed white oak countertops.
+    - article [ref=e38]:
+      - generic [ref=e40]:
+        - iframe [ref=e41]:
+          - generic [ref=f201e4]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+              - generic:
+                - img
+                - generic: Playing in picture-in-picture
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: More options
+                    - button "More options":
+                      - img
+              - generic:
+                - button "Play" [ref=f201e11] [cursor=pointer]:
+                  - img [ref=f201e12]
+                  - generic:
+                    - generic: Play
+                - generic [ref=f201e15]:
+                  - generic [ref=f201e16]:
+                    - slider "Progress Bar" [ref=f201e17] [cursor=pointer]
+                    - generic:
+                      - generic:
+                        - generic: 00:00
+                    - generic [ref=f201e22]: 09:34
+                  - generic [ref=f201e23]:
+                    - generic [ref=f201e24]:
+                      - button:
+                        - img
+                      - slider
+                    - button:
+                      - img
+                      - generic: Settings
+                    - button:
+                      - img
+                      - generic: Picture-in-Picture
+                    - button:
+                      - img
+                      - generic: Fullscreen
+                    - button "Show controls" [ref=f201e25] [cursor=pointer]:
+                      - img [ref=f201e26]
+                      - generic:
+                        - generic: Show controls
+        - button [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+      - generic [ref=e46]:
+        - generic [ref=e47]: Port Streets
+        - heading "The Weiland Family" [level=2] [ref=e48]
+        - paragraph [ref=e49]: Michael and Denise share their experiences with their prolific home, particularly highlighting its distinctive fireplace lighting and the dark, beautiful style that permeates their space. They express their admiration for the dark aged cabinets that add a rich, elegant depth to the home's interior.
+    - article [ref=e51]:
+      - generic [ref=e53]:
+        - iframe [ref=e54]:
+          - generic [ref=f202e4]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+              - generic:
+                - img
+                - generic: Playing in picture-in-picture
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: More options
+                    - button "More options":
+                      - img
+              - generic:
+                - button "Play" [ref=f202e11] [cursor=pointer]:
+                  - img [ref=f202e12]
+                  - generic:
+                    - generic: Play
+                - generic [ref=f202e15]:
+                  - generic [ref=f202e16]:
+                    - slider "Progress Bar" [ref=f202e17] [cursor=pointer]
+                    - generic:
+                      - generic:
+                        - generic: 00:00
+                    - generic [ref=f202e22]: 07:39
+                  - generic [ref=f202e23]:
+                    - generic [ref=f202e24]:
+                      - button:
+                        - img
+                      - slider
+                    - button:
+                      - img
+                      - generic: Settings
+                    - button:
+                      - img
+                      - generic: Picture-in-Picture
+                    - button:
+                      - img
+                      - generic: Fullscreen
+                    - button "Show controls" [ref=f202e25] [cursor=pointer]:
+                      - img [ref=f202e26]
+                      - generic:
+                        - generic: Show controls
+        - button [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+      - generic [ref=e59]:
+        - generic [ref=e60]: Cameo Highlands
+        - heading "The Maguire Family" [level=2] [ref=e61]
+        - paragraph [ref=e62]: Lisa offers a personal look into her life in her beautifully designed Cameo Highland home. She highlights how the extensive use of reclaimed lumber adds unique character and warmth to her space, perfectly complementing the breathtaking views and spectacular sunsets, and praises the thoughtful design that turned her vision into reality.
+    - article [ref=e64]:
+      - generic [ref=e66]:
+        - iframe [ref=e67]:
+          
+        - button [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+      - generic [ref=e72]:
+        - generic [ref=e73]: Yacht Streets
+        - heading "The Ogden Family" [level=2] [ref=e74]
+        - paragraph [ref=e75]: Katie shares her delight in her stunningly bright, white-finished home. She enthusiastically highlights the beautiful white granite countertops and the abundant natural light that floods through expansive windows, enhancing the airy, open feel of her living spaces, and expresses deep appreciation for the meticulous attention to detail that makes her home feel both welcoming and elegantly modern.
+    - article [ref=e77]:
+      - generic [ref=e79]:
+        - iframe [ref=e80]:
+          - generic [ref=f204e4]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+              - generic:
+                - img
+                - generic: Playing in picture-in-picture
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: More options
+                    - button "More options":
+                      - img
+              - generic:
+                - button "Play" [ref=f204e11] [cursor=pointer]:
+                  - img [ref=f204e12]
+                  - generic:
+                    - generic: Play
+                - generic [ref=f204e15]:
+                  - generic [ref=f204e16]:
+                    - slider "Progress Bar" [ref=f204e17] [cursor=pointer]
+                    - generic:
+                      - generic:
+                        - generic: 00:00
+                    - generic [ref=f204e22]: 05:03
+                  - generic [ref=f204e23]:
+                    - generic [ref=f204e24]:
+                      - button:
+                        - img
+                      - slider
+                    - button:
+                      - img
+                      - generic: Settings
+                    - button:
+                      - img
+                      - generic: Picture-in-Picture
+                    - button:
+                      - img
+                      - generic: Fullscreen
+                    - button "Show controls" [ref=f204e25] [cursor=pointer]:
+                      - img [ref=f204e26]
+                      - generic:
+                        - generic: Show controls
+        - button [ref=e82] [cursor=pointer]:
+          - img [ref=e83]
+      - generic [ref=e85]:
+        - generic [ref=e86]: Newport Beach
+        - heading "The Bauer Family" [level=2] [ref=e87]
+        - paragraph [ref=e88]: Doug and Kathleen offer a glimpse into their luxurious traditional home. They discuss the elegant fixtures and artistic white finishes that define their grandiose living space, emphasizing the refined atmosphere, and express deep satisfaction with the home's opulent design and functionality, praising the team for realizing a vision that perfectly matches their taste and lifestyle.
+  - contentinfo [ref=e89]:
+    - list [ref=e90]:
+      - listitem [ref=e91]:
+        - link "Home" [ref=e92] [cursor=pointer]:
+          - /url: ../
+      - listitem [ref=e93]:
+        - link "Projects" [ref=e94] [cursor=pointer]:
+          - /url: ../featured-homes/
+      - listitem [ref=e95]:
+        - link "About" [ref=e96] [cursor=pointer]:
+          - /url: ../about/
+      - listitem [ref=e97]:
+        - link "Testimonials" [ref=e98] [cursor=pointer]:
+          - /url: ./
+      - listitem [ref=e99]:
+        - link "Contact" [ref=e100] [cursor=pointer]:
+          - /url: ../contact/
+    - paragraph [ref=e101]: © 2025 H & J Cabinets. All rights reserved.

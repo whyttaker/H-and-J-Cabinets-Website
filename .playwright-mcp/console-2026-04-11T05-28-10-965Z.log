@@ -1,0 +1,16 @@
+[      28ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:791
+[   33262ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image1.jpg:0
+[   33262ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image3-1.jpg:0
+[   33263ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image2.jpg:0
+[   33263ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image4-1.jpg:0
+[   33264ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image5-1.jpg:0
+[  293753ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image1.jpg:0
+[  293754ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image2.jpg:0
+[  293754ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image4-1.jpg:0
+[  293754ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image3-1.jpg:0
+[  293754ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image5-1.jpg:0
+[  518149ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image3-1.jpg:0
+[  533135ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:791
+[  542159ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/featured-homes/:398
+[  570234ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:791
+[  589465ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/featured-homes/:398

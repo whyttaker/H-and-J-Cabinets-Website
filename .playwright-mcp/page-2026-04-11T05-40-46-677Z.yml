@@ -1,0 +1,290 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]
+  - region "Projects hero" [ref=e11]:
+    - img "H & J Cabinets, fine custom cabinetry" [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]: Our Portfolio
+      - heading "A Portfolio of Singular Spaces" [level=1] [ref=e16]:
+        - text: A Portfolio of
+        - emphasis [ref=e17]: Singular Spaces
+      - paragraph [ref=e18]: From intimate kitchens to sweeping estate libraries, each of these twenty-three residences tells a different story, unified by the same uncompromising devotion to craft, material, and the beauty of wood shaped by skilled hands.
+    - generic [ref=e20]: Explore
+  - generic [ref=e23]: Featured Residences
+  - generic [ref=e24]:
+    - article [ref=e25]:
+      - generic [ref=e27]:
+        - iframe [ref=e28]:
+          
+        - button [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+      - generic [ref=e33]:
+        - generic [ref=e34]: No. 01
+        - link "Newport Beach" [ref=e35] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Big Canyon Residence" [level=2] [ref=e36]
+        - paragraph [ref=e37]: A stunning residence in Big Canyon, brought to life by the vision of renowned architect Eric Olsen, the refined touch of M. Elle Design interiors, and the expert construction of Patterson Homes. This home's cabinetry showcases the art of traditional woodworking blended with intricate custom aesthetics.
+    - article [ref=e39]:
+      - generic [ref=e41]:
+        - iframe [ref=e42]:
+          
+        - button [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+      - generic [ref=e47]:
+        - generic [ref=e48]: No. 02
+        - link "Corona del Mar" [ref=e49] [cursor=pointer]:
+          - /url: ../custom-cabinets/corona-del-mar/
+        - heading "Serra Drive Residence" [level=2] [ref=e50]
+        - paragraph [ref=e51]: Explore the sophistication of our Morning Canyon project, a modern contemporary home enriched by the creative vision of renowned architect Eric Olsen, the exquisite design expertise of Melinda Murtaugh, and the precision construction by RDM Homes. This residence captures the beauty of simplistic modern design.
+    - article [ref=e53]:
+      - generic [ref=e55]:
+        - iframe [ref=e56]:
+          
+        - button [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+      - generic [ref=e61]:
+        - generic [ref=e62]: No. 03
+        - link "Newport Beach" [ref=e63] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Harbor Ridge Residence" [level=2] [ref=e64]
+        - paragraph [ref=e65]: Explore the exceptional contemporary design in Harbor Ridge, where solid wood drawer fronts and doors meet Mozambique and reclaimed white oak countertops. This video captures the intricate details and high-quality materials that define the space.
+    - article [ref=e67]:
+      - generic [ref=e69]:
+        - iframe [ref=e70]:
+          
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+      - generic [ref=e75]:
+        - generic [ref=e76]: No. 04
+        - link "Southern California" [ref=e77] [cursor=pointer]:
+          - /url: ../custom-cabinets/southern-california/
+        - heading "Bel Air Residence" [level=2] [ref=e78]
+        - paragraph [ref=e79]: Traditional and exquisitely crafted cabinetry we designed for a stunning home in Bel Air. At H & J Cabinets, we specialize in creating timeless beauty, and this project is a testament to our commitment to excellence. The olive hinges selected for this project are not just functional but are chosen for their subtle beauty, complementing the traditional style with a touch of understated luxury.
+    - article [ref=e81]:
+      - generic [ref=e83]:
+        - iframe [ref=e84]
+        - button [ref=e86] [cursor=pointer]:
+          - img [ref=e87]
+      - generic [ref=e89]:
+        - generic [ref=e90]: No. 05
+        - link "Laguna Beach" [ref=e91] [cursor=pointer]:
+          - /url: ../custom-cabinets/laguna-beach/
+        - heading "Emerald Bay Residence" [level=2] [ref=e92]
+        - paragraph [ref=e93]: A tour of this modern space, where the naturally finished, plain sliced oak stands out, exuding a warm, inviting aura against the backdrop of cool tile accents. Our design philosophy marries form with function, blending cool and warm elements to create a harmonious living environment that feels both innovative and inviting.
+    - article [ref=e95]:
+      - generic [ref=e97]:
+        - iframe [ref=e98]
+        - button [ref=e100] [cursor=pointer]:
+          - img [ref=e101]
+      - generic [ref=e103]:
+        - generic [ref=e104]: No. 06
+        - link "Newport Beach" [ref=e105] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Port Streets Residence" [level=2] [ref=e106]
+        - paragraph [ref=e107]: Explore the blending of modern and transitional styles in our latest Port Streets project. This video reveals the unique combination of glass and metal, set against cool white finishes and metal accents. The result is a glitzy, sleek look that captures the essence of sophisticated design with a bold, contemporary edge.
+    - article [ref=e109]:
+      - generic [ref=e111]:
+        - iframe [ref=e112]
+        - button [ref=e114] [cursor=pointer]:
+          - img [ref=e115]
+      - generic [ref=e117]:
+        - generic [ref=e118]: No. 07
+        - link "Newport Beach" [ref=e119] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Lido Island Residence" [level=2] [ref=e120]
+        - paragraph [ref=e121]: Discover traditional craftsmanship with a twist in this beachside Lido Isle home. Our video highlights rift white oak cabinets adorned with traditional details, painted finishes, and oak accents. The design features a plethora of hidden details that merge functionality with timeless style, perfect for a traditional house by the sea.
+    - article [ref=e123]:
+      - generic [ref=e125]:
+        - iframe [ref=e126]
+        - button [ref=e128] [cursor=pointer]:
+          - img [ref=e129]
+      - generic [ref=e131]:
+        - generic [ref=e132]: No. 08
+        - link "Newport Beach" [ref=e133] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Pelican Point Residence" [level=2] [ref=e134]
+        - paragraph [ref=e135]: Take a tour of a Moroccan-style home where exquisite ceiling and intricate detailing are the stars. This video showcases the unique ambiance created by walnut finishes that accentuate the sophisticated design elements, offering a glimpse into a luxuriously detailed living space.
+    - article [ref=e137]:
+      - generic [ref=e139]:
+        - iframe [ref=e140]
+        - button [ref=e142] [cursor=pointer]:
+          - img [ref=e143]
+      - generic [ref=e145]:
+        - generic [ref=e146]: No. 09
+        - link "Newport Beach" [ref=e147] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Balboa Peninsula Residence" [level=2] [ref=e148]
+        - paragraph [ref=e149]: Experience a perfect mix of fine cabinetry, polished metal, and sleek glass in this contemporary colonial home. The video displays a palette of cool whites and warm greys, complemented by oil-rubbed bronze hardware, embodying a blend of modernity and traditional elegance.
+    - article [ref=e151]:
+      - generic [ref=e153]:
+        - iframe [ref=e154]
+        - button [ref=e156] [cursor=pointer]:
+          - img [ref=e157]
+      - generic [ref=e159]:
+        - generic [ref=e160]: No. 10
+        - link "Newport Beach" [ref=e161] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Newport Beach Residence" [level=2] [ref=e162]
+        - paragraph [ref=e163]: Venture into a home where contemporary style meets bold detailing. This video features rift white oak cabinets with a charcoal stain, highlighted by custom overlay cabinets with a bold reveal around the drawer fronts and micro shaker fronts, presenting a modern yet distinctive look.
+    - article [ref=e165]:
+      - generic [ref=e167]:
+        - iframe [ref=e168]
+        - button [ref=e170] [cursor=pointer]:
+          - img [ref=e171]
+      - generic [ref=e173]:
+        - generic [ref=e174]: No. 11
+        - link "Newport Beach" [ref=e175] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Newport Oceanfront Residence" [level=2] [ref=e176]
+        - paragraph [ref=e177]: Embrace the contemporary design enriched with a warm walnut stain on rift white oak. This video captures the essence of oceanfront living, showcasing the serene and sophisticated atmosphere of a modern home with stunning views.
+    - article [ref=e179]:
+      - generic [ref=e181]:
+        - iframe [ref=e182]
+        - button [ref=e184] [cursor=pointer]:
+          - img [ref=e185]
+      - generic [ref=e187]:
+        - generic [ref=e188]: No. 12
+        - link "Corona del Mar" [ref=e189] [cursor=pointer]:
+          - /url: ../custom-cabinets/corona-del-mar/
+        - heading "Berry Residence" [level=2] [ref=e190]
+        - paragraph [ref=e191]: The elegance of contemporary design with an oceanfront view at Dolphin Terrace. The video highlights the serene beauty and sophisticated design elements that make this home a luxurious retreat.
+    - article [ref=e193]:
+      - generic [ref=e195]:
+        - iframe [ref=e196]
+        - button [ref=e198] [cursor=pointer]:
+          - img [ref=e199]
+      - generic [ref=e201]:
+        - generic [ref=e202]: No. 13
+        - link "Newport Beach" [ref=e203] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Port Margate Residence" [level=2] [ref=e204]
+        - paragraph [ref=e205]: Step into a world of traditional Country French design, featuring a plaster hood, walk-in pantry, and every modern kitchen convenience. The video highlights quarter-sawn white oak cabinetry and a custom black stained library and office room, offering a glimpse into a beautifully functional space.
+    - article [ref=e207]:
+      - generic [ref=e209]:
+        - iframe [ref=e210]
+        - button [ref=e212] [cursor=pointer]:
+          - img [ref=e213]
+      - generic [ref=e215]:
+        - generic [ref=e216]: No. 14
+        - link "Southern California" [ref=e217] [cursor=pointer]:
+          - /url: ../custom-cabinets/southern-california/
+        - heading "Scottsdale Residence" [level=2] [ref=e218]
+        - paragraph [ref=e219]: This exquisite home features a striking façade of meticulously arranged rustic stones that complement the natural desert landscape. Inside, darkly stained cabinets adorn the spacious kitchen and bathrooms, designed to meet the needs of a modern household while maintaining a warm, inviting atmosphere.
+    - article [ref=e221]:
+      - generic [ref=e223]:
+        - iframe [ref=e224]
+        - button [ref=e226] [cursor=pointer]:
+          - img [ref=e227]
+      - generic [ref=e229]:
+        - generic [ref=e230]: No. 15
+        - link "Orange County" [ref=e231] [cursor=pointer]:
+          - /url: ../custom-cabinets/orange-county/
+        - heading "Ladera Ranch Residence" [level=2] [ref=e232]
+        - paragraph [ref=e233]: Explore the charm of white oak cabinetry finished in white and beaded inset cabinetry that defines this Ladera Ranch home. Our video tour emphasizes the traditional French accents that enhance the home's warm, inviting atmosphere.
+    - article [ref=e235]:
+      - generic [ref=e237]:
+        - iframe [ref=e238]
+        - button [ref=e240] [cursor=pointer]:
+          - img [ref=e241]
+      - generic [ref=e243]:
+        - generic [ref=e244]: No. 16
+        - link "Newport Beach" [ref=e245] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Newport Cliff Residence" [level=2] [ref=e246]
+        - paragraph [ref=e247]: Delight in the traditional style of Newport Cliff, featuring custom-styled toe kicks, inlaid panels, and flush inset refrigerator panels. This video showcases the meticulous attention to detail and craftsmanship that make each space both functional and visually stunning.
+    - article [ref=e249]:
+      - generic [ref=e251]:
+        - iframe [ref=e252]
+        - button [ref=e254] [cursor=pointer]:
+          - img [ref=e255]
+      - generic [ref=e257]:
+        - generic [ref=e258]: No. 17
+        - link "Newport Beach" [ref=e259] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Irvine Terrace Residence" [level=2] [ref=e260]
+        - paragraph [ref=e261]: Enjoy a glimpse into a home that epitomizes traditional Country French style. The design elements and cabinetry bring a timeless elegance to the home, perfect for those who appreciate classic aesthetics.
+    - article [ref=e263]:
+      - generic [ref=e265]:
+        - iframe [ref=e266]
+        - button [ref=e268] [cursor=pointer]:
+          - img [ref=e269]
+      - generic [ref=e271]:
+        - generic [ref=e272]: No. 18
+        - link "Corona del Mar" [ref=e273] [cursor=pointer]:
+          - /url: ../custom-cabinets/corona-del-mar/
+        - heading "Dolphin Terrace Residence" [level=2] [ref=e274]
+        - paragraph [ref=e275]: Experience the modern simplicity and functional beauty of contemporary design in Dolphin Terrace. This video highlights the clean lines and minimalistic style that define the home, creating a space that's both visually striking and comfortably livable.
+    - article [ref=e277]:
+      - generic [ref=e279]:
+        - iframe [ref=e280]
+        - button [ref=e282] [cursor=pointer]:
+          - img [ref=e283]
+      - generic [ref=e285]:
+        - generic [ref=e286]: No. 19
+        - link "Corona del Mar" [ref=e287] [cursor=pointer]:
+          - /url: ../custom-cabinets/corona-del-mar/
+        - heading "Cameo Shores Residence" [level=2] [ref=e288]
+        - paragraph [ref=e289]: Discover the sleek, contemporary design of Cameo Shores through our latest video. The space is defined by its modern aesthetics, offering a clean and sophisticated environment perfect for modern living.
+    - article [ref=e291]:
+      - generic [ref=e293]:
+        - iframe [ref=e294]
+        - button [ref=e296] [cursor=pointer]:
+          - img [ref=e297]
+      - generic [ref=e299]:
+        - generic [ref=e300]: No. 20
+        - link "Laguna Beach" [ref=e301] [cursor=pointer]:
+          - /url: ../custom-cabinets/laguna-beach/
+        - heading "South Laguna Beach Residence" [level=2] [ref=e302]
+        - paragraph [ref=e303]: A tour of a contemporary home in South Laguna Beach, where design and function meet to create a uniquely modern living experience. The video captures the essence of sophisticated, contemporary design tailored to the stunning seaside location.
+    - article [ref=e305]:
+      - generic [ref=e307]:
+        - iframe [ref=e308]
+        - button [ref=e310] [cursor=pointer]:
+          - img [ref=e311]
+      - generic [ref=e313]:
+        - generic [ref=e314]: No. 21
+        - link "Newport Beach" [ref=e315] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Dover Shores Residence" [level=2] [ref=e316]
+        - paragraph [ref=e317]: A clever contemporary home filled with personal touches in Dover Shores. This video showcases how innovative design elements and smart cabinetry solutions can transform a space into a personalized, modern haven.
+    - article [ref=e319]:
+      - generic [ref=e321]:
+        - iframe [ref=e322]
+        - button [ref=e324] [cursor=pointer]:
+          - img [ref=e325]
+      - generic [ref=e327]:
+        - generic [ref=e328]: No. 22
+        - link "Newport Beach" [ref=e329] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Big Canyon" [level=2] [ref=e330]
+        - paragraph [ref=e331]: Step into the timeless beauty of traditional design in Big Canyon. Our video highlights the rich, classic elements that make the cabinetry and overall décor stand out as exemplars of traditional elegance.
+    - article [ref=e333]:
+      - generic [ref=e335]:
+        - iframe [ref=e336]
+        - button [ref=e338] [cursor=pointer]:
+          - img [ref=e339]
+      - generic [ref=e341]:
+        - generic [ref=e342]: No. 23
+        - link "Newport Beach" [ref=e343] [cursor=pointer]:
+          - /url: ../custom-cabinets/newport-beach/
+        - heading "Balboa Peninsula" [level=2] [ref=e344]
+        - paragraph [ref=e345]: The refined contemporary design of Balboa Peninsula, featuring inset finger pulls that accentuate the sleek, modern cabinetry. This video showcases how subtle details can make a significant impact in a contemporary space.
+  - contentinfo [ref=e346]:
+    - list [ref=e347]:
+      - listitem [ref=e348]:
+        - link "Home" [ref=e349] [cursor=pointer]:
+          - /url: ../
+      - listitem [ref=e350]:
+        - link "Projects" [ref=e351] [cursor=pointer]:
+          - /url: ./
+      - listitem [ref=e352]:
+        - link "Contact" [ref=e353] [cursor=pointer]:
+          - /url: ../contact/
+    - paragraph [ref=e354]: © 2025 H & J Cabinets. All rights reserved.

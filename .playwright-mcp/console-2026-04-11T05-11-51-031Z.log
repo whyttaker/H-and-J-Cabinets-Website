@@ -1,0 +1,8 @@
+[   20983ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:790
+[  775820ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:790
+[  834522ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3457/:790
+[  964625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image1.jpg:0
+[  964625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image2.jpg:0
+[  964625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image4-1.jpg:0
+[  964625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image3-1.jpg:0
+[  964626ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/content/pictures/image5-1.jpg:0

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The H &amp; J Difference | H &amp; J Cabinets</title>
+<meta name="description" content="Discover what makes H &amp; J Cabinets exceptional, from hand-drawn renderings to white-glove installation, every stage of our process is built on precision and care.">
+<link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:  #000000;
+    --gold:   #d4a843;
+    --cream:  #f2ede6;
+    --grey:   #7a7672;
+    --gap:    clamp(48px, 6vw, 80px);
+    --inset:  clamp(24px, 5vw, 72px);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Film grain */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  /* ─── ANIMATIONS ─────────────────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.25; }
+    60%       { opacity: 0.9; }
+  }
+
+  /* ─── HERO ───────────────────────────────────────────────────── */
+  .diff-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    background: var(--black);
+    overflow: hidden;
+  }
+
+  /* Subtle radiating glow from center */
+  .diff-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(212,168,67,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .diff-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 860px;
+    padding: 0 var(--inset);
+    animation: fadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  }
+
+  .diff-hero .eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .diff-hero .eyebrow::before,
+  .diff-hero .eyebrow::after {
+    content: '';
+    width: 48px; height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .diff-hero h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+    line-height: 1.12;
+    color: var(--cream);
+    margin-bottom: 28px;
+  }
+
+  .diff-hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .diff-hero .hero-sub {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    color: var(--grey);
+    max-width: 520px;
+    margin: 0 auto 48px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  /* Scroll hint */
+  .scroll-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .scroll-hint span {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+  }
+
+  .scroll-hint-line {
+    width: 1px;
+    height: 56px;
+    background: var(--gold);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  /* ─── SCROLL STAGE ───────────────────────────────────────────── */
+  .diff-scroll-stage {
+    position: relative;
+    height: 380vh;
+    margin-top: 20vh;
+  }
+
+  .diff-sticky {
+    position: sticky;
+    top: calc((100vh - 80vh) / 2);
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  /* Video centered with side padding so full frame is visible */
+  .diff-video-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 22vw;
+    right: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .diff-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Subtle top/bottom vignette only — sides kept open for cards */
+  .diff-video-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom,
+        rgba(0,0,0,0.3) 0%,
+        transparent 18%,
+        transparent 82%,
+        rgba(0,0,0,0.3) 100%);
+    pointer-events: none;
+  }
+
+  /* ─── ANNOTATION CARDS ───────────────────────────────────────── */
+  .diff-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 18vw;
+    padding: 22px 22px 22px 20px;
+    background: transparent;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  /* Odd cards: left side — hug the window edge */
+  .diff-card:nth-child(odd) {
+    left: clamp(12px, 1.5vw, 24px);
+    transform: translateY(-50%) translateX(-20px);
+  }
+
+  /* Even cards: right side — hug the window edge */
+  .diff-card:nth-child(even) {
+    right: clamp(12px, 1.5vw, 24px);
+    left: auto;
+    transform: translateY(-50%) translateX(20px);
+    padding: 22px 20px 22px 22px;
+  }
+
+  .diff-card.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .diff-card:nth-child(odd).visible  { transform: translateY(-50%) translateX(0); }
+  .diff-card:nth-child(even).visible { transform: translateY(-50%) translateX(0); }
+
+  .diff-card-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    color: var(--gold);
+    opacity: 0.9;
+    margin-bottom: 10px;
+    display: block;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  .diff-card h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 1.8vw, 1.65rem);
+    color: var(--cream);
+    line-height: 1.2;
+    margin-bottom: 12px;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+  }
+
+  .diff-card p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: rgba(242,237,230,0.8);
+    line-height: 1.7;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  /* ─── PROGRESS RAIL ──────────────────────────────────────────── */
+  .diff-rail {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 200px;
+    width: 2px;
+    background: rgba(212,168,67,0.15);
+    z-index: 20;
+  }
+
+  .diff-rail-fill {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 100%;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: none;
+  }
+
+  .diff-rail-ticks {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  .diff-rail-tick {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px; height: 1px;
+    background: rgba(212,168,67,0.4);
+  }
+
+  .diff-rail-tick span {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: rgba(212,168,67,0.5);
+    white-space: nowrap;
+  }
+
+  /* ─── WHY UNMATCHED ──────────────────────────────────────────── */
+  .diff-unmatched {
+    padding: clamp(80px, 12vw, 140px) var(--inset);
+    background: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .diff-unmatched-header {
+    padding: clamp(28px, 3.5vw, 48px) clamp(24px, 3vw, 40px);
+    background: rgba(255,255,255,0.025);
+    border-top: 1px solid rgba(212,168,67,0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .diff-unmatched-header .eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .diff-unmatched-header .eyebrow::after {
+    content: '';
+    width: 32px; height: 1px;
+    background: var(--gold);
+    opacity: 0.45;
+  }
+
+  .diff-unmatched-link {
+    display: inline-block;
+    margin-top: 24px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  .diff-unmatched-link:hover { opacity: 0.7; }
+
+  .diff-unmatched-header h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(1.8rem, 2.8vw, 3rem);
+    color: var(--cream);
+    line-height: 1.15;
+  }
+
+  .diff-pillars {
+    display: contents; /* cards flow directly into the parent grid */
+  }
+
+  .diff-pillar {
+    padding: clamp(28px, 3.5vw, 48px) clamp(24px, 3vw, 40px);
+    background: rgba(255,255,255,0.025);
+    border-top: 1px solid rgba(212,168,67,0.18);
+    position: relative;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+
+  .diff-pillar.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .diff-pillars .diff-pillar:nth-child(2) { transition-delay: 0.08s; }
+  .diff-pillars .diff-pillar:nth-child(3) { transition-delay: 0.16s; }
+  .diff-pillars .diff-pillar:nth-child(4) { transition-delay: 0.24s; }
+
+  .diff-pillar-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  .diff-pillar h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 1.8vw, 1.6rem);
+    color: var(--cream);
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .diff-pillar p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+    color: var(--grey);
+    line-height: 1.75;
+  }
+
+  /* ─── CLOSING CTA ────────────────────────────────────────────── */
+  .diff-closing {
+    padding: clamp(80px, 12vw, 140px) var(--inset);
+    text-align: center;
+    background: var(--black);
+    border-top: 1px solid rgba(212,168,67,0.12);
+  }
+
+  .diff-closing .eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    opacity: 0.8;
+  }
+
+  .diff-closing .eyebrow::before,
+  .diff-closing .eyebrow::after {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .diff-closing h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .diff-closing h2 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .diff-closing p {
+    color: var(--grey);
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-style: italic;
+    max-width: 480px;
+    margin: 0 auto 44px;
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 14px 38px;
+    background: var(--gold);
+    color: #1a1400;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background: var(--cream);
+  }
+
+  .btn-ghost {
+    display: inline-block;
+    padding: 13px 38px;
+    border: 1px solid rgba(212,168,67,0.5);
+    color: var(--gold);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.3s, color 0.3s;
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--cream);
+  }
+
+  /* ─── FOOTER ─────────────────────────────────────────────────── */
+  .site-footer {
+    padding: clamp(40px, 5vw, 60px) var(--inset);
+    border-top: 1px solid rgba(212,168,67,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: clamp(16px, 3vw, 36px);
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav a {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-nav a:hover { color: var(--gold); }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(122,118,114,0.5);
+    letter-spacing: 0.08em;
+  }
+
+  /* ─── SCROLL REVEAL ──────────────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ─── MOBILE ─────────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+
+    /* Sticky sits near the top — video + text stacked */
+    .diff-sticky {
+      top: 5vh;
+      height: 82vh;
+    }
+
+    /* Video: pushed down a bit, leaves room for text below */
+    .diff-video-wrap {
+      top: 10vh;
+      left: 12px;
+      right: 12px;
+      bottom: 26vh;
+    }
+
+    /* All cards: fixed position below video, always same spot */
+    .diff-card,
+    .diff-card:nth-child(even) {
+      top: auto;
+      bottom: 12px;
+      left: 20px;
+      right: 20px;
+      max-width: none;
+      border: none;
+      padding: 16px 16px 16px 18px;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transform: none;
+    }
+
+    .diff-rail { display: none; }
+
+    /* "Why unmatched" section — single column on mobile */
+    .diff-unmatched {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: clamp(48px, 10vw, 80px) var(--inset);
+    }
+
+    .diff-unmatched-header {
+      border-bottom: 1px solid rgba(212,168,67,0.18);
+      border-top: 1px solid rgba(212,168,67,0.18);
+      margin-bottom: 2px;
+    }
+
+    .diff-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cta-group, .contact-btn-row, .btn-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-primary, .btn-ghost { width: auto; align-self: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── HEADER ───────────────────────────────────────────────── -->
+<script src="/content/nav.js"></script>
+
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+<section class="diff-hero" aria-label="The H &amp; J Difference">
+  <div class="diff-hero-content">
+    <div class="eyebrow">The H &amp; J Difference</div>
+    <h1>Cabinetry is<br>not a product.<br><em>It's a practice.</em></h1>
+    <p class="hero-sub">Every stage of our process is intentional. Scroll to see how we build, and why it matters.</p>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SCROLL STAGE ──────────────────────────────────────────── -->
+<section class="diff-scroll-stage" id="diff-stage" aria-label="Craftsmanship process">
+  <div class="diff-sticky">
+
+    <!-- Video -->
+    <div class="diff-video-wrap">
+      <video class="diff-video" id="diff-video" playsinline muted preload="auto" disablepictureinpicture webkit-playsinline>
+        <source src="../content/videos/cabinet_scroll.mp4" type="video/mp4">
+        <source src="../content/videos/cabinet_scroll.webm" type="video/webm">
+      </video>
+    </div>
+
+    <!-- Annotation cards -->
+    <div class="diff-card">
+      <span class="diff-card-num">01</span>
+      <h3>The Design Process</h3>
+      <p>Every project begins with hand-drawn renderings, no templates, no shortcuts. Your vision, rendered precisely before a single board is cut.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">02</span>
+      <h3>Material Selection</h3>
+      <p>We source only premium hardwoods, hand-selected for grain, figure, and longevity. The wood you see is the wood in your home.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">03</span>
+      <h3>Precision Milling</h3>
+      <p>Each board is milled to exact tolerances in-house. Consistent thickness, flat faces, square edges, the foundation every joint depends on.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">04</span>
+      <h3>Precision Joinery</h3>
+      <p>Traditional dovetail and mortise-and-tenon construction, techniques chosen for strength and beauty that outlasts trends.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">05</span>
+      <h3>Expert Craftsmanship</h3>
+      <p>Each piece is built by master craftsmen with decades of dedicated experience, never rushed, never compromised.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">06</span>
+      <h3>White-Glove Installation</h3>
+      <p>Our own team handles every installation. No subcontractors. Precise fit, clean finish, every time.</p>
+    </div>
+
+    <div class="diff-card">
+      <span class="diff-card-num">07</span>
+      <h3>Singular to You</h3>
+      <p>No catalogue. No two projects alike. Every cabinet made exclusively for your space, your life, your vision.</p>
+    </div>
+
+    <!-- Progress rail -->
+    <div class="diff-rail" aria-hidden="true">
+      <div class="diff-rail-fill" id="diff-rail-fill"></div>
+      <div class="diff-rail-ticks">
+        <div class="diff-rail-tick" style="top:0%"><span>01</span></div>
+        <div class="diff-rail-tick" style="top:16.67%"><span>02</span></div>
+        <div class="diff-rail-tick" style="top:33.33%"><span>03</span></div>
+        <div class="diff-rail-tick" style="top:50%"><span>04</span></div>
+        <div class="diff-rail-tick" style="top:66.67%"><span>05</span></div>
+        <div class="diff-rail-tick" style="top:83.33%"><span>06</span></div>
+        <div class="diff-rail-tick" style="top:100%"><span>07</span></div>
+      </div>
+    </div>
+
+  </div><!-- /.diff-sticky -->
+</section>
+
+<!-- ─── WHY UNMATCHED ────────────────────────────────────────── -->
+<section class="diff-unmatched">
+  <div class="diff-unmatched-header">
+    <div class="eyebrow">The Standard We Set</div>
+    <h2>Why our cabinets<br>are unmatched</h2>
+    <a href="../custom-cabinets/" class="diff-unmatched-link">Explore our custom cabinets &rarr;</a>
+  </div>
+  <div class="diff-pillars">
+
+    <div class="diff-pillar reveal">
+      <span class="diff-pillar-num">01</span>
+      <h3>Built for Strength</h3>
+      <p>Our cabinets are constructed using a traditional framed design, which provides a level of structural integrity that frameless systems simply cannot match. The face frame reinforces the entire cabinet, keeping everything square, stable, and secure over time. This results in doors and drawers that stay aligned, operate smoothly, and maintain their quality even with daily use.</p>
+    </div>
+
+    <div class="diff-pillar reveal">
+      <span class="diff-pillar-num">02</span>
+      <h3>Premium Materials, No Shortcuts</h3>
+      <p>We believe that what goes inside your cabinets matters just as much as what you see on the outside. That is why we never use MDF or low-grade plywood in critical areas. Instead, we select high-quality materials that are more resistant to moisture, wear, and long-term stress. This approach not only increases durability but also helps prevent issues like swelling, warping, and premature breakdown.</p>
+    </div>
+
+    <div class="diff-pillar reveal">
+      <span class="diff-pillar-num">03</span>
+      <h3>Lifetime Adjustment Guarantee</h3>
+      <p>Over time, natural settling can cause minor shifts in cabinetry. Rather than passing that responsibility on to you, we stand behind our work for the long term. Our lifetime adjustment guarantee means that if your cabinets ever need to be realigned or fine-tuned, we will take care of it at no cost. It is a commitment to lasting performance and continued support.</p>
+    </div>
+
+    <div class="diff-pillar reveal">
+      <span class="diff-pillar-num">04</span>
+      <h3>30+ Years of Craftsmanship</h3>
+      <p>With more than two decades of experience in high-end custom cabinetry, we bring a deep understanding of both design and construction to every project. We combine proven craftsmanship with modern technology to achieve precise fits, clean finishes, and consistent results. Each cabinet is built with care, attention, and a level of detail that reflects our standards.</p>
+    </div>
+
+    <div class="diff-pillar reveal">
+      <span class="diff-pillar-num">05</span>
+      <h3>A Better Client Experience</h3>
+      <p>We approach every project with the mindset that the experience should feel just as refined as the final product. From the initial design to the final installation, we prioritize clarity, transparency, and responsiveness. We keep change order costs to a minimum and work closely with you to ensure the process remains smooth and predictable. Our goal is not only to meet expectations but to deliver a result that feels thoughtfully executed from start to finish.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CLOSING CTA ───────────────────────────────────────────── -->
+<section class="diff-closing">
+  <div class="eyebrow">Ready to Begin</div>
+  <h2>Your vision deserves<br><em>this level of care.</em></h2>
+  <p>Every exceptional home starts with a conversation. We'd love to hear yours.</p>
+  <div class="cta-group">
+    <a href="../featured-homes/" class="btn-primary">See Our Work &rarr;</a>
+    <a href="../contact/" class="btn-ghost">Get in Touch &rarr;</a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul class="footer-nav">
+      <li><a href="../">Home</a></li>
+      <li><a href="../featured-homes/">Projects</a></li>
+    <li><a href="../about/">About</a></li>
+      <li><a href="./">The Difference</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var stage    = document.getElementById('diff-stage');
+  var video    = document.getElementById('diff-video');
+  var cards    = document.querySelectorAll('.diff-card');
+  var railFill = document.getElementById('diff-rail-fill');
+  var NUM_CARDS = cards.length;
+
+  var stageTop = 0, stageHeight = 0;
+  function recalc() {
+    var rect = stage.getBoundingClientRect();
+    stageTop    = rect.top + window.scrollY;
+    stageHeight = stage.offsetHeight - window.innerHeight;
+  }
+  recalc();
+  window.addEventListener('resize', recalc, { passive: true });
+
+  /* ── Detect iOS ──────────────────────────────────────────────────────── */
+  var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  /* ── Shared scroll handler (cards + rail) ────────────────────────────── */
+  var currentPct = 0;
+  function onScroll() {
+    var raw = window.scrollY - stageTop;
+    currentPct = Math.min(1, Math.max(0, raw / stageHeight));
+    railFill.style.transform = 'scaleY(' + currentPct + ')';
+    var cardIdx = Math.min(NUM_CARDS - 1, Math.floor(currentPct * NUM_CARDS));
+    cards.forEach(function (card, i) {
+      card.classList.toggle('visible', i === cardIdx);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ══════════════════════════════════════════════════════════════════════
+     iOS PATH — image sequence on canvas
+     ══════════════════════════════════════════════════════════════════════ */
+  if (isIOS) {
+    var FRAME_COUNT = 80;
+    var FRAME_BASE  = '../content/videos/frames/frame';
+
+    /* Hide the video, create a canvas in its place */
+    video.style.display = 'none';
+    var canvas = document.createElement('canvas');
+    canvas.style.cssText = 'width:100%;height:100%;object-fit:contain;display:block;';
+    video.parentNode.appendChild(canvas);
+    var ctx = canvas.getContext('2d');
+
+    /* Preload all frames */
+    var frames = new Array(FRAME_COUNT);
+    var loaded = 0;
+    for (var i = 0; i < FRAME_COUNT; i++) {
+      (function (idx) {
+        var img = new Image();
+        img.onload = function () {
+          frames[idx] = img;
+          loaded++;
+          /* Set canvas size from first frame */
+          if (idx === 0) {
+            canvas.width  = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            ctx.drawImage(img, 0, 0);
+          }
+        };
+        img.src = FRAME_BASE + String(idx + 1).padStart(3, '0') + '.jpg';
+      })(i);
+    }
+
+    /* RAF: draw the frame matching scroll position */
+    var lastFrameIdx = -1;
+    function rafCanvas() {
+      var frameIdx = Math.min(FRAME_COUNT - 1, Math.floor(currentPct * FRAME_COUNT));
+      if (frameIdx !== lastFrameIdx && frames[frameIdx]) {
+        ctx.drawImage(frames[frameIdx], 0, 0);
+        lastFrameIdx = frameIdx;
+      }
+      requestAnimationFrame(rafCanvas);
+    }
+    requestAnimationFrame(rafCanvas);
+
+  /* ══════════════════════════════════════════════════════════════════════
+     Desktop PATH — smooth video scrubbing (unchanged)
+     ══════════════════════════════════════════════════════════════════════ */
+  } else {
+    var targetTime  = 0;
+    var displayTime = 0;
+
+    video.pause();
+    video.currentTime = 0;
+
+    window.addEventListener('scroll', function () {
+      if (video.readyState >= 1 && isFinite(video.duration)) {
+        targetTime = currentPct * video.duration;
+      }
+    }, { passive: true });
+
+    var LERP = 0.06;
+    function rafPlay() {
+      var diff = targetTime - displayTime;
+      if (Math.abs(diff) > 0.002) {
+        displayTime += diff * LERP;
+        if (video.readyState >= 2 && isFinite(video.duration)) {
+          video.currentTime = displayTime;
+        }
+      }
+      requestAnimationFrame(rafPlay);
+    }
+    requestAnimationFrame(rafPlay);
+  }
+
+  /* Scroll reveal for closing section */
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(function (el) { obs.observe(el); });
+  }
+
+})();
+</script>
+
+</body>
+</html>

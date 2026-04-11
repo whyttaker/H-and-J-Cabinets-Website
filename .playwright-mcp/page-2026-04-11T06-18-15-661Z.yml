@@ -1,0 +1,175 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - region "Custom Cabinets hero" [ref=e9]:
+    - img "Luxury custom kitchen cabinets Orange County California" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e13]: H & J Cabinets
+      - heading "Custom Cabinets Built to Last" [level=1] [ref=e14]:
+        - text: Custom Cabinets
+        - emphasis [ref=e15]: Built to Last
+      - paragraph [ref=e16]: Premium materials, proven construction, and a process refined over 30 years. Every cabinet built with intention, to perform beautifully for decades.
+  - generic [ref=e18]: Custom Cabinetry
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Our Approach
+      - heading "Built with intention. Built to endure." [level=2] [ref=e22]:
+        - text: Built with intention.
+        - emphasis [ref=e23]: Built to endure.
+      - paragraph [ref=e24]: At H & J Cabinets, we design and build custom cabinetry using premium materials and proven construction methods. Every cabinet is built with intention, ensuring long-term durability, precise fit, and a finish that holds its quality over time.
+      - paragraph [ref=e25]: We work directly with homeowners, interior designers, and architects across Orange County and Southern California to create cabinetry that is singular to each project, no catalogue, no compromises, no shortcuts. The result is cabinetry that not only looks exceptional on day one, but continues to perform and look exceptional for decades.
+    - generic [ref=e26]:
+      - generic [ref=e27]: Why It Matters
+      - heading "The case for custom cabinetry" [level=2] [ref=e28]:
+        - text: The case for
+        - emphasis [ref=e29]: custom cabinetry
+      - paragraph [ref=e30]: Stock and semi-custom cabinets are built to general dimensions for a general customer. Custom cabinets are built for your specific space, your specific lifestyle, and your specific vision. The difference is felt every single day.
+      - list [ref=e31]:
+        - listitem [ref=e32]:
+          - generic [ref=e33]:
+            - strong [ref=e34]: Durability
+            - text: Custom cabinets are built from higher-grade materials with superior joinery techniques, resulting in a product that holds up under real daily use for decades rather than years.
+        - listitem [ref=e35]:
+          - generic [ref=e36]:
+            - strong [ref=e37]: Precision fit
+            - text: Every inch of your space is used intentionally. No filler panels, no awkward gaps, no wasted space. Cabinetry that was made for the room it lives in.
+        - listitem [ref=e38]:
+          - generic [ref=e39]:
+            - strong [ref=e40]: Long-term value
+            - text: Quality cabinetry is one of the highest-return investments in a home. It drives resale value, enhances livability, and does not need to be replaced when trends shift, because it was built around your space, not a catalogue.
+    - generic [ref=e41]:
+      - generic [ref=e42]: Construction Methods
+      - 'heading "Where we win: framed construction" [level=2] [ref=e43]':
+        - text: "Where we win:"
+        - emphasis [ref=e44]: framed construction
+      - paragraph [ref=e45]: H & J Cabinets builds using traditional face-frame construction, the method that has defined premium cabinetry for generations, and the method that continues to outperform modern frameless alternatives in structural integrity and long-term performance.
+      - paragraph [ref=e46]: The face frame, a solid hardwood frame attached to the front of the cabinet box, reinforces the entire structure. It keeps the cabinet square and stable as a home settles over time. It provides a secure mounting surface for doors and hardware. And it ensures that doors and drawers stay aligned and operate smoothly for the life of the cabinet.
+      - list [ref=e47]:
+        - listitem [ref=e48]: Face-frame construction provides structural integrity that frameless systems cannot match
+        - listitem [ref=e49]: Cabinets remain square and stable as the home naturally settles over the years
+        - listitem [ref=e50]: Doors and drawers maintain alignment and smooth operation with daily use
+        - listitem [ref=e51]: Longevity built into the construction method, not just the materials
+    - generic [ref=e52]:
+      - generic [ref=e53]: Materials
+      - heading "No MDF. No low-grade shortcuts." [level=2] [ref=e54]:
+        - text: No MDF.
+        - emphasis [ref=e55]: No low-grade shortcuts.
+      - paragraph [ref=e56]: The materials inside your cabinets matter as much as what you see on the surface. At H & J Cabinets, we never use MDF or low-grade plywood in critical areas, the structural components that determine how well your cabinetry holds up over time.
+      - list [ref=e57]:
+        - listitem [ref=e58]: Premium hardwoods selected for grain, figure, and structural integrity
+        - listitem [ref=e59]: High-quality plywood for cabinet boxes, dimensionally stable and resistant to warping
+        - listitem [ref=e60]: Superior resistance to moisture, humidity, and the conditions of real kitchen and bathroom environments
+        - listitem [ref=e61]: No swelling, no delaminating, no premature breakdown, because the materials chosen do not allow for it
+      - paragraph [ref=e62]: "Every material decision is made with the end product in mind: cabinetry that holds its quality across decades of use, not just the first few years."
+    - generic [ref=e63]:
+      - generic [ref=e64]: The Process
+      - heading "Design. Build. Install." [level=2] [ref=e65]:
+        - text: Design. Build.
+        - emphasis [ref=e66]: Install.
+      - paragraph [ref=e67]: Our process is straightforward because we have refined it over 30 years. No subcontractors. No handoffs. Our team handles every phase, which means accountability at every step and a final product that reflects our standards, not a third party's.
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: "01"
+          - heading "Design" [level=3] [ref=e71]
+          - paragraph [ref=e72]: We meet, we listen, and we draw. Every project begins with a detailed design phase, hand-drawn renderings and precision drawings that give you a clear picture of the final result before a single board is cut.
+        - generic [ref=e73]:
+          - generic [ref=e74]: "02"
+          - heading "Build" [level=3] [ref=e75]
+          - paragraph [ref=e76]: Your cabinetry is built in our shop by master craftsmen using hand-selected materials. Each piece is built exclusively for your project, no stock components, no catalogue pulls.
+        - generic [ref=e77]:
+          - generic [ref=e78]: "03"
+          - heading "Install" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Our own team installs every project. Precise fit, clean finish, and a final walkthrough to ensure everything meets our standard, and yours. We also offer a lifetime adjustment guarantee for any settling that occurs after installation.
+    - generic [ref=e81]:
+      - generic [ref=e82]: Where We Work
+      - heading "Serving Orange County and beyond" [level=2] [ref=e83]:
+        - text: Serving Orange County
+        - emphasis [ref=e84]: and beyond
+      - paragraph [ref=e85]: H & J Cabinets is based in Santa Ana, California, and serves clients across Orange County, Southern California, and select projects nationwide. We work closely with homeowners, architects, and interior designers on high-end residential projects from initial concept through final installation.
+      - paragraph [ref=e86]: Our primary service area includes Newport Beach, Corona del Mar, Irvine, Laguna Beach, Huntington Beach, Mission Viejo, and the broader Orange County region. We also serve clients throughout Southern California, Northern California, Arizona, Nevada, Texas, and Hawaii for exceptional projects.
+      - generic [ref=e87]:
+        - link "Newport Beach" [ref=e88] [cursor=pointer]:
+          - /url: ./newport-beach/
+        - link "Corona del Mar" [ref=e89] [cursor=pointer]:
+          - /url: ./corona-del-mar/
+        - link "Irvine" [ref=e90] [cursor=pointer]:
+          - /url: ./irvine/
+        - link "Laguna Beach" [ref=e91] [cursor=pointer]:
+          - /url: ./laguna-beach/
+        - link "Huntington Beach" [ref=e92] [cursor=pointer]:
+          - /url: ./huntington-beach/
+        - link "Mission Viejo" [ref=e93] [cursor=pointer]:
+          - /url: ./mission-viejo/
+        - link "Orange County" [ref=e94] [cursor=pointer]:
+          - /url: ./orange-county/
+        - link "Southern California" [ref=e95] [cursor=pointer]:
+          - /url: ./southern-california/
+  - generic [ref=e97]: FAQ
+  - region "Frequently asked questions about custom cabinets" [ref=e98]:
+    - heading "Frequently Asked Questions" [level=2] [ref=e99]
+    - generic [ref=e100]:
+      - paragraph [ref=e101]: What are custom cabinets?
+      - paragraph [ref=e102]: Custom cabinets are built specifically for your space rather than using standard sizes. Every dimension, material, and finish is tailored to fit your home precisely, resulting in a better fit, improved functionality, and a higher level of overall quality.
+    - generic [ref=e103]:
+      - paragraph [ref=e104]: What is the difference between framed and frameless cabinets?
+      - paragraph [ref=e105]: Framed cabinets use a face frame on the front of the cabinet box, which adds strength, stability, and long-term durability. Frameless cabinets, often referred to as European-style cabinets, do not have this frame and rely on thicker box construction for support. While frameless designs can offer a more modern appearance, framed cabinets are generally more rigid and better suited for long-term performance.
+    - generic [ref=e106]:
+      - paragraph [ref=e107]: Are framed cabinets more durable than frameless cabinets?
+      - paragraph [ref=e108]: Framed cabinets are typically more durable because the face frame reinforces the structure of the cabinet. This added support helps prevent shifting, sagging, and misalignment over time, especially in high-use areas like kitchens.
+    - generic [ref=e109]:
+      - paragraph [ref=e110]: What materials are best for high-quality cabinets?
+      - paragraph [ref=e111]: High-quality cabinets are built using durable materials such as high-grade plywood and solid wood components. These materials resist moisture, wear, and long-term stress better than alternatives like MDF or low-grade particle board, which are more prone to swelling and deterioration.
+    - generic [ref=e112]:
+      - paragraph [ref=e113]: Do you use MDF in your cabinets?
+      - paragraph [ref=e114]: We avoid using MDF and low-quality materials in critical structural areas. Our focus is on using materials that maintain their integrity over time and perform well in real living environments.
+    - generic [ref=e115]:
+      - paragraph [ref=e116]: How long do custom cabinets last?
+      - paragraph [ref=e117]: When built with proper construction methods and high-quality materials, custom cabinets can last for decades. Longevity depends on both the materials used and the precision of the build and installation.
+    - generic [ref=e118]:
+      - paragraph [ref=e119]: Do you offer custom cabinets in Orange County and Newport Beach?
+      - paragraph [ref=e120]: Yes, we design and build custom cabinetry throughout Orange County, including Newport Beach, Corona del Mar, Irvine, and surrounding areas. We also take on projects throughout Southern California and beyond.
+    - generic [ref=e121]:
+      - paragraph [ref=e122]: What is the process for getting custom cabinets?
+      - paragraph [ref=e123]: The process typically begins with design and planning, followed by material selection, fabrication, and installation. We guide you through each phase to ensure the final result aligns with your vision and performs as expected.
+    - generic [ref=e124]:
+      - paragraph [ref=e125]: Are custom cabinets worth the investment?
+      - paragraph [ref=e126]: Custom cabinets offer long-term value through better materials, precise fit, and improved durability. While the initial investment may be higher than pre-built options, they are designed to last longer and perform better over time.
+    - generic [ref=e127]:
+      - paragraph [ref=e128]: Can custom cabinets be designed for my exact space and needs?
+      - paragraph [ref=e129]: Yes. Custom cabinetry is built specifically for your layout, allowing for complete flexibility in sizing, storage solutions, and overall design. This ensures that your cabinets not only look refined but function exactly as needed.
+    - generic [ref=e130]: If you are considering custom cabinetry and want a solution built to a higher standard, we are here to help guide the process from design through installation.
+  - generic [ref=e131]:
+    - heading "Ready to build to a higher standard?" [level=2] [ref=e132]
+    - paragraph [ref=e133]: If you are planning a project and want cabinetry built to a higher standard, contact H & J Cabinets to get started.
+    - generic [ref=e134]:
+      - link "Get in Touch →" [ref=e135] [cursor=pointer]:
+        - /url: ../contact/
+      - link "The H & J Difference" [ref=e136] [cursor=pointer]:
+        - /url: ../difference/
+  - contentinfo [ref=e137]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets" [ref=e138] [cursor=pointer]:
+      - /url: ../
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e139]
+      - generic [ref=e140]: H & J Cabinets
+    - list [ref=e141]:
+      - listitem [ref=e142]:
+        - link "Home" [ref=e143] [cursor=pointer]:
+          - /url: ../
+      - listitem [ref=e144]:
+        - link "Projects" [ref=e145] [cursor=pointer]:
+          - /url: ../featured-homes/
+      - listitem [ref=e146]:
+        - link "About" [ref=e147] [cursor=pointer]:
+          - /url: ../about/
+      - listitem [ref=e148]:
+        - link "Contact" [ref=e149] [cursor=pointer]:
+          - /url: ../contact/
+    - paragraph [ref=e150]: © 2025 H & J Cabinets. All rights reserved.

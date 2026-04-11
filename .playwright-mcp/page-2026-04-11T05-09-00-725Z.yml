@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]
+  - region "The H & J Difference" [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: The H & J Difference
+      - heading "Cabinetry is not a product. It's a practice." [level=1] [ref=e14]:
+        - text: Cabinetry is
+        - text: not a product.
+        - emphasis [ref=e15]: It's a practice.
+      - paragraph [ref=e16]: Every stage of our process is intentional. Scroll to see how we build, and why it matters.
+      - generic [ref=e18]: Scroll
+  - region "Craftsmanship process" [ref=e20]:
+    - generic [ref=e21]:
+      - generic:
+        - generic: "01"
+        - heading "The Design Process" [level=3]
+        - paragraph: Every project begins with hand-drawn renderings, no templates, no shortcuts. Your vision, rendered precisely before a single board is cut.
+      - generic:
+        - generic: "02"
+        - heading "Material Selection" [level=3]
+        - paragraph: We source only premium hardwoods, hand-selected for grain, figure, and longevity. The wood you see is the wood in your home.
+      - generic:
+        - generic: "03"
+        - heading "Precision Milling" [level=3]
+        - paragraph: Each board is milled to exact tolerances in-house. Consistent thickness, flat faces, square edges, the foundation every joint depends on.
+      - generic:
+        - generic: "04"
+        - heading "Precision Joinery" [level=3]
+        - paragraph: Traditional dovetail and mortise-and-tenon construction, techniques chosen for strength and beauty that outlasts trends.
+      - generic:
+        - generic: "05"
+        - heading "Expert Craftsmanship" [level=3]
+        - paragraph: Each piece is built by master craftsmen with decades of dedicated experience, never rushed, never compromised.
+      - generic:
+        - generic: "06"
+        - heading "White-Glove Installation" [level=3]
+        - paragraph: Our own team handles every installation. No subcontractors. Precise fit, clean finish, every time.
+      - generic:
+        - generic: "07"
+        - heading "Singular to You" [level=3]
+        - paragraph: No catalogue. No two projects alike. Every cabinet made exclusively for your space, your life, your vision.
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]: The Standard We Set
+      - heading "Why our cabinets are unmatched" [level=2] [ref=e27]:
+        - text: Why our cabinets
+        - text: are unmatched
+      - link "Explore our custom cabinets →" [ref=e28] [cursor=pointer]:
+        - /url: ../custom-cabinets/
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: "01"
+        - heading "Built for Strength" [level=3] [ref=e32]
+        - paragraph [ref=e33]: Our cabinets are constructed using a traditional framed design, which provides a level of structural integrity that frameless systems simply cannot match. The face frame reinforces the entire cabinet, keeping everything square, stable, and secure over time. This results in doors and drawers that stay aligned, operate smoothly, and maintain their quality even with daily use.
+      - generic [ref=e34]:
+        - generic [ref=e35]: "02"
+        - heading "Premium Materials, No Shortcuts" [level=3] [ref=e36]
+        - paragraph [ref=e37]: We believe that what goes inside your cabinets matters just as much as what you see on the outside. That is why we never use MDF or low-grade plywood in critical areas. Instead, we select high-quality materials that are more resistant to moisture, wear, and long-term stress. This approach not only increases durability but also helps prevent issues like swelling, warping, and premature breakdown.
+      - generic [ref=e38]:
+        - generic [ref=e39]: "03"
+        - heading "Lifetime Adjustment Guarantee" [level=3] [ref=e40]
+        - paragraph [ref=e41]: Over time, natural settling can cause minor shifts in cabinetry. Rather than passing that responsibility on to you, we stand behind our work for the long term. Our lifetime adjustment guarantee means that if your cabinets ever need to be realigned or fine-tuned, we will take care of it at no cost. It is a commitment to lasting performance and continued support.
+      - generic [ref=e42]:
+        - generic [ref=e43]: "04"
+        - heading "30+ Years of Craftsmanship" [level=3] [ref=e44]
+        - paragraph [ref=e45]: With more than two decades of experience in high-end custom cabinetry, we bring a deep understanding of both design and construction to every project. We combine proven craftsmanship with modern technology to achieve precise fits, clean finishes, and consistent results. Each cabinet is built with care, attention, and a level of detail that reflects our standards.
+      - generic [ref=e46]:
+        - generic [ref=e47]: "05"
+        - heading "A Better Client Experience" [level=3] [ref=e48]
+        - paragraph [ref=e49]: We approach every project with the mindset that the experience should feel just as refined as the final product. From the initial design to the final installation, we prioritize clarity, transparency, and responsiveness. We keep change order costs to a minimum and work closely with you to ensure the process remains smooth and predictable. Our goal is not only to meet expectations but to deliver a result that feels thoughtfully executed from start to finish.
+  - generic [ref=e50]:
+    - generic [ref=e51]: Ready to Begin
+    - heading "Your vision deserves this level of care." [level=2] [ref=e52]:
+      - text: Your vision deserves
+      - emphasis [ref=e53]: this level of care.
+    - paragraph [ref=e54]: Every exceptional home starts with a conversation. We'd love to hear yours.
+    - generic [ref=e55]:
+      - link "See Our Work →" [ref=e56] [cursor=pointer]:
+        - /url: ../featured-homes/
+      - link "Get in Touch →" [ref=e57] [cursor=pointer]:
+        - /url: ../contact/
+  - contentinfo [ref=e58]:
+    - navigation "Footer" [ref=e59]:
+      - list [ref=e60]:
+        - listitem [ref=e61]:
+          - link "Home" [ref=e62] [cursor=pointer]:
+            - /url: ../
+        - listitem [ref=e63]:
+          - link "Projects" [ref=e64] [cursor=pointer]:
+            - /url: ../featured-homes/
+        - listitem [ref=e65]:
+          - link "About" [ref=e66] [cursor=pointer]:
+            - /url: ../about/
+        - listitem [ref=e67]:
+          - link "The Difference" [ref=e68] [cursor=pointer]:
+            - /url: ./
+        - listitem [ref=e69]:
+          - link "Contact" [ref=e70] [cursor=pointer]:
+            - /url: ../contact/
+    - paragraph [ref=e71]: © 2025 H & J Cabinets. All rights reserved.

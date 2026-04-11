@@ -1,0 +1,78 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - region "Contact hero" [ref=e9]:
+    - img "Luxury custom kitchen cabinets Orange County California" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e13]: Get in Touch
+      - heading "Begin Your Vision Here" [level=1] [ref=e14]:
+        - text: Begin Your
+        - emphasis [ref=e15]: Vision Here
+      - paragraph [ref=e16]: Every exceptional home starts with a conversation. Whether you have a clear vision or are just beginning to dream, we're here to listen, advise, and create.
+    - generic [ref=e18]: Connect
+  - generic [ref=e21]: Contact & Location
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - paragraph [ref=e24]: Whether you're ready to start a new project, have questions about our services, or simply want to learn more about what we offer, we're here to help. Our dedicated team is committed to providing you with prompt and personalized assistance, ensuring your experience with H & J Cabinets is nothing short of exceptional.
+      - generic [ref=e25]:
+        - generic [ref=e26]: Contact
+        - heading "Let's Get Started" [level=3] [ref=e27]
+        - generic [ref=e28]:
+          - link "Call (714) 349‑3522" [ref=e29] [cursor=pointer]:
+            - /url: tel:+17143493522
+            - text: Call
+            - generic: (714) 349‑3522
+          - link "Text (714) 349‑3522" [ref=e30] [cursor=pointer]:
+            - /url: sms:+17143493522
+            - text: Text
+            - generic: (714) 349‑3522
+          - link "Email inquiries@handjcabinets.com" [ref=e31] [cursor=pointer]:
+            - /url: mailto:inquiries@handjcabinets.com
+            - text: Email
+            - generic: inquiries@handjcabinets.com
+      - generic [ref=e32]:
+        - generic [ref=e33]: Visit
+        - heading "Our Shop" [level=3] [ref=e34]
+        - generic [ref=e35]:
+          - text: 1369 S Lyon St.
+          - text: Santa Ana, CA 92705
+        - link "Open in Maps →" [ref=e36] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/?api=1&query=33.7302544,-117.8453118
+      - generic [ref=e37]:
+        - generic [ref=e38]: Follow
+        - heading "Stay Inspired" [level=3] [ref=e39]
+        - link "@hjcabinets" [ref=e41] [cursor=pointer]:
+          - /url: https://www.instagram.com/hjcabinets/
+          - img [ref=e42]
+          - text: "@hjcabinets"
+    - generic [ref=e45]:
+      - generic:
+        - region "Map" [ref=e46]
+        - button "Map marker" [ref=e47] [cursor=pointer]:
+          - img [ref=e48]
+      - generic [ref=e51]:
+        - button "Zoom in" [ref=e52] [cursor=pointer]
+        - button "Zoom out" [ref=e54] [cursor=pointer]
+  - contentinfo [ref=e56]:
+    - list [ref=e57]:
+      - listitem [ref=e58]:
+        - link "Home" [ref=e59] [cursor=pointer]:
+          - /url: ../
+      - listitem [ref=e60]:
+        - link "Projects" [ref=e61] [cursor=pointer]:
+          - /url: ../featured-homes/
+      - listitem [ref=e62]:
+        - link "About" [ref=e63] [cursor=pointer]:
+          - /url: ../about/
+      - listitem [ref=e64]:
+        - link "Contact" [ref=e65] [cursor=pointer]:
+          - /url: ./
+    - paragraph [ref=e66]: © 2025 H & J Cabinets. All rights reserved.

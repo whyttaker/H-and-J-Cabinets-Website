@@ -1,0 +1,8 @@
+# Mapbox token (keep locally, do not commit)
+handjcabinets.com/content/mapbox-config.js
+
+# Large video files (>50MB GitHub limit)
+handjcabinets.com/content/videos/hero-showcase-video.mp4
+
+# OS files
+.DS_Store

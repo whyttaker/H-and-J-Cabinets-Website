@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]
+  - region "Hero" [ref=e11]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Fine Custom Cabinetry
+      - heading "Custom Cabinetry Built the Right Way" [level=1] [ref=e16]:
+        - text: Custom Cabinetry
+        - text: Built the
+        - emphasis [ref=e17]: Right Way
+      - paragraph [ref=e18]: With intention, premium materials, and the finest craftsmanship. From initial design through final installation, every detail is executed to perform beautifully for years to come. Serving California and the greater area for over 30 years.
+      - generic [ref=e19]:
+        - link "Our Work" [ref=e20] [cursor=pointer]:
+          - /url: difference/
+        - link "Get in Touch" [ref=e21] [cursor=pointer]:
+          - /url: contact/
+    - generic [ref=e23]: Discover
+  - region "Our approach" [ref=e25]:
+    - generic [ref=e26]:
+      - text: "\"Every detail considered."
+      - text: Every piece, singular."
+    - generic [ref=e27]:
+      - paragraph [ref=e29]:
+        - text: At H & J Cabinets, we believe that great cabinetry is the foundation of a great home. From the first consultation to the final fitting, our team of master craftsmen works alongside architects, designers, and homeowners giving
+        - link "insights" [ref=e30] [cursor=pointer]:
+          - /url: insights/
+        - text: on how to create pieces that are as functional as they are beautiful.
+      - paragraph [ref=e31]: "Each project begins with listening, understanding how you live, what you value, and what you dream of. What follows is a process refined over decades: meticulous joinery, hand-selected materials, and an unwavering commitment to getting every detail exactly right."
+  - generic [ref=e33]: Latest Work
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - iframe [ref=e36]:
+        
+      - button [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: No. 01 · Featured Residence
+        - generic [ref=e44]: Big Canyon Residence
+        - paragraph [ref=e45]: Brought to life alongside renowned architect Eric Olsen and M. Elle Design interiors, traditional woodworking blended with intricate custom aesthetics.
+      - link "View All Projects →" [ref=e46] [cursor=pointer]:
+        - /url: featured-homes/
+  - generic [ref=e48]: From the Portfolio
+  - region "Gallery preview" [ref=e49]:
+    - generic [ref=e50]:
+      - img "Luxury custom kitchen cabinets Orange County California" [ref=e52]
+      - img "Modern custom cabinetry Newport Beach luxury home" [ref=e54]
+      - img "High-end custom kitchen cabinet design Orange County CA" [ref=e56]
+      - img "Bespoke custom cabinet installation Southern California" [ref=e58]
+      - img "Premium handcrafted kitchen cabinets Newport Beach CA" [ref=e60]
+      - img "Custom built-in cabinetry Orange County luxury home" [ref=e62]
+    - link "Explore the Full Gallery →" [ref=e64] [cursor=pointer]:
+      - /url: gallery/
+  - region "Client testimonial" [ref=e65]:
+    - generic: "\""
+    - paragraph [ref=e66]: The meticulous attention to detail, the superb craftsmanship, and the personalized service made our experience truly exceptional. H & J brought our vision to life beyond what we imagined.
+    - paragraph [ref=e67]: Jeff & Diane Brown · Harbor Ridge Residence
+    - link "More Client Stories →" [ref=e68] [cursor=pointer]:
+      - /url: testimonials/
+  - region "Contact" [ref=e69]:
+    - img "H & J Cabinets custom cabinet design sketch and craftsmanship process" [ref=e71]
+    - generic [ref=e72]:
+      - generic [ref=e73]: Begin Your Project
+      - heading "Start the Conversation" [level=2] [ref=e74]:
+        - text: Start the
+        - emphasis [ref=e75]: Conversation
+      - paragraph [ref=e76]:
+        - text: Every exceptional home starts with a conversation. Whether you have a clear vision or are just beginning to dream, we're here to listen, advise, and create your perfect
+        - link "custom cabinets" [ref=e77] [cursor=pointer]:
+          - /url: custom-cabinets/
+        - text: .
+      - generic [ref=e78]:
+        - link "Call (714) 349‑3522" [ref=e79] [cursor=pointer]:
+          - /url: tel:+17143493522
+          - text: Call
+          - generic: (714) 349‑3522
+        - link "Text (714) 349‑3522" [ref=e80] [cursor=pointer]:
+          - /url: sms:+17143493522
+          - text: Text
+          - generic: (714) 349‑3522
+        - link "Email inquiries@handjcabinets.com" [ref=e81] [cursor=pointer]:
+          - /url: mailto:inquiries@handjcabinets.com
+          - text: Email
+          - generic: inquiries@handjcabinets.com
+  - contentinfo [ref=e82]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets" [ref=e83] [cursor=pointer]:
+      - /url: ./
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e84]
+      - generic [ref=e85]: H & J Cabinets
+    - list [ref=e86]:
+      - listitem [ref=e87]:
+        - link "Home" [ref=e88] [cursor=pointer]:
+          - /url: ./
+      - listitem [ref=e89]:
+        - link "Projects" [ref=e90] [cursor=pointer]:
+          - /url: featured-homes/
+      - listitem [ref=e91]:
+        - link "About" [ref=e92] [cursor=pointer]:
+          - /url: about/
+      - listitem [ref=e93]:
+        - link "Contact" [ref=e94] [cursor=pointer]:
+          - /url: contact/
+    - paragraph [ref=e95]: © 2025 H & J Cabinets. All rights reserved.

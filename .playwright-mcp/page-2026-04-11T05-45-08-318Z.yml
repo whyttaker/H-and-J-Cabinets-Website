@@ -1,0 +1,410 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]
+  - region "Gallery hero" [ref=e11]:
+    - img "H & J Cabinets, fine custom cabinetry" [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]: Our Collection
+      - heading "Where Artistry Meets Precision" [level=1] [ref=e16]:
+        - text: Where
+        - emphasis [ref=e17]: Artistry
+        - text: Meets Precision
+      - paragraph [ref=e18]: From the first sketch to the final finish, every detail is considered. Browse our portfolio of bespoke cabinetry, each piece a reflection of our commitment to enduring craftsmanship and singular beauty.
+    - generic [ref=e20]: Explore
+  - region "Cabinet gallery" [ref=e22]:
+    - generic [ref=e25]: Selected Works
+    - list [ref=e28]:
+      - listitem "View photo 1" [ref=e29] [cursor=pointer]:
+        - img "Luxury custom kitchen cabinets Orange County California" [ref=e30]
+        - generic [ref=e32]:
+          - generic [ref=e33]: No. 01
+          - img [ref=e35]
+      - listitem "View photo 2" [ref=e37] [cursor=pointer]:
+        - img "Modern custom cabinetry Newport Beach luxury home" [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]: No. 02
+          - img [ref=e43]
+      - listitem "View photo 3" [ref=e45] [cursor=pointer]:
+        - img "High-end custom kitchen cabinet design Orange County CA" [ref=e46]
+        - generic [ref=e48]:
+          - generic [ref=e49]: No. 03
+          - img [ref=e51]
+      - listitem "View photo 4" [ref=e53] [cursor=pointer]:
+        - img "Bespoke custom cabinet installation Southern California" [ref=e54]
+        - generic [ref=e56]:
+          - generic [ref=e57]: No. 04
+          - img [ref=e59]
+      - listitem "View photo 5" [ref=e61] [cursor=pointer]:
+        - img "Premium handcrafted kitchen cabinets Newport Beach CA" [ref=e62]
+        - generic [ref=e64]:
+          - generic [ref=e65]: No. 05
+          - img [ref=e67]
+      - listitem "View photo 6" [ref=e69] [cursor=pointer]:
+        - img "Custom built-in cabinetry Orange County luxury home" [ref=e70]
+        - generic [ref=e72]:
+          - generic [ref=e73]: No. 06
+          - img [ref=e75]
+      - listitem [ref=e77] [cursor=pointer]:
+        - img "Premium custom cabinetry Orange County fine craftsmanship" [ref=e78]
+        - generic [ref=e80]:
+          - generic [ref=e81]: No. 07
+          - img [ref=e83]
+      - listitem [ref=e85] [cursor=pointer]:
+        - img "Luxury kitchen cabinet design inspiration Southern California" [ref=e86]
+        - generic [ref=e88]:
+          - generic [ref=e89]: No. 08
+          - img [ref=e91]
+      - listitem [ref=e93] [cursor=pointer]:
+        - img "Custom built-in cabinets Laguna Beach luxury residence" [ref=e94]
+        - generic [ref=e96]:
+          - generic [ref=e97]: No. 09
+          - img [ref=e99]
+      - listitem [ref=e101] [cursor=pointer]:
+        - img "Modern white kitchen cabinets custom made Orange County" [ref=e102]
+        - generic [ref=e104]:
+          - generic [ref=e105]: No. 10
+          - img [ref=e107]
+      - listitem [ref=e109] [cursor=pointer]:
+        - img "High-end custom cabinetry Irvine California home remodel" [ref=e110]
+        - generic [ref=e112]:
+          - generic [ref=e113]: No. 11
+          - img [ref=e115]
+      - listitem [ref=e117] [cursor=pointer]:
+        - img "Best custom kitchen cabinets Newport Beach handcrafted" [ref=e118]
+        - generic [ref=e120]:
+          - generic [ref=e121]: No. 12
+          - img [ref=e123]
+      - listitem [ref=e125] [cursor=pointer]:
+        - img "Custom closet cabinetry Orange County luxury home design" [ref=e126]
+        - generic [ref=e128]:
+          - generic [ref=e129]: No. 13
+          - img [ref=e131]
+      - listitem [ref=e133] [cursor=pointer]:
+        - img "Modern custom cabinet design inspiration Orange County CA" [ref=e134]
+        - generic [ref=e136]:
+          - generic [ref=e137]: No. 14
+          - img [ref=e139]
+      - listitem [ref=e141] [cursor=pointer]:
+        - img "Luxury custom bathroom cabinets Huntington Beach California" [ref=e142]
+        - generic [ref=e144]:
+          - generic [ref=e145]: No. 15
+          - img [ref=e147]
+      - listitem [ref=e149] [cursor=pointer]:
+        - img "Handcrafted wood kitchen cabinets Mission Viejo CA" [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e153]: No. 16
+          - img [ref=e155]
+      - listitem [ref=e157] [cursor=pointer]:
+        - img "Custom built-in office cabinetry Orange County California" [ref=e158]
+        - generic [ref=e160]:
+          - generic [ref=e161]: No. 17
+          - img [ref=e163]
+      - listitem [ref=e165] [cursor=pointer]:
+        - img "Premium luxury kitchen cabinets Southern California" [ref=e166]
+        - generic [ref=e168]:
+          - generic [ref=e169]: No. 18
+          - img [ref=e171]
+      - listitem [ref=e173] [cursor=pointer]:
+        - img "Custom cabinet installation Corona del Mar coastal home" [ref=e174]
+        - generic [ref=e176]:
+          - generic [ref=e177]: No. 19
+          - img [ref=e179]
+      - listitem [ref=e181] [cursor=pointer]:
+        - img "High-end kitchen cabinetry design Orange County California" [ref=e182]
+        - generic [ref=e184]:
+          - generic [ref=e185]: No. 20
+          - img [ref=e187]
+      - listitem [ref=e189] [cursor=pointer]:
+        - img "Modern custom pantry cabinets Newport Beach luxury kitchen" [ref=e190]
+        - generic [ref=e192]:
+          - generic [ref=e193]: No. 21
+          - img [ref=e195]
+      - listitem [ref=e197] [cursor=pointer]:
+        - img "Custom wood cabinetry inspiration Orange County fine homes" [ref=e198]
+        - generic [ref=e200]:
+          - generic [ref=e201]: No. 22
+          - img [ref=e203]
+      - listitem [ref=e205] [cursor=pointer]:
+        - img "Bespoke kitchen cabinets Orange County — best custom cabinets" [ref=e206]
+        - generic [ref=e208]:
+          - generic [ref=e209]: No. 23
+          - img [ref=e211]
+      - listitem [ref=e213] [cursor=pointer]:
+        - img "Luxury custom laundry room cabinets Southern California" [ref=e214]
+        - generic [ref=e216]:
+          - generic [ref=e217]: No. 24
+          - img [ref=e219]
+      - listitem [ref=e221] [cursor=pointer]:
+        - img "Custom kitchen cabinet remodel Laguna Beach California" [ref=e222]
+        - generic [ref=e224]:
+          - generic [ref=e225]: No. 25
+          - img [ref=e227]
+      - listitem:
+        - img "Handcrafted bathroom vanity cabinets Orange County CA"
+        - generic [ref=e230] [cursor=pointer]:
+          - generic [ref=e231]: No. 26
+          - img [ref=e233]
+      - listitem:
+        - img "Premium custom built-in cabinets Irvine luxury home"
+        - generic [ref=e236] [cursor=pointer]:
+          - generic [ref=e237]: No. 27
+          - img [ref=e239]
+      - listitem:
+        - img "Modern luxury kitchen cabinets Newport Beach California"
+        - generic [ref=e242] [cursor=pointer]:
+          - generic [ref=e243]: No. 28
+          - img [ref=e245]
+      - listitem:
+        - img "Custom cabinet design inspiration Southern California homes"
+        - generic [ref=e248] [cursor=pointer]:
+          - generic [ref=e249]: No. 29
+          - img [ref=e251]
+      - listitem:
+        - img "High-end custom cabinetry Mission Viejo luxury residence"
+        - generic [ref=e254] [cursor=pointer]:
+          - generic [ref=e255]: No. 30
+          - img [ref=e257]
+      - listitem:
+        - img "Custom wood kitchen cabinets Huntington Beach California"
+        - generic [ref=e260] [cursor=pointer]:
+          - generic [ref=e261]: No. 31
+          - img [ref=e263]
+      - listitem:
+        - img "Luxury built-in cabinet installation Newport Beach CA"
+        - generic [ref=e266] [cursor=pointer]:
+          - generic [ref=e267]: No. 32
+          - img [ref=e269]
+      - listitem:
+        - img "Modern custom cabinetry design Orange County fine homes"
+        - generic [ref=e272] [cursor=pointer]:
+          - generic [ref=e273]: No. 33
+          - img [ref=e275]
+      - listitem:
+        - img "Custom kitchen cabinets inspiration luxury Southern California"
+        - generic [ref=e278] [cursor=pointer]:
+          - generic [ref=e279]: No. 34
+          - img [ref=e281]
+      - listitem:
+        - img "Handcrafted premium cabinetry Corona del Mar California"
+        - generic [ref=e284] [cursor=pointer]:
+          - generic [ref=e285]: No. 35
+          - img [ref=e287]
+      - listitem:
+        - img "Best custom cabinets Orange County — H & J Cabinets"
+        - generic [ref=e290] [cursor=pointer]:
+          - generic [ref=e291]: No. 36
+          - img [ref=e293]
+      - listitem:
+        - img "Luxury kitchen cabinet design Newport Beach custom built"
+        - generic [ref=e296] [cursor=pointer]:
+          - generic [ref=e297]: No. 37
+          - img [ref=e299]
+      - listitem:
+        - img "Custom pantry and kitchen cabinetry Southern California"
+        - generic [ref=e302] [cursor=pointer]:
+          - generic [ref=e303]: No. 38
+          - img [ref=e305]
+      - listitem:
+        - img "High-end bathroom cabinet design Orange County California"
+        - generic [ref=e308] [cursor=pointer]:
+          - generic [ref=e309]: No. 39
+          - img [ref=e311]
+      - listitem:
+        - img "Modern custom closet cabinets Newport Beach luxury home"
+        - generic [ref=e314] [cursor=pointer]:
+          - generic [ref=e315]: No. 40
+          - img [ref=e317]
+      - listitem:
+        - img "Custom built cabinetry Irvine Orange County California"
+        - generic [ref=e320] [cursor=pointer]:
+          - generic [ref=e321]: No. 41
+          - img [ref=e323]
+      - listitem:
+        - img "Luxury wood cabinet installation Laguna Beach California"
+        - generic [ref=e326] [cursor=pointer]:
+          - generic [ref=e327]: No. 42
+          - img [ref=e329]
+      - listitem:
+        - img "Custom kitchen remodel cabinets Orange County premium quality"
+        - generic [ref=e332] [cursor=pointer]:
+          - generic [ref=e333]: No. 43
+          - img [ref=e335]
+      - listitem:
+        - img "Handcrafted cabinet design inspiration California luxury homes"
+        - generic [ref=e338] [cursor=pointer]:
+          - generic [ref=e339]: No. 44
+          - img [ref=e341]
+      - listitem:
+        - img "Best luxury custom kitchen cabinets Orange County CA"
+        - generic [ref=e344] [cursor=pointer]:
+          - generic [ref=e345]: No. 45
+          - img [ref=e347]
+      - listitem:
+        - img "Custom cabinet installation Newport Beach premium hardwood"
+        - generic [ref=e350] [cursor=pointer]:
+          - generic [ref=e351]: No. 46
+          - img [ref=e353]
+      - listitem:
+        - img "Modern kitchen cabinet design Southern California custom"
+        - generic [ref=e356] [cursor=pointer]:
+          - generic [ref=e357]: No. 47
+          - img [ref=e359]
+      - listitem:
+        - img "High-end custom cabinetry Huntington Beach California"
+        - generic [ref=e362] [cursor=pointer]:
+          - generic [ref=e363]: No. 48
+          - img [ref=e365]
+      - listitem:
+        - img "Luxury built-in cabinets Mission Viejo California custom"
+        - generic [ref=e368] [cursor=pointer]:
+          - generic [ref=e369]: No. 49
+          - img [ref=e371]
+      - listitem:
+        - img "Custom cabinet inspo Orange County luxury home remodel"
+        - generic [ref=e374] [cursor=pointer]:
+          - generic [ref=e375]: No. 50
+          - img [ref=e377]
+      - listitem:
+        - img "Premium handcrafted kitchen cabinets Corona del Mar CA"
+        - generic [ref=e380] [cursor=pointer]:
+          - generic [ref=e381]: No. 51
+          - img [ref=e383]
+      - listitem:
+        - img "Custom wood cabinetry Newport Beach luxury kitchen design"
+        - generic [ref=e386] [cursor=pointer]:
+          - generic [ref=e387]: No. 52
+          - img [ref=e389]
+      - listitem:
+        - img "Modern luxury custom cabinets Orange County California"
+        - generic [ref=e392] [cursor=pointer]:
+          - generic [ref=e393]: No. 53
+          - img [ref=e395]
+      - listitem:
+        - img "Bespoke cabinet installation Southern California fine homes"
+        - generic [ref=e398] [cursor=pointer]:
+          - generic [ref=e399]: No. 54
+          - img [ref=e401]
+      - listitem:
+        - img "Custom kitchen cabinet design Laguna Beach California"
+        - generic [ref=e404] [cursor=pointer]:
+          - generic [ref=e405]: No. 55
+          - img [ref=e407]
+      - listitem:
+        - img "High-end custom cabinetry Irvine luxury home California"
+        - generic [ref=e410] [cursor=pointer]:
+          - generic [ref=e411]: No. 56
+          - img [ref=e413]
+      - listitem:
+        - img "Handcrafted built-in cabinets Orange County custom design"
+        - generic [ref=e416] [cursor=pointer]:
+          - generic [ref=e417]: No. 57
+          - img [ref=e419]
+      - listitem:
+        - img "Luxury modern kitchen cabinets Newport Beach California"
+        - generic [ref=e422] [cursor=pointer]:
+          - generic [ref=e423]: No. 58
+          - img [ref=e425]
+      - listitem:
+        - img "Custom cabinetry inspiration Orange County luxury interiors"
+        - generic [ref=e428] [cursor=pointer]:
+          - generic [ref=e429]: No. 59
+          - img [ref=e431]
+      - listitem:
+        - img "Best custom cabinets Southern California — H & J Cabinets"
+        - generic [ref=e434] [cursor=pointer]:
+          - generic [ref=e435]: No. 60
+          - img [ref=e437]
+      - listitem:
+        - img "Premium custom kitchen cabinetry Newport Beach CA"
+        - generic [ref=e440] [cursor=pointer]:
+          - generic [ref=e441]: No. 61
+          - img [ref=e443]
+      - listitem:
+        - img "Custom cabinet design Orange County handcrafted excellence"
+        - generic [ref=e446] [cursor=pointer]:
+          - generic [ref=e447]: No. 62
+          - img [ref=e449]
+      - listitem:
+        - img "Luxury kitchen and bathroom cabinetry Orange County CA"
+        - generic [ref=e452] [cursor=pointer]:
+          - generic [ref=e453]: No. 63
+          - img [ref=e455]
+      - listitem:
+        - img "Modern custom built-in cabinets Orange County California"
+        - generic [ref=e458] [cursor=pointer]:
+          - generic [ref=e459]: No. 64
+          - img [ref=e461]
+      - listitem:
+        - img "High-end custom cabinetry design inspiration California"
+        - generic [ref=e464] [cursor=pointer]:
+          - generic [ref=e465]: No. 65
+          - img [ref=e467]
+      - listitem:
+        - img "Custom wood kitchen cabinets Newport Beach luxury estate"
+        - generic [ref=e470] [cursor=pointer]:
+          - generic [ref=e471]: No. 66
+          - img [ref=e473]
+      - listitem:
+        - img "Handcrafted luxury cabinet installation Orange County CA"
+        - generic [ref=e476] [cursor=pointer]:
+          - generic [ref=e477]: No. 67
+          - img [ref=e479]
+      - listitem:
+        - img "Custom kitchen cabinets Orange County premium craftsmanship"
+        - generic [ref=e482] [cursor=pointer]:
+          - generic [ref=e483]: No. 68
+          - img [ref=e485]
+      - listitem:
+        - img "Bespoke built-in cabinetry Newport Beach California home"
+        - generic [ref=e488] [cursor=pointer]:
+          - generic [ref=e489]: No. 69
+          - img [ref=e491]
+      - listitem:
+        - img "Modern luxury bathroom cabinets Orange County custom made"
+        - generic [ref=e494] [cursor=pointer]:
+          - generic [ref=e495]: No. 70
+          - img [ref=e497]
+      - listitem:
+        - img "Custom cabinetry design Southern California fine residence"
+        - generic [ref=e500] [cursor=pointer]:
+          - generic [ref=e501]: No. 71
+          - img [ref=e503]
+      - listitem:
+        - img "High-end kitchen cabinets Mission Viejo California custom"
+        - generic [ref=e506] [cursor=pointer]:
+          - generic [ref=e507]: No. 72
+          - img [ref=e509]
+      - listitem:
+        - img "Luxury custom kitchen cabinets Orange County California by H & J Cabinets"
+        - generic [ref=e512] [cursor=pointer]:
+          - generic [ref=e513]: No. 73
+          - img [ref=e515]
+  - dialog "Image viewer":
+    - button "Close": ✕
+    - generic:
+      - generic:
+        - img "Cabinet photo"
+      - generic:
+        - generic: 1 / 73
+  - contentinfo [ref=e517]:
+    - list [ref=e518]:
+      - listitem [ref=e519]:
+        - link "Projects" [ref=e520] [cursor=pointer]:
+          - /url: ../featured-homes/
+      - listitem [ref=e521]:
+        - link "About" [ref=e522] [cursor=pointer]:
+          - /url: ../about/
+      - listitem [ref=e523]:
+        - link "About" [ref=e524] [cursor=pointer]:
+          - /url: ../about/
+      - listitem [ref=e525]:
+        - link "Contact" [ref=e526] [cursor=pointer]:
+          - /url: ../contact/
+    - paragraph [ref=e527]: © 2025 H & J Cabinets. All rights reserved.

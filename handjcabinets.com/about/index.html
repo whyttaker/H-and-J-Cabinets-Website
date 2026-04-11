@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
+<title>About H &amp; J Cabinets | Fine Custom Cabinetry Since 1988</title>
+<meta name="description" content="Founded in 1988 by Joe Worland in Anaheim, H &amp; J Cabinets has grown into a team of nearly 100 professionals delivering precision custom cabinetry across California and beyond.">
+<link rel="canonical" href="https://handjcabinets.com/about/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "H & J Cabinets",
+  "description": "Founded in 1988 by Joe Worland, H & J Cabinets builds precision custom cabinetry for homes across Orange County, California, and beyond.",
+  "foundingDate": "1988",
+  "founder": {
+    "@type": "Person",
+    "name": "Joe Worland"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1369 S Lyon St",
+    "addressLocality": "Santa Ana",
+    "addressRegion": "CA",
+    "postalCode": "92705",
+    "addressCountry": "US"
+  },
+  "telephone": "+17143493522",
+  "url": "https://handjcabinets.com",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 100
+  },
+  "areaServed": ["California", "Arizona", "Hawaii", "Oregon", "Texas", "Nevada"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:   #000000;
+    --gold:    #d4a843;
+    --cream:   #f2ede6;
+    --grey:    #7a7672;
+    --gap:     clamp(48px, 6vw, 80px);
+    --inset:   clamp(24px, 5vw, 72px);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  /* ─── HEADER ─────────────────────────────────────────────────── */
+
+  /* ─── ABOUT HERO ──────────────────────────────────────────────── */
+  .about-hero {
+    padding: clamp(140px, 18vw, 220px) var(--inset) clamp(80px, 10vw, 120px);
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  }
+
+  .about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 1px;
+    background: linear-gradient(to right, transparent, rgba(212,168,67,0.3), transparent);
+  }
+
+  .about-hero-crest {
+    position: absolute;
+    right: clamp(-80px, -2vw, 0px);
+    top: 60%;
+    transform: translateY(-50%);
+    width: clamp(560px, 68vw, 1000px);
+    opacity: 0.18;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 42px; height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold));
+  }
+
+  .about-hero h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    color: var(--cream);
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+
+  .about-hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .about-hero-sub {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    font-style: italic;
+    color: rgba(242,237,230,0.65);
+    max-width: 580px;
+    line-height: 1.8;
+  }
+
+  /* ─── SECTION LABEL ──────────────────────────────────────────── */
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 var(--inset);
+    margin-bottom: var(--gap);
+  }
+
+  .section-label span {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--grey);
+    white-space: nowrap;
+  }
+
+  .section-label::before,
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(212,168,67,0.2);
+  }
+
+  /* ─── ARTICLE BODY ───────────────────────────────────────────── */
+  .article-body {
+    padding: 0 var(--inset) var(--gap);
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(56px, 8vw, 96px);
+  }
+
+  .article-section .section-eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .article-section .section-eyebrow::after {
+    content: '';
+    width: 40px; height: 1px;
+    background: rgba(212,168,67,0.35);
+  }
+
+  .article-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+  }
+
+  .article-section h2 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .article-section p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    color: rgba(242,237,230,0.75);
+    line-height: 1.85;
+    margin-bottom: 18px;
+  }
+
+  .article-section p:last-child { margin-bottom: 0; }
+
+  /* ─── STAT ROW ────────────────────────────────────────────────── */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin: 32px 0;
+    border: 1px solid rgba(212,168,67,0.12);
+  }
+
+  .stat-item {
+    padding: 36px 28px;
+    background: rgba(255,255,255,0.02);
+    text-align: center;
+  }
+
+  .stat-item:not(:last-child) {
+    border-right: 1px solid rgba(212,168,67,0.12);
+  }
+
+  .stat-number {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+
+  /* ─── PULL QUOTE ──────────────────────────────────────────────── */
+  .pull-quote {
+    border-left: 3px solid rgba(212,168,67,0.4);
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.025);
+    margin: 32px 0;
+  }
+
+  .pull-quote p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ─── VALUE LIST ───────────────────────────────────────────────── */
+  .value-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 8px;
+  }
+
+  .value-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(212,168,67,0.1);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(15px, 1.05vw, 17px);
+    color: rgba(242,237,230,0.7);
+    line-height: 1.7;
+  }
+
+  .value-list li:first-child { border-top: 1px solid rgba(212,168,67,0.1); }
+
+  .value-list li strong {
+    display: block;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    font-weight: 400;
+    color: var(--cream);
+    letter-spacing: 0.02em;
+  }
+
+  /* ─── STATES MAP ──────────────────────────────────────────────── */
+  .states-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .state-tag {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey);
+    padding: 8px 16px;
+    border: 1px solid rgba(212,168,67,0.2);
+  }
+
+  /* ─── CTA STRIP ──────────────────────────────────────────────── */
+  .cta-strip {
+    padding: clamp(64px, 10vw, 120px) var(--inset);
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(212,168,67,0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .cta-strip h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.15;
+    max-width: 640px;
+  }
+
+  .cta-strip p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    font-style: italic;
+    color: rgba(242,237,230,0.6);
+    max-width: 520px;
+    line-height: 1.7;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary, .btn-ghost {
+    display: inline-block;
+    padding: 14px 32px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #000000;
+    border: 1px solid var(--gold);
+  }
+
+  .btn-primary:hover { background: #c9973a; border-color: #c9973a; }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(242,237,230,0.35);
+  }
+
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ─── FOOTER ─────────────────────────────────────────────────── */
+  .site-footer {
+    border-top: 1px solid rgba(212,168,67,0.15);
+    padding: 48px var(--inset);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .footer-logo img {
+    width: 32px; height: 32px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid rgba(212,168,67,0.25);
+    opacity: 0.7;
+  }
+
+  .footer-logo span {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 32px;
+  }
+
+  .footer-links a {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-links a:hover { color: var(--gold); }
+
+  .footer-copy {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: rgba(122,118,114,0.5);
+  }
+
+  /* ─── SCROLL REVEAL ──────────────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .about-hero { padding-top: clamp(70px, 22vw, 160px); }
+    .about-hero-crest { width: 130vw; right: -52vw; top: 50%; }
+    .stat-row { grid-template-columns: 1fr; }
+    .stat-item:not(:last-child) { border-right: none; border-bottom: 1px solid rgba(212,168,67,0.12); }
+  }
+
+  @media (max-width: 480px) {
+    .cta-group, .contact-btn-row, .btn-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .btn-primary, .btn-ghost { width: auto; align-self: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<script src="/content/nav.js"></script>
+
+<!-- ─── HERO ──────────────────────────────────────────── -->
+<section class="about-hero" aria-label="About H &amp; J Cabinets">
+  <img src="../content/pictures/hj-crest.png" alt="" class="about-hero-crest" aria-hidden="true">
+  <div class="hero-eyebrow">Since 1988</div>
+  <h1>Designed with precision.<br><em>Built to last.</em></h1>
+  <p class="about-hero-sub">Everything we build is rooted in a simple idea: do it right, and do it to last. From the materials we choose to the way each cabinet is constructed and installed, our focus has always been on delivering a level of quality that stands the test of time.</p>
+</section>
+
+<!-- ─── DIVIDER ───────────────────────────────────────── -->
+<div class="section-label reveal" aria-hidden="true" style="margin-top:var(--gap)">
+  <span>Our Story</span>
+</div>
+
+<!-- ─── ARTICLE BODY ──────────────────────────────────── -->
+<main class="article-body">
+
+  <!-- Section 1: Our Story -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Founded in Anaheim</div>
+    <h2>Thirty years of building<br><em>the right way</em></h2>
+    <p>H &amp; J Cabinets was founded in 1988 by Joe Worland with a clear vision of building cabinetry the right way, with precision, durability, and attention to detail at every stage. The company began as a small shop in Anaheim, taking on projects throughout the local area and steadily building a reputation for quality work.</p>
+    <p>As demand grew, so did the scope of the business. What started with local projects expanded into work across Orange County, then throughout California, and eventually into projects across multiple states. Each stage of growth was driven by the same commitment to craftsmanship and consistency that defined the company from the beginning.</p>
+    <p>Joe's background in the Marine Corps played a foundational role in shaping that approach. Discipline, accountability, and a high standard of execution remain embedded in how the company operates today.</p>
+
+    <p>While H &amp; J Cabinets has grown into a team of nearly 100 professionals, the core philosophy has never changed. Every project is built with the same level of care, precision, and pride that the company was founded on.</p>
+  </div>
+
+  <!-- Section 2: What We Stand For -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">Our Philosophy</div>
+    <h2>What we<br><em>stand for</em></h2>
+    <p>Our vision is straightforward. Build the best cabinets possible, using the highest quality materials, and hold every project to a standard of excellence that does not compromise.</p>
+
+    <div class="pull-quote">
+      <p>"We believe cabinetry should feel solid, function seamlessly, and maintain its integrity long after installation."</p>
+    </div>
+
+    <p>Every decision we make, from construction methods to final details, is guided by that standard. We do not build to a price point. We build to a level of quality that our clients can see, feel, and rely on for decades.</p>
+
+    <ul class="value-list">
+      <li>
+        <strong>No compromises on materials</strong>
+        We source premium hardwoods and high-quality plywood. Low-grade materials produce low-grade results, and that is not something we are willing to deliver.
+      </li>
+      <li>
+        <strong>Proven construction methods</strong>
+        Traditional face-frame construction provides structural integrity that modern frameless systems cannot match. Doors and drawers stay aligned and operate smoothly for the life of the cabinet.
+      </li>
+      <li>
+        <strong>Our team, start to finish</strong>
+        Every project is built and installed by our own craftsmen. No subcontractors. The same standard of care that goes into building the cabinet applies to how it is fitted and installed in your home.
+      </li>
+      <li>
+        <strong>Accountability after installation</strong>
+        We stand behind our work. If a home settles and adjustments are needed, we return at no cost. That is what it means to build with integrity.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Section 3: The Team -->
+  <div class="article-section reveal">
+    <div class="section-eyebrow">The People Behind the Work</div>
+    <h2>Built by a team<br><em>that cares</em></h2>
+    <p>Behind every project is a team that takes pride in the work. Our builders, installers, and designers approach each job with attention and care, ensuring that every cabinet fits precisely and performs as intended.</p>
+    <p>We are not focused on volume. We are focused on delivering work that reflects the level of detail and quality our clients expect. That means taking the time to get it right, every time, on every project regardless of scale.</p>
+    <p>Joe Worland's military background established a culture of discipline and accountability that continues to define the company. That same commitment to doing things correctly, without shortcuts, is reflected in the work of every person on our team.</p>
+  </div>
+
+</main>
+
+<!-- ─── CTA ─────────────────────────────────────────── -->
+<section class="cta-strip reveal">
+  <h2>Let's build something that lasts.</h2>
+  <p>We enjoy working closely with our clients to bring their vision to life. Whether you are starting a new project or refining an existing design, we are here to guide the process and deliver cabinetry built to a higher standard.</p>
+  <div class="cta-buttons">
+    <a href="../contact/" class="btn-primary">Start the Conversation &rarr;</a>
+    <a href="../featured-homes/" class="btn-ghost">See Our Projects</a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────── -->
+<footer class="site-footer">
+  <a href="../" class="footer-logo">
+    <img src="/content/pictures/logo.png" alt="H &amp; J Cabinets logo, fine custom cabinetry Orange County California since 1988">
+    <span>H &amp; J Cabinets</span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../featured-homes/">Projects</a></li>
+    <li><a href="./">About</a></li>
+    <li><a href="../contact/">Contact</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
+</footer>
+
+<script>
+  // ─── Scroll header
+  // ─── Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

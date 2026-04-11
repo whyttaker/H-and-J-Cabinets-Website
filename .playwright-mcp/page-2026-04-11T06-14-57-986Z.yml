@@ -1,0 +1,95 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: ../../
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation
+  - region "Newport Beach custom cabinets" [ref=e7]:
+    - img "Luxury custom kitchen cabinets in Newport Beach California — H & J Cabinets" [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Newport Beach, California
+      - heading "Custom Cabinets in Newport Beach" [level=1] [ref=e12]:
+        - text: Custom Cabinets
+        - text: in
+        - emphasis [ref=e13]: Newport Beach
+      - paragraph [ref=e14]: High-end custom cabinetry built for the homes and standards of Newport Beach. Premium materials, framed construction, and a finish designed to hold up in coastal environments for decades.
+  - generic [ref=e16]: Newport Beach Custom Cabinetry
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Our Work in Newport Beach
+      - heading "Built for homes that demand the best" [level=2] [ref=e20]:
+        - text: Built for homes that
+        - emphasis [ref=e21]: demand the best
+      - paragraph [ref=e22]: H & J Cabinets provides high-end custom cabinetry for homes in Newport Beach, with a focus on durability, precision, and refined design. Our cabinets are built using premium materials and framed construction to ensure long-term performance in coastal environments.
+      - paragraph [ref=e23]: Newport Beach is home to some of the finest residences in Southern California, and the cabinetry inside those homes needs to match that standard. We have spent over 30 years building for clients who expect, and receive, the highest level of craftsmanship, material quality, and service available.
+    - generic [ref=e24]:
+      - generic [ref=e25]: Why It Matters Here
+      - heading "Quality cabinetry in a coastal environment" [level=2] [ref=e26]:
+        - text: Quality cabinetry in
+        - emphasis [ref=e27]: a coastal environment
+      - paragraph [ref=e28]: Newport Beach presents specific conditions that make material and construction choices especially important. Coastal air carries moisture and salt that accelerates the breakdown of lower-grade materials. Homes located near the water, in areas like Balboa Island, Corona del Mar, and Lido Isle, face greater exposure to humidity and environmental stress than inland properties.
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - strong [ref=e31]: Humidity and coastal air
+          - text: Salt air and elevated humidity cause MDF and low-grade plywood to swell, warp, and delaminate over time. Premium hardwoods and quality plywood hold their integrity in these conditions.
+        - listitem [ref=e32]:
+          - strong [ref=e33]: High-end homes require high-end cabinetry
+          - text: Newport Beach residences are designed with intention at every level. Cabinetry that does not meet that standard is visible immediately, in how it looks, fits, and operates.
+        - listitem [ref=e34]:
+          - strong [ref=e35]: Long-term performance
+          - text: Quality cabinetry is an investment in a property's long-term value. In Newport Beach's real estate market, the finish level of interior details, including cabinetry, has a direct impact on how a home is perceived and priced.
+      - paragraph [ref=e37]: "\"In a coastal environment, what your cabinets are made of and how they are built is not a detail, it is the difference between cabinetry that lasts and cabinetry that fails.\""
+    - generic [ref=e38]:
+      - generic [ref=e39]: Our Approach
+      - heading "Materials, craftsmanship, and 30 years of experience" [level=2] [ref=e40]:
+        - text: Materials, craftsmanship,
+        - emphasis [ref=e41]: and 30 years of experience
+      - paragraph [ref=e42]: We build using traditional face-frame construction, the method that provides structural integrity that frameless systems cannot match. The face frame reinforces the entire cabinet box, keeping it square and stable as homes naturally settle over time. Doors and drawers stay aligned and operate smoothly for the life of the cabinet.
+      - paragraph [ref=e43]: We never use MDF in critical areas. Every cabinet box is built from high-quality plywood selected for its resistance to moisture and long-term dimensional stability. The result is cabinetry that performs in a Newport Beach home the same way it will perform twenty years from now.
+      - list [ref=e44]:
+        - listitem [ref=e45]: Premium hardwoods hand-selected for grain, figure, and coastal durability
+        - listitem [ref=e46]: Face-frame construction for structural integrity that endures
+        - listitem [ref=e47]: No MDF, no low-grade shortcuts, in any component that matters
+        - listitem [ref=e48]: Every project built, finished, and installed by our own team
+        - listitem [ref=e49]: Lifetime adjustment guarantee, we return at no cost if settling requires realignment
+    - generic [ref=e50]:
+      - generic [ref=e51]: Our Work in the Area
+      - heading "Projects throughout Newport Beach and beyond" [level=2] [ref=e52]:
+        - text: Projects throughout
+        - emphasis [ref=e53]: Newport Beach and beyond
+      - paragraph [ref=e54]: We have completed custom cabinetry projects throughout Newport Beach and the surrounding coastal communities, including Corona del Mar, Balboa Island, Lido Isle, and Harbor Ridge. Our work spans full kitchen installations, primary bathroom vanities, built-in libraries and entertainment systems, and whole-home cabinetry for new builds and complete remodels.
+      - paragraph [ref=e55]: Our clients in Newport Beach include homeowners, interior designers, and custom home builders who require a cabinetry partner that can participate at the highest level of a luxury build, attending design meetings, contributing to problem-solving, and delivering a final product that exceeds expectations.
+      - paragraph [ref=e56]: Each project is singular. Every cabinet is made exclusively for the client's space, no catalogue, no standard dimensions, no compromises.
+  - generic [ref=e57]:
+    - heading "Looking for custom cabinets in Newport Beach?" [level=2] [ref=e58]
+    - paragraph [ref=e59]: Contact H & J Cabinets to discuss your project. We'll listen to your vision, assess your space, and build cabinetry that performs at the level Newport Beach homes demand.
+    - generic [ref=e60]:
+      - link "Start the Conversation →" [ref=e61] [cursor=pointer]:
+        - /url: ../../contact/
+      - link "About Our Cabinets" [ref=e62] [cursor=pointer]:
+        - /url: ../../
+  - contentinfo [ref=e63]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets" [ref=e64] [cursor=pointer]:
+      - /url: ../../
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e65]
+      - generic [ref=e66]: H & J Cabinets
+    - list [ref=e67]:
+      - listitem [ref=e68]:
+        - link "Home" [ref=e69] [cursor=pointer]:
+          - /url: ../../
+      - listitem [ref=e70]:
+        - link "Projects" [ref=e71] [cursor=pointer]:
+          - /url: ../../featured-homes/
+      - listitem [ref=e72]:
+        - link "About" [ref=e73] [cursor=pointer]:
+          - /url: ../../about/
+      - listitem [ref=e74]:
+        - link "Contact" [ref=e75] [cursor=pointer]:
+          - /url: ../../contact/
+      - listitem [ref=e76]:
+        - link "Custom Cabinets" [ref=e77] [cursor=pointer]:
+          - /url: ../../
+    - paragraph [ref=e78]: © 2025 H & J Cabinets. All rights reserved.

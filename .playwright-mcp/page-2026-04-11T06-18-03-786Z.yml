@@ -1,0 +1,89 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - region "Custom cabinets in Mission Viejo" [ref=e9]:
+    - img "Luxury custom kitchen cabinets in Mission Viejo California — H & J Cabinets" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e13]: Mission Viejo, California
+      - heading "Custom Cabinets in Mission Viejo" [level=1] [ref=e14]:
+        - text: Custom Cabinets
+        - text: in
+        - emphasis [ref=e15]: Mission Viejo
+      - paragraph [ref=e16]: High-quality custom cabinetry for homes in Mission Viejo and South Orange County. Premium materials, proven construction, and a process refined over 30 years.
+  - generic [ref=e18]: Mission Viejo Custom Cabinetry
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Our Work in Mission Viejo
+      - heading "Built for South Orange County's finest homes" [level=2] [ref=e22]:
+        - text: Built for South
+        - emphasis [ref=e23]: Orange County's finest homes
+      - paragraph [ref=e24]: H & J Cabinets has completed custom cabinetry projects throughout Mission Viejo and the surrounding South Orange County communities. Mission Viejo is one of the most established and well-regarded communities in the region, with a strong base of long-term homeowners who invest deeply in their properties.
+      - paragraph [ref=e25]: Many of our Mission Viejo clients are undertaking major kitchen remodels, primary bathroom upgrades, or whole-home cabinetry projects after years of planning. These are not impulse projects. They are carefully considered investments in a home that a family intends to enjoy for decades.
+    - generic [ref=e26]:
+      - generic [ref=e27]: Why Quality Matters Here
+      - heading "An established community that invests in quality" [level=2] [ref=e28]:
+        - text: An established community
+        - emphasis [ref=e29]: that invests in quality
+      - paragraph [ref=e30]: Mission Viejo homeowners are known for their attention to quality and their long-term perspective on home investment. Unlike markets where cosmetic finishes are prioritized for quick resale, Mission Viejo clients typically want cabinetry that looks exceptional and holds up for the long term.
+      - list [ref=e31]:
+        - listitem [ref=e32]:
+          - strong [ref=e33]: Long-term homeowners
+          - text: Clients who plan to stay in their homes for 10 to 20 or more years need cabinetry that performs over that time horizon. That requires better materials, better joinery, and better construction methods, not a catalogue product.
+        - listitem [ref=e34]:
+          - strong [ref=e35]: Remodel-driven demand
+          - text: Many Mission Viejo homes were built in the 1980s and 1990s and are due for a kitchen or bathroom update. A full custom cabinetry installation is typically the centerpiece of these remodels.
+        - listitem [ref=e36]:
+          - strong [ref=e37]: Quality over cost
+          - text: Mission Viejo buyers understand the difference between cabinetry that looks good on day one and cabinetry that continues to look and perform well for decades. They choose the latter.
+    - generic [ref=e38]:
+      - generic [ref=e39]: Our Approach
+      - heading "Materials, craftsmanship, and 30 years of experience" [level=2] [ref=e40]:
+        - text: Materials, craftsmanship,
+        - emphasis [ref=e41]: and 30 years of experience
+      - paragraph [ref=e42]: We build every Mission Viejo project using traditional face-frame construction. The structural integrity this method provides means that cabinets stay square, doors stay aligned, and drawers operate smoothly even after years of regular use and the natural settling of a home.
+      - paragraph [ref=e43]: Premium hardwoods and quality plywood are used throughout. No MDF in critical areas, no low-grade shortcuts. Our own team manages every phase of the project from design through installation.
+    - generic [ref=e44]:
+      - generic [ref=e45]: Our Work in the Area
+      - heading "Projects throughout Mission Viejo" [level=2] [ref=e46]:
+        - text: Projects throughout
+        - emphasis [ref=e47]: Mission Viejo
+      - paragraph [ref=e48]: Our Mission Viejo work includes kitchen installations, bathroom vanities, laundry rooms, home offices, entertainment centers, and custom storage systems. We work with both homeowners managing their own remodels and with interior designers overseeing larger renovation projects.
+      - paragraph [ref=e49]: Every cabinet we build is designed for the specific home and the specific client. That precision is what separates our work from anything available in a showroom.
+  - generic [ref=e50]:
+    - heading "Planning a remodel in Mission Viejo?" [level=2] [ref=e51]
+    - paragraph [ref=e52]: Contact H & J Cabinets to discuss your project. We build custom cabinetry for Mission Viejo homes that is made to last.
+    - generic [ref=e53]:
+      - link "Start the Conversation →" [ref=e54] [cursor=pointer]:
+        - /url: ../../contact/
+      - link "About Our Cabinets" [ref=e55] [cursor=pointer]:
+        - /url: ../../
+  - contentinfo [ref=e56]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets" [ref=e57] [cursor=pointer]:
+      - /url: ../../
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e58]
+      - generic [ref=e59]: H & J Cabinets
+    - list [ref=e60]:
+      - listitem [ref=e61]:
+        - link "Home" [ref=e62] [cursor=pointer]:
+          - /url: ../../
+      - listitem [ref=e63]:
+        - link "Projects" [ref=e64] [cursor=pointer]:
+          - /url: ../../featured-homes/
+      - listitem [ref=e65]:
+        - link "About" [ref=e66] [cursor=pointer]:
+          - /url: ../../about/
+      - listitem [ref=e67]:
+        - link "Contact" [ref=e68] [cursor=pointer]:
+          - /url: ../../contact/
+      - listitem [ref=e69]:
+        - link "Custom Cabinets" [ref=e70] [cursor=pointer]:
+          - /url: ../../
+    - paragraph [ref=e71]: © 2025 H & J Cabinets. All rights reserved.

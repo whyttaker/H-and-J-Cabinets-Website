@@ -1,0 +1,85 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets Fine Custom Cabinetry" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e4]
+      - generic [ref=e5]:
+        - text: H & J Cabinets
+        - generic [ref=e6]: Fine Custom Cabinetry
+    - navigation "Primary"
+    - button "Open menu" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - region "About H & J Cabinets" [ref=e9]:
+    - img
+    - generic [ref=e10]: Since 1988
+    - heading "Designed with precision. Built to last." [level=1] [ref=e11]:
+      - text: Designed with precision.
+      - emphasis [ref=e12]: Built to last.
+    - paragraph [ref=e13]: "Everything we build is rooted in a simple idea: do it right, and do it to last. From the materials we choose to the way each cabinet is constructed and installed, our focus has always been on delivering a level of quality that stands the test of time."
+  - generic [ref=e15]: Our Story
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: Founded in Anaheim
+      - heading "Thirty years of building the right way" [level=2] [ref=e19]:
+        - text: Thirty years of building
+        - emphasis [ref=e20]: the right way
+      - paragraph [ref=e21]: H & J Cabinets was founded in 1988 by Joe Worland with a clear vision of building cabinetry the right way, with precision, durability, and attention to detail at every stage. The company began as a small shop in Anaheim, taking on projects throughout the local area and steadily building a reputation for quality work.
+      - paragraph [ref=e22]: As demand grew, so did the scope of the business. What started with local projects expanded into work across Orange County, then throughout California, and eventually into projects across multiple states. Each stage of growth was driven by the same commitment to craftsmanship and consistency that defined the company from the beginning.
+      - paragraph [ref=e23]: Joe's background in the Marine Corps played a foundational role in shaping that approach. Discipline, accountability, and a high standard of execution remain embedded in how the company operates today.
+      - paragraph [ref=e24]: While H & J Cabinets has grown into a team of nearly 100 professionals, the core philosophy has never changed. Every project is built with the same level of care, precision, and pride that the company was founded on.
+    - generic [ref=e25]:
+      - generic [ref=e26]: Our Philosophy
+      - heading "What we stand for" [level=2] [ref=e27]:
+        - text: What we
+        - emphasis [ref=e28]: stand for
+      - paragraph [ref=e29]: Our vision is straightforward. Build the best cabinets possible, using the highest quality materials, and hold every project to a standard of excellence that does not compromise.
+      - paragraph [ref=e31]: "\"We believe cabinetry should feel solid, function seamlessly, and maintain its integrity long after installation.\""
+      - paragraph [ref=e32]: Every decision we make, from construction methods to final details, is guided by that standard. We do not build to a price point. We build to a level of quality that our clients can see, feel, and rely on for decades.
+      - list [ref=e33]:
+        - listitem [ref=e34]:
+          - strong [ref=e35]: No compromises on materials
+          - text: We source premium hardwoods and high-quality plywood. Low-grade materials produce low-grade results, and that is not something we are willing to deliver.
+        - listitem [ref=e36]:
+          - strong [ref=e37]: Proven construction methods
+          - text: Traditional face-frame construction provides structural integrity that modern frameless systems cannot match. Doors and drawers stay aligned and operate smoothly for the life of the cabinet.
+        - listitem [ref=e38]:
+          - strong [ref=e39]: Our team, start to finish
+          - text: Every project is built and installed by our own craftsmen. No subcontractors. The same standard of care that goes into building the cabinet applies to how it is fitted and installed in your home.
+        - listitem [ref=e40]:
+          - strong [ref=e41]: Accountability after installation
+          - text: We stand behind our work. If a home settles and adjustments are needed, we return at no cost. That is what it means to build with integrity.
+    - generic [ref=e42]:
+      - generic [ref=e43]: The People Behind the Work
+      - heading "Built by a team that cares" [level=2] [ref=e44]:
+        - text: Built by a team
+        - emphasis [ref=e45]: that cares
+      - paragraph [ref=e46]: Behind every project is a team that takes pride in the work. Our builders, installers, and designers approach each job with attention and care, ensuring that every cabinet fits precisely and performs as intended.
+      - paragraph [ref=e47]: We are not focused on volume. We are focused on delivering work that reflects the level of detail and quality our clients expect. That means taking the time to get it right, every time, on every project regardless of scale.
+      - paragraph [ref=e48]: Joe Worland's military background established a culture of discipline and accountability that continues to define the company. That same commitment to doing things correctly, without shortcuts, is reflected in the work of every person on our team.
+  - generic [ref=e49]:
+    - heading "Let's build something that lasts." [level=2] [ref=e50]
+    - paragraph [ref=e51]: We enjoy working closely with our clients to bring their vision to life. Whether you are starting a new project or refining an existing design, we are here to guide the process and deliver cabinetry built to a higher standard.
+    - generic [ref=e52]:
+      - link "Start the Conversation →" [ref=e53] [cursor=pointer]:
+        - /url: ../contact/
+      - link "See Our Projects" [ref=e54] [cursor=pointer]:
+        - /url: ../featured-homes/
+  - contentinfo [ref=e55]:
+    - link "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988 H & J Cabinets" [ref=e56] [cursor=pointer]:
+      - /url: ../
+      - img "H & J Cabinets logo, fine custom cabinetry Orange County California since 1988" [ref=e57]
+      - generic [ref=e58]: H & J Cabinets
+    - list [ref=e59]:
+      - listitem [ref=e60]:
+        - link "Home" [ref=e61] [cursor=pointer]:
+          - /url: ../
+      - listitem [ref=e62]:
+        - link "Projects" [ref=e63] [cursor=pointer]:
+          - /url: ../featured-homes/
+      - listitem [ref=e64]:
+        - link "About" [ref=e65] [cursor=pointer]:
+          - /url: ./
+      - listitem [ref=e66]:
+        - link "Contact" [ref=e67] [cursor=pointer]:
+          - /url: ../contact/
+    - paragraph [ref=e68]: © 2025 H & J Cabinets. All rights reserved.
