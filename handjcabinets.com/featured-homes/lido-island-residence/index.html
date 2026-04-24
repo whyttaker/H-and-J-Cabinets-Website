@@ -46,15 +46,8 @@
     position: relative; height: 100vh; min-height: 640px; max-height: 980px;
     overflow: hidden; display: flex; align-items: flex-end;
   }
-  .hero-video-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #080807; }
-  .hero-bg-iframe {
-    position: absolute; top: 50%; left: 50%;
-    min-width: 177.78vh; min-height: 56.25vw;
-    width: 100vw; height: 56.25vw;
-    max-height: 100vh; max-width: 177.78vh;
-    transform: translate(-50%, -50%);
-    pointer-events: none; border: none;
-  }
+  .hero-img-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+  .hero-bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; }
   .hero-overlay {
     position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(170deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0.97) 100%);
@@ -168,10 +161,8 @@
 <script src="/content/nav.js?v=3"></script>
 
 <section class="project-hero" aria-label="Lido Island Residence hero">
-  <div class="hero-video-bg">
-    <iframe class="hero-bg-iframe"
-      src="https://player.vimeo.com/video/680083408?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;dnt=1"
-      allow="autoplay" frameborder="0" title="Lido Island Residence background video"></iframe>
+  <div class="hero-img-bg">
+    <img class="hero-bg-img" src="https://i.vimeocdn.com/video/1452573826-a3e91317463a5aaec4789ff1adf51c0cd12f3c84c57831da3173358a9619af49-d_1280.jpg" alt="" fetchpriority="high">
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
