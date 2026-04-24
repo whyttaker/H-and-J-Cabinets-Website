@@ -8,9 +8,10 @@
 <link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
 <title>H &amp; J Cabinets, Fine Custom Cabinetry</title>
 <meta name="description" content="Expert cabinet makers dedicated to excellence, from hand-drawn renderings to the final installation, every piece tailored to your exact vision.">
+<link rel="canonical" href="https://handjcabinets.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -160,6 +161,7 @@
     color: #1a1400;
     background: var(--gold);
     padding: 15px 36px;
+    border-radius: 999px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
     display: inline-block;
@@ -177,6 +179,7 @@
     background: transparent;
     border: 1px solid rgba(242,237,230,0.35);
     padding: 15px 36px;
+    border-radius: 999px;
     text-decoration: none;
     transition: border-color 0.3s, color 0.3s, transform 0.2s;
     display: inline-block;
@@ -310,6 +313,7 @@
     padding-bottom: 0;
     background: #080807;
     overflow: hidden;
+    border-radius: 10px;
     flex: 0 0 58%;
     aspect-ratio: 16 / 9;
   }
@@ -586,9 +590,185 @@
     transform: translateX(-50%) translateY(0);
   }
 
+  /* ─── PARTNERS ────────────────────────────────────────── */
+  @font-face {
+    font-family: 'Pizzicato';
+    src: url('https://guiderodesign.com/static/media/PizzicatoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .partners-section {
+    padding: clamp(40px, 5vw, 64px) var(--inset);
+  }
+
+  /* Compact inline header */
+  .partners-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 3px;
+    padding-bottom: 6px;
+  }
+
+  .partners-header h2 {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 10.5px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .partners-header p { display: none; }
+
+  /* Each category is a full-width row */
+  .partner-category {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner-category:last-child { border-bottom: none; }
+
+  .partner-category-inner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .partner-category-label {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(212,168,67,0.55);
+    white-space: nowrap;
+  }
+
+  /* Partners: tight centered flex row */
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Each partner tile */
+  .partner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 8px;
+    text-decoration: none;
+    opacity: 0.55;
+    transition: opacity 0.25s;
+    width: clamp(110px, 11vw, 150px);
+    padding: 12px 10px;
+  }
+
+  .partner-item:hover { opacity: 1; }
+
+  .partner-logo-img {
+    width: auto;
+    height: 60px;
+    max-width: 120px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+
+  .partner-name {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: rgba(242,237,230,0.55);
+    line-height: 1.3;
+  }
+
+  /* Text-based logo */
+  .partner-logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    max-width: 120px;
+    color: rgba(242,237,230,0.9);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .partner-logo-text--open-sans {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .partner-logo-text--cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .partner-logo-text--pizzicato {
+    font-family: 'Pizzicato', 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+  }
+
+  .partner-logo-text--rjschwinn {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .partner-logo-text--coastal-living {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+  }
+
+  .partner-logo-text--traditional-home {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .partner-logo-img--press {
+    filter: invert(1);
+  }
+
+  @media (max-width: 768px) {
+    .partners-header { flex-direction: column; gap: 4px; align-items: center; text-align: center; }
+    .partners-header p { text-align: center; }
+    .partner-category { padding: 12px 0; }
+    .partner-category-inner { display: flex; flex-direction: column; align-items: flex-start; padding-left: 0 !important; }
+    .partner-category-label { width: auto; margin-bottom: 2px; margin-left: 0 !important; }
+    .partner-item { width: calc(33.33% - 4px); padding: 8px 6px; }
+    .partner-logo-img { height: 40px; }
+  }
+
   /* ─── FOOTER ──────────────────────────────────────────── */
   .site-footer {
-    border-top: 1px solid rgba(212,168,67,0.15);
     padding: 48px var(--inset);
     display: flex;
     flex-direction: column;
@@ -717,7 +897,7 @@
       },
       "additionalProperty": [
         { "@type": "PropertyValue", "name": "Cabinet Construction", "value": "Framed cabinet construction for increased structural integrity and long-term durability." },
-        { "@type": "PropertyValue", "name": "Materials", "value": "Uses premium hardwoods and quality plywood; never MDF or low-grade materials in critical structural areas." },
+        { "@type": "PropertyValue", "name": "Materials", "value": "Uses premium hardwoods and quality plywood; never low-grade materials in critical structural areas." },
         { "@type": "PropertyValue", "name": "Guarantee", "value": "Lifetime adjustment guarantee at no additional cost." },
         { "@type": "PropertyValue", "name": "Experience", "value": "Over 30 years of high-end custom cabinetry experience." },
         { "@type": "PropertyValue", "name": "Service Philosophy", "value": "Minimized change orders, clear communication, white-glove installation by H & J's own team — no subcontractors." },
@@ -744,7 +924,7 @@
 <body>
 
 <!-- ─── HEADER ─────────────────────────────────────────── -->
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 <script src="/content/vimeo-player.js"></script>
 
 <!-- ─── HERO ───────────────────────────────────────────── -->
@@ -776,8 +956,8 @@
   </div>
   <div class="philosophy-body reveal" style="transition-delay:0.14s">
     <div class="philosophy-rule"></div>
-    <p>At H &amp; J Cabinets, we believe that great cabinetry is the foundation of a great home. From the first consultation to the final fitting, our team of master craftsmen works alongside architects, designers, and homeowners giving <a href="insights/" style="color:var(--gold);text-decoration:none;">insights</a> on how to create pieces that are as functional as they are beautiful.</p>
-    <p>Each project begins with listening, understanding how you live, what you value, and what you dream of. What follows is a process refined over decades: meticulous joinery, hand-selected materials, and an unwavering commitment to getting every detail exactly right.</p>
+    <p>At H &amp; J Cabinets, we believe that great cabinetry is the foundation of a great home. From <a href="custom-cabinets/kitchen/" style="color:var(--gold);text-decoration:none;">custom kitchen cabinets</a> to <a href="custom-cabinets/bathroom/" style="color:var(--gold);text-decoration:none;">bathroom cabinets</a> and <a href="custom-cabinets/built-in-storage/" style="color:var(--gold);text-decoration:none;">built-ins</a>, every piece is designed to elevate both the function and feel of your space. From the first consultation to the final installation, our team works alongside architects, designers, and homeowners, offering thoughtful <a href="insights/" style="color:var(--gold);text-decoration:none;">insights</a> to create cabinetry that is as purposeful as it is refined.</p>
+    <p>Each project begins with listening, understanding how you live, what you value, and what you envision for your home. What follows is a process shaped by decades of experience: precise construction, carefully selected materials, and a commitment to craftsmanship that ensures every detail is executed to the highest standard.</p>
   </div>
 </section>
 
@@ -848,8 +1028,11 @@
   </div>
   <div class="contact-strip-content reveal">
     <div class="eyebrow" style="margin-bottom:24px">Begin Your Project</div>
-    <h2>Start the<br><em>Conversation</em></h2>
-    <p>Every exceptional home starts with a conversation. Whether you have a clear vision or are just beginning to dream, we're here to listen, advise, and create your perfect <a href="custom-cabinets/" style="color:var(--gold);text-decoration:none;">custom cabinets</a>.</p>
+    <div style="display: inline-flex; flex-direction: column; align-items: stretch;">
+      <h2><em style="white-space: nowrap;">Ready to Build?</em></h2>
+      <p style="max-width: none;">Every exceptional home starts with a conversation. Whether you have a clear vision or are just beginning to dream, we're here to listen, advise, and create your perfect <a href="custom-cabinets/" style="color:var(--gold);text-decoration:none;">custom cabinets</a>.</p>
+    </div>
+    <div style="height: 28px;"></div>
     <div class="cta-group">
       <a id="home-call" href="#" class="btn-primary contact-btn">Call<span class="contact-tip"></span></a>
       <a id="home-sms" href="#" class="btn-ghost contact-btn">Text<span class="contact-tip"></span></a>
@@ -858,23 +1041,162 @@
   </div>
 </section>
 
-<!-- ─── FOOTER ─────────────────────────────────────────── -->
-<footer class="site-footer">
-  <a href="./" class="footer-logo">
-    <img src="/content/pictures/logo.png"
-         alt="H &amp; J Cabinets logo, fine custom cabinetry Orange County California since 1988" width="36" height="36">
-    <span>H &amp; J Cabinets</span>
-  </a>
-  <ul class="footer-links">
-    <li><a href="./">Home</a></li>
-    <li><a href="featured-homes/">Projects</a></li>
-    <li><a href="about/">About</a></li>
-    <li><a href="contact/">Contact</a></li>
-  </ul>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<!-- ─── FEATURED IN ─────────────────────────────────────── -->
+<section class="partners-section reveal" style="padding-bottom: 48px;">
+  <div class="partners-header">
+    <h2>Featured In</h2>
+    <p>Selected press coverage and editorial features.</p>
+  </div>
+
+  <div class="partner-category" style="border-bottom: none; padding-bottom: 0;">
+    <div class="partner-category-inner">
+    <div class="partner-category-label">Press</div>
+    <div class="partner-list">
+
+      <a href="https://www.californiahomedesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img partner-logo-img--press" src="https://www.californiahomedesign.com/wp-content/uploads/2022/12/97x140.jpg" alt="California Home+Design logo">
+        <span class="partner-name">California Home+Design</span>
+      </a>
+
+      <a href="https://www.housebeautiful.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://www.housebeautiful.com/_assets/design-tokens/housebeautiful/static/images/logos/logo.d4c2c6d.svg?primary=%2523ffffff" alt="House Beautiful logo">
+        <span class="partner-name">House Beautiful</span>
+      </a>
+
+      <a href="https://www.instagram.com/coastal_living/" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--coastal-living">Coastal Living</span>
+        <span class="partner-name">Coastal Living</span>
+      </a>
+
+      <a href="https://www.instagram.com/traditionalhome/" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--traditional-home">Traditional Home</span>
+        <span class="partner-name">Traditional Home</span>
+      </a>
+
+    </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ─── PARTNERS ──────────────────────────────────────── -->
+<section class="partners-section reveal" style="padding-top: 16px;">
+  <div class="partners-header">
+    <h2>Our Partners</h2>
+    <p>Working alongside the region's finest builders, architects &amp; designers.</p>
+  </div>
+
+  <!-- BUILDERS -->
+  <div class="partner-category reveal">
+    <div class="partner-category-inner" style="padding-left: 10px;">
+    <div class="partner-category-label">Builders</div>
+    <div class="partner-list">
+
+      <a href="https://tonyvalentineconstruction.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://tonyvalentineconstruction.com/wp-content/uploads/2015/08/Nav_Logo_White.png" alt="Tony Valentine Construction logo">
+        <span class="partner-name">Tony Valentine Construction</span>
+      </a>
+
+      <a href="https://www.rjschwinnassociates.com/portfolio/pacific-ridge" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--rjschwinn">RJ Schwinn</span>
+        <span class="partner-name">RJ Schwinn General Contractors</span>
+      </a>
+
+      <a href="https://pattersoncustomhomes.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://pattersoncustomhomes.com/wp-content/uploads/2018/08/patterson-custom-homes-logo-color@2x.png" alt="Patterson Homes Custom Homes logo" style="filter: invert(1) saturate(0) brightness(3);">
+        <span class="partner-name">Patterson Homes</span>
+      </a>
+
+      <a href="https://www.winklecustomhomes.com/spaces/beacon-bay" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://cdn.prod.website-files.com/65c5a143976416b394141769/678184c298d979fbbb41cba8_jake-winkle-signature.png" alt="Winkle Custom Homes logo">
+        <span class="partner-name">Winkle Custom Homes</span>
+      </a>
+
+      <a href="https://www.corbinreevesconstruction.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://images.squarespace-cdn.com/content/v1/5b6a051cb40b9d4f9ca4c4b4/1535042050650-52J88OQWJ2ELOQ9WOIKN/corbin_reeves-UPDATED.png" alt="Corbin Reeves Construction logo">
+        <span class="partner-name">Corbin Reeves Construction</span>
+      </a>
+
+    </div>
+    </div>
+  </div>
+
+  <!-- ARCHITECTS -->
+  <div class="partner-category reveal" style="transition-delay: 0.12s">
+    <div class="partner-category-inner">
+    <div class="partner-category-label">Architects</div>
+    <div class="partner-list">
+
+      <a href="https://www.ericolsendesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://images.squarespace-cdn.com/content/v1/66f316171d8d3d51aed8bdc9/f91a9152-a621-42af-aef0-405c43345e15/logo-white.png" alt="Eric Olsen Design logo">
+        <span class="partner-name">Eric Olsen Design</span>
+      </a>
+
+      <a href="https://www.brandonarchitects.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://www.brandonarchitects.com/logo.svg" alt="Brandon Architects logo">
+        <span class="partner-name">Brandon Architects</span>
+      </a>
+
+      <a href="https://geoffsumichdesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--open-sans">Geoff Sumich</span>
+        <span class="partner-name">Geoff Sumich Design</span>
+      </a>
+
+      <a href="https://guiderodesign.com/projects" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--pizzicato">William Guidero</span>
+        <span class="partner-name">William Guidero</span>
+      </a>
+
+      <a href="https://www.lsarchitects.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://cdn.prod.website-files.com/6356e715f3ff1567ee0a405b/6356e936be97538247ccfccc_LSA_logo_neg.svg" alt="Laidlaw Schultz Architects logo">
+        <span class="partner-name">Laidlaw Schultz</span>
+      </a>
+
+    </div>
+    </div>
+  </div>
+
+  <!-- DESIGNERS -->
+  <div class="partner-category reveal" style="transition-delay: 0.24s">
+    <div class="partner-category-inner">
+    <div class="partner-category-label" style="margin-left: 20px;">Designers</div>
+    <div class="partner-list">
+
+      <a href="https://blackbanddesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://blackbanddesign.com/wp-content/uploads/2023/12/blackband-white-on-transparent.png" alt="BlackBand Design logo">
+        <span class="partner-name">BlackBand Design</span>
+      </a>
+
+      <a href="https://www.5thandsand.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://cdn.prod.website-files.com/64e4cd69e0ebdc770d940c34/64e4cd69e0ebdc770d940c39_Asset%201fav.avif" alt="5th and Sand Design logo">
+        <span class="partner-name">5th and Sand Design</span>
+      </a>
+
+      <a href="https://www.brookewagnerdesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://static.wixstatic.com/media/a3a7c5_ea32892ffe8044ffb1c2cbfda0c3a525~mv2.png" alt="Brooke Wagner Design logo">
+        <span class="partner-name">Brooke Wagner Design</span>
+      </a>
+
+      <a href="https://www.kellynuttdesign.com/" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--cormorant">Kelly Nutt</span>
+        <span class="partner-name">Kelly Nutt Design</span>
+      </a>
+
+      <a href="https://www.graceblu.com/" class="partner-item" target="_blank" rel="noopener">
+        <img class="partner-logo-img" src="https://www.graceblu.com/wp-content/uploads/2025/05/GB-logo-1-black.svg" alt="Grace Blu Design logo">
+        <span class="partner-name">Grace Blu Design</span>
+      </a>
+
+    </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="/content/footer.js?v=1"></script>
 
 <script>
+  window.__revealReady = true;
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {

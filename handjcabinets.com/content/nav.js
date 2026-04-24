@@ -1,7 +1,7 @@
 /* ─── Global Navigation ─────────────────────────────────────────────────────
    Inject shared header HTML + CSS + scroll behaviour + mobile menu.
    Include as first element inside <body>:
-     <script src="/content/nav.js"></script>
+     <script src="/content/nav.js?v=2"></script>
    ──────────────────────────────────────────────────────────────────────── */
 (function () {
   'use strict';
@@ -214,6 +214,7 @@
     { href: '/difference/',     label: 'The Difference' },
     { href: '/featured-homes/', label: 'Projects'       },
     { href: '/contact/',        label: 'Contact'        },
+    { href: '/careers/',        label: 'Careers'        },
     { href: '/about/',          label: 'About'          },
   ];
 
@@ -307,5 +308,27 @@
   window.addEventListener('scroll', function () {
     hdr.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
+
+  /* ── Scroll reveal (only if page hasn't set up its own observer) ─────── */
+  function _navSetupReveal() {
+    if (window.__revealReady) return;
+    // Keep a strong reference on window so the observer is not GC'd
+    window._navRevealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          window._navRevealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      window._navRevealObserver.observe(el);
+    });
+  }
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', _navSetupReveal);
+  } else {
+    _navSetupReveal();
+  }
 
 })();

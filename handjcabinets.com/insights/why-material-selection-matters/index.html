@@ -69,7 +69,7 @@
   .article-cta { padding:clamp(48px,8vw,88px) var(--inset); border-top:1px solid rgba(212,168,67,0.12); background:rgba(255,255,255,0.02); text-align:center; display:flex; flex-direction:column; align-items:center; gap:24px; }
   .article-cta h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.8rem,3vw,2.8rem); font-weight:300; font-style:italic; color:var(--cream); }
   .article-cta p { font-family:'EB Garamond',Georgia,serif; font-size:clamp(15px,1.05vw,17px); font-style:italic; color:rgba(242,237,230,0.6); max-width:480px; line-height:1.7; }
-  .btn-primary { display:inline-block; padding:14px 32px; font-family:'EB Garamond',Georgia,serif; font-size:14px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; text-decoration:none; background:var(--gold); color:#000; border:1px solid var(--gold); transition:background 0.3s; }
+  .btn-primary { display:inline-block; padding:14px 32px; font-family:'EB Garamond',Georgia,serif; font-size:14px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; text-decoration:none; border-radius: 999px; background:var(--gold); color:#000; border:1px solid var(--gold); transition:background 0.3s; }
   .btn-primary:hover { background:#c9973a; border-color:#c9973a; }
   .site-footer { border-top:1px solid rgba(212,168,67,0.15); padding:48px var(--inset); display:flex; flex-direction:column; align-items:center; gap:28px; }
   .footer-logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
@@ -83,7 +83,7 @@
 </style>
 </head>
 <body>
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 <header class="article-header">
   <a href="../" class="back-link">Insights</a>
   <div class="article-tag">Materials</div>
@@ -142,19 +142,6 @@
   <a href="../../contact/" class="btn-primary">Get in Touch &rarr;</a>
 </section>
 
-<footer class="site-footer">
-  <a href="../../" class="footer-logo">
-    <img src="/content/pictures/logo.png" alt="H &amp; J Cabinets">
-    <span>H &amp; J Cabinets</span>
-  </a>
-  <ul class="footer-links">
-    <li><a href="../../">Home</a></li>
-    <li><a href="../../featured-homes/">Projects</a></li>
-    <li><a href="../../about/">About</a></li>
-    <li><a href="../../contact/">Contact</a></li>
-    <li><a href="../">Insights</a></li>
-  </ul>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<script src="/content/footer.js?v=1"></script>
 </body>
 </html>

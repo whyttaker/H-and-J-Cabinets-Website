@@ -8,6 +8,7 @@
 <link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
 <title>Contact | H &amp; J Cabinets</title>
 <meta name="description" content="Reach out to H &amp; J Cabinets to begin your custom cabinetry project. Visit us in Santa Ana, CA or send us a message.">
+<link rel="canonical" href="https://handjcabinets.com/contact/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
@@ -270,6 +271,7 @@
     font-size: clamp(15px, 1.05vw, 17px);
     color: rgba(242,237,230,0.7);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
     line-height: 1.6;
   }
@@ -301,6 +303,7 @@
     text-transform: uppercase;
     color: var(--grey);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
   }
 
@@ -430,6 +433,7 @@
     text-transform: uppercase;
     color: var(--grey);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
   }
 
@@ -453,6 +457,7 @@
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 999px;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
   }
   .btn-primary {
@@ -542,7 +547,7 @@
 </head>
 <body>
 
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 
 <section class="page-hero" aria-label="Contact hero">
   <div class="hero-img-wrap">
@@ -615,19 +620,12 @@
 
 </section>
 
-<footer class="site-footer">
-  <ul class="footer-links">
-    <li><a href="../">Home</a></li>
-    <li><a href="../featured-homes/">Projects</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="./">Contact</a></li>
-  </ul>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<script src="/content/footer.js?v=1"></script>
 
 <script src="/content/mapbox-config.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
 <script>
+  window.__revealReady = true;
   // Header scroll
   // Phone (assembled at runtime — not present in static source)
   const _p = ['714', '349', '3522'];

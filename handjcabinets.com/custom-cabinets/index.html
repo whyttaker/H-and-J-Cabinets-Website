@@ -143,6 +143,7 @@
     color: rgba(242,237,230,0.9);
     text-shadow: 0 1px 8px rgba(0,0,0,0.65);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s, text-shadow 0.3s;
     position: relative;
     padding-bottom: 3px;
@@ -493,6 +494,7 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 999px;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
   }
 
@@ -561,6 +563,7 @@
     text-transform: uppercase;
     color: var(--grey);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
   }
 
@@ -662,7 +665,7 @@
 </style>
 </head>
 <body>
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 <section class="page-hero" aria-label="Custom Cabinets hero">
   <div class="hero-img-wrap">
     <img src="/content/pictures/hj-2.png"
@@ -718,8 +721,8 @@
   <!-- Section 4: Materials -->
   <div class="article-section reveal">
     <div class="section-eyebrow">Materials</div>
-    <h2>No MDF.<br><em>No low-grade shortcuts.</em></h2>
-    <p>The materials inside your cabinets matter as much as what you see on the surface. At H &amp; J Cabinets, we never use MDF or low-grade plywood in critical areas, the structural components that determine how well your cabinetry holds up over time.</p>
+    <h2>No Low-Grade Materials.<br><em>No Shortcuts.</em></h2>
+    <p>The materials inside your cabinets matter as much as what you see on the surface. At H &amp; J Cabinets, we never use low-grade materials in critical areas, the structural components that determine how well your cabinetry holds up over time.</p>
     <ul class="feature-list">
       <li>Premium hardwoods selected for grain, figure, and structural integrity</li>
       <li>High-quality plywood for cabinet boxes, dimensionally stable and resistant to warping</li>
@@ -935,21 +938,10 @@
   </div>
 </section>
 
-<footer class="site-footer">
-  <a href="../" class="footer-logo">
-    <img src="/content/pictures/logo.png" alt="H &amp; J Cabinets logo, fine custom cabinetry Orange County California since 1988">
-    <span>H &amp; J Cabinets</span>
-  </a>
-  <ul class="footer-links">
-    <li><a href="../">Home</a></li>
-    <li><a href="../featured-homes/">Projects</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../contact/">Contact</a></li>
-  </ul>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<script src="/content/footer.js?v=1"></script>
 
 <script>
+  window.__revealReady = true;
   // Header scroll
   const _hdr = document.getElementById('site-header');
   window.addEventListener('scroll', () => {

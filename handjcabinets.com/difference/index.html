@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The H &amp; J Difference | H &amp; J Cabinets</title>
 <meta name="description" content="Discover what makes H &amp; J Cabinets exceptional, from hand-drawn renderings to white-glove installation, every stage of our process is built on precision and care.">
+<link rel="canonical" href="https://handjcabinets.com/difference/">
 <link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
@@ -161,14 +162,14 @@
   /* ─── SCROLL STAGE ───────────────────────────────────────────── */
   .diff-scroll-stage {
     position: relative;
-    height: 380vh;
-    margin-top: 20vh;
+    height: 280vh;
+    margin-top: 10vh;
   }
 
   .diff-sticky {
     position: sticky;
-    top: calc((100vh - 80vh) / 2);
-    height: 80vh;
+    top: 15vh;
+    height: 55vh;
     overflow: hidden;
   }
 
@@ -369,6 +370,7 @@
     text-transform: uppercase;
     color: var(--gold);
     text-decoration: none;
+    border-radius: 999px;
     transition: opacity 0.3s;
   }
   .diff-unmatched-link:hover { opacity: 0.7; }
@@ -499,6 +501,7 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 999px;
     transition: background 0.3s, color 0.3s;
   }
 
@@ -517,6 +520,7 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 999px;
     transition: border-color 0.3s, color 0.3s;
   }
 
@@ -551,6 +555,7 @@
     text-transform: uppercase;
     color: var(--grey);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
   }
 
@@ -641,7 +646,7 @@
 <body>
 
 <!-- ─── HEADER ───────────────────────────────────────────────── -->
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section class="diff-hero" aria-label="The H &amp; J Difference">
@@ -745,8 +750,8 @@
 
     <div class="diff-pillar reveal">
       <span class="diff-pillar-num">02</span>
-      <h3>Premium Materials, No Shortcuts</h3>
-      <p>We believe that what goes inside your cabinets matters just as much as what you see on the outside. That is why we never use MDF or low-grade plywood in critical areas. Instead, we select high-quality materials that are more resistant to moisture, wear, and long-term stress. This approach not only increases durability but also helps prevent issues like swelling, warping, and premature breakdown.</p>
+      <h3>Premium Materials, No Shortcuts.</h3>
+      <p>We believe that what goes inside your cabinets matters just as much as what you see on the outside. That is why we never use low-grade materials in critical areas. Instead, we select high-quality materials that are more resistant to moisture, wear, and long-term stress. This approach not only increases durability but also helps prevent issues like swelling, warping, and premature breakdown.</p>
     </div>
 
     <div class="diff-pillar reveal">
@@ -781,21 +786,10 @@
   </div>
 </section>
 
-<!-- ─── FOOTER ────────────────────────────────────────────────── -->
-<footer class="site-footer">
-  <nav aria-label="Footer">
-    <ul class="footer-nav">
-      <li><a href="../">Home</a></li>
-      <li><a href="../featured-homes/">Projects</a></li>
-    <li><a href="../about/">About</a></li>
-      <li><a href="./">The Difference</a></li>
-      <li><a href="../contact/">Contact</a></li>
-    </ul>
-  </nav>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<script src="/content/footer.js?v=1"></script>
 
 <script>
+window.__revealReady = true;
 (function () {
   'use strict';
 

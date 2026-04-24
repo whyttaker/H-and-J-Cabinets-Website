@@ -384,6 +384,7 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 999px;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
   }
 
@@ -452,6 +453,7 @@
     text-transform: uppercase;
     color: var(--grey);
     text-decoration: none;
+    border-radius: 999px;
     transition: color 0.3s;
   }
 
@@ -492,7 +494,7 @@
 </head>
 <body>
 
-<script src="/content/nav.js"></script>
+<script src="/content/nav.js?v=3"></script>
 
 <!-- ─── HERO ──────────────────────────────────────────── -->
 <section class="about-hero" aria-label="About H &amp; J Cabinets">
@@ -574,22 +576,10 @@
   </div>
 </section>
 
-<!-- ─── FOOTER ────────────────────────────────────────── -->
-<footer class="site-footer">
-  <a href="../" class="footer-logo">
-    <img src="/content/pictures/logo.png" alt="H &amp; J Cabinets logo, fine custom cabinetry Orange County California since 1988">
-    <span>H &amp; J Cabinets</span>
-  </a>
-  <ul class="footer-links">
-    <li><a href="../">Home</a></li>
-    <li><a href="../featured-homes/">Projects</a></li>
-    <li><a href="./">About</a></li>
-    <li><a href="../contact/">Contact</a></li>
-  </ul>
-  <p class="footer-copy">&copy; 2025 H &amp; J Cabinets. All rights reserved.</p>
-</footer>
+<script src="/content/footer.js?v=1"></script>
 
 <script>
+  window.__revealReady = true;
   // ─── Scroll header
   // ─── Reveal on scroll
   const reveals = document.querySelectorAll('.reveal');
