@@ -3,142 +3,191 @@
 
   <url>
     <loc>https://handjcabinets.com/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/gallery/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/featured-homes/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/difference/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/testimonials/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/corona-del-mar/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/irvine/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/laguna-beach/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/huntington-beach/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/mission-viejo/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/orange-county/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/southern-california/</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://handjcabinets.com/custom-cabinets/newport-beach/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/custom-cabinets/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://handjcabinets.com/custom-cabinets/kitchen/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/bathroom/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/built-in-storage/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/newport-beach/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/corona-del-mar/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/irvine/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/laguna-beach/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/huntington-beach/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/mission-viejo/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/orange-county/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/custom-cabinets/southern-california/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://handjcabinets.com/about/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/insights/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/insights/framed-vs-frameless-cabinets/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/insights/why-material-selection-matters/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/insights/custom-cabinet-process/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://handjcabinets.com/contact/</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/careers/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/careers/cabinet-installer/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/careers/cabinet-builder/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://handjcabinets.com/careers/cabinet-drafter/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

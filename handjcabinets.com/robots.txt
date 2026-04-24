@@ -20,10 +20,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-# Block admin and system paths
-Disallow: /wp-json/
-Disallow: /xmlrpc.php
-Disallow: /feed/
-Disallow: /comments/
-
 Sitemap: https://handjcabinets.com/sitemap.xml

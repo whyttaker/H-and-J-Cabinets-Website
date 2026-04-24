@@ -1,6 +1,6 @@
 # H & J Cabinets
 
-> H & J Cabinets is a high-end custom cabinetry company based in Santa Ana, California. For over 30 years, we have built bespoke cabinetry for luxury residential projects across Orange County, Southern California, and beyond. Every cabinet is made exclusively for the client's space — no catalogue, no compromises.
+> H & J Cabinets is a high-end custom cabinetry company based in Santa Ana, California. For over 35 years, we have built bespoke cabinetry for luxury residential projects across Orange County, Southern California, and beyond. Every cabinet is made exclusively for the client's space — no catalogue, no compromises.
 
 ## Who We Serve
 
@@ -9,11 +9,11 @@ We work with discerning homeowners, interior designers, architects, and custom h
 ## What Makes H & J Different
 
 - **Framed construction** — Traditional face-frame cabinetry provides structural integrity that frameless systems cannot match. Doors and drawers stay aligned and operate smoothly for decades.
-- **No MDF in critical areas** — We select premium hardwoods and quality plywood. We never use MDF or low-grade materials where it matters.
+- **No Low-Grade Materials in critical areas** — We select premium hardwoods and quality plywood. We never use low-grade materials.
 - **Lifetime adjustment guarantee** — If your cabinets ever need realignment due to natural settling, we return at no cost.
 - **No subcontractors** — Our own team designs, builds, and installs every project.
 - **Singular to you** — No two H & J projects are alike. Every piece is made exclusively for the client's space, life, and vision.
-- **30+ Years of experience** — Proven craftsmanship combined with modern precision technology.
+- **35+ Years of experience** — Proven craftsmanship combined with modern precision technology.
 
 ## Services
 
@@ -47,6 +47,18 @@ Clients consistently describe H & J Cabinets as one of the most important decisi
 - **Email:** inquiries@handjcabinets.com
 - **Address:** 1369 S Lyon St, Santa Ana, CA 92705
 - **Instagram:** https://www.instagram.com/hjcabinets/
+- **Houzz:** https://www.houzz.com/pro/hnjcabs/h-j-cabinets
+- **YouTube:** https://youtube.com/@HJCabinets
+
+## Careers
+
+H & J Cabinets is hiring skilled tradespeople and technical staff to join our in-house team. We do not use subcontractors — every member of the team is part of the company. Current openings:
+
+- **Cabinet Installer** — Field installation of custom cabinetry in luxury residential projects across Orange County.
+- **Cabinet Builder** — Shop production of custom cabinets; precision cutting, assembly, and finishing.
+- **Cabinet Drafter** — Technical drawings and shop documents using Cabinet Vision. Requires Cabinet Vision proficiency.
+
+Applications: careers@handjcabinets.com
 
 ## Pages
 
@@ -55,4 +67,12 @@ Clients consistently describe H & J Cabinets as one of the most important decisi
 - [Featured Projects](https://handjcabinets.com/featured-homes/): In-depth project showcases.
 - [The H & J Difference](https://handjcabinets.com/difference/): Detailed explanation of our construction methods, materials, guarantees, and process philosophy.
 - [Testimonials](https://handjcabinets.com/testimonials/): Client feedback and experience themes.
+- [Custom Cabinets](https://handjcabinets.com/custom-cabinets/): Overview of custom cabinetry services and locations served.
+- [Kitchen Cabinetry](https://handjcabinets.com/custom-cabinets/kitchen/): Custom kitchen cabinet design and construction.
+- [Bathroom Cabinetry](https://handjcabinets.com/custom-cabinets/bathroom/): Custom bathroom vanities and built-ins.
+- [Built-In Storage](https://handjcabinets.com/custom-cabinets/built-in-storage/): Libraries, entertainment centers, wine cellars, and custom built-in cabinetry.
 - [Contact](https://handjcabinets.com/contact/): Inquiry form and contact information.
+- [Careers](https://handjcabinets.com/careers/): Current job openings at H & J Cabinets.
+- [Cabinet Installer](https://handjcabinets.com/careers/cabinet-installer/): Role details and application questions for the installer position.
+- [Cabinet Builder](https://handjcabinets.com/careers/cabinet-builder/): Role details and application questions for the shop builder position.
+- [Cabinet Drafter](https://handjcabinets.com/careers/cabinet-drafter/): Role details and application questions for the drafter position (Cabinet Vision required).
