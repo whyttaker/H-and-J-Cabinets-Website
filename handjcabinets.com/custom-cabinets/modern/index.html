@@ -68,6 +68,16 @@
   .reveal.visible { opacity: 1; transform: none; }
   @media (max-width: 900px) { .img-pair, .img-trio { grid-template-columns: 1fr; } .img-feature--side { grid-template-columns: 1fr; } }
   @media (max-width: 768px) { .hero-content { padding: 0 28px 60px; } }
+
+  /* ─── BACKLINK SECTION ─── */
+  .services-nav { padding: clamp(40px,6vw,72px) var(--inset); border-top: 1px solid rgba(212,168,67,0.1); }
+  .services-nav-label { font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .services-nav-label::after { content: ''; flex: 1; height: 1px; background: rgba(212,168,67,0.2); }
+  .services-tag-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .services-tag { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(212,168,67,0.25); padding: 7px 16px; text-decoration: none; transition: background 0.25s, border-color 0.25s; white-space: nowrap; }
+  .services-tag:hover { background: rgba(212,168,67,0.08); border-color: rgba(212,168,67,0.5); }
+  .services-tag.parent { color: var(--cream); border-color: rgba(242,237,230,0.2); font-size: 11px; letter-spacing: 0.22em; }
+  .services-tag.parent:hover { border-color: var(--gold); color: var(--gold); }
 </style>
 </head>
 <body>
@@ -126,6 +136,31 @@
     <p style="font-family:'EB Garamond',Georgia,serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey);">Serving Newport Beach, Irvine, Laguna Beach, and Orange County.</p>
   </div>
 </main>
+
+
+<section class="services-nav reveal">
+  <div class="services-nav-label">More Custom Cabinetry</div>
+  <div class="services-tag-grid">
+    <a href="../" class="services-tag parent">&larr; All Custom Cabinets</a>
+    <a href="../contemporary/" class="services-tag">Contemporary Cabinets</a>
+      <a href="../traditional/" class="services-tag">Traditional Cabinets</a>
+      <a href="../ornamental/" class="services-tag">Ornamental Cabinets</a>
+      <a href="../baroque/" class="services-tag">Baroque Cabinets</a>
+      <a href="../rustic/" class="services-tag">Rustic Cabinets</a>
+      <a href="../cottage/" class="services-tag">Cottage Cabinets</a>
+      <a href="../shabby-chic/" class="services-tag">Shabby Chic Cabinets</a>
+      <a href="../antique/" class="services-tag">Antique Cabinets</a>
+      <a href="../tv-cabinets/" class="services-tag">TV Cabinets &amp; Media Units</a>
+      <a href="../motorized-tv/" class="services-tag">Motorized TV Cabinets</a>
+      <a href="../sliding-door/" class="services-tag">Sliding Door Cabinets</a>
+      <a href="../closet-systems/" class="services-tag">Closet Systems</a>
+      <a href="../entry-doors/" class="services-tag">Entry Doors</a>
+      <a href="../interior-doors/" class="services-tag">Interior Doors</a>
+      <a href="../staircases/" class="services-tag">Staircases</a>
+      <a href="../bed-frames/" class="services-tag">Bed Frames</a>
+      <a href="../coffee-tables/" class="services-tag">Coffee Tables</a>
+  </div>
+</section>
 
 <section class="cta-strip">
   <h2>Ready to design your modern cabinets?</h2>
