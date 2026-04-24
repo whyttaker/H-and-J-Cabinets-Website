@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
+<title>Newport Oceanfront Residence | H &amp; J Cabinets</title>
+<meta name="description" content="A contemporary Newport Beach oceanfront residence featuring warm walnut stain on rift white oak cabinetry, serene open design, and craftsmanship by H & J Cabinets.">
+<link rel="canonical" href="https://handjcabinets.com/featured-homes/newport-oceanfront-residence/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black:   #000000;
+    --gold:    #d4a843;
+    --gold-dim: rgba(212,168,67,0.15);
+    --cream:   #f2ede6;
+    --grey:    #7a7672;
+    --gap:     clamp(48px, 6vw, 80px);
+    --inset:   clamp(24px, 5vw, 72px);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(16px, 1.1vw, 18px);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  /* HERO */
+  .project-hero {
+    position: relative; height: 100vh; min-height: 640px; max-height: 980px;
+    overflow: hidden; display: flex; align-items: flex-end;
+  }
+  .hero-video-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #080807; }
+  .hero-bg-iframe {
+    position: absolute; top: 50%; left: 50%;
+    min-width: 177.78vh; min-height: 56.25vw;
+    width: 100vw; height: 56.25vw;
+    max-height: 100vh; max-width: 177.78vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none; border: none;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(170deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0.97) 100%);
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    padding: 0 var(--inset) clamp(48px,6vw,80px);
+    max-width: 900px;
+    animation: fadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: none; }
+  }
+  .breadcrumb {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(242,237,230,0.5); margin-bottom: 24px;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .breadcrumb a { color: rgba(242,237,230,0.5); text-decoration: none; transition: color 0.3s; }
+  .breadcrumb a:hover { color: var(--gold); }
+  .breadcrumb span { color: rgba(212,168,67,0.4); }
+  .hero-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(13px, 1vw, 15px); font-style: italic; letter-spacing: 0.18em;
+    color: var(--gold); margin-bottom: 12px;
+  }
+  .hero-content h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(3rem, 6vw, 5.8rem); font-weight: 300; line-height: 1.02;
+    letter-spacing: 0.01em; color: var(--cream); margin-bottom: 20px;
+  }
+  .hero-location-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: rgba(242,237,230,0.55); text-decoration: none; transition: color 0.3s;
+  }
+  .hero-location-link::before { content: ''; display: inline-block; width: 20px; height: 1px; background: currentColor; }
+  .hero-location-link:hover { color: var(--gold); text-decoration: none; }
+  /* VIDEO */
+  .video-section { padding: clamp(48px,6vw,80px) var(--inset) 0; max-width: 1200px; margin: 0 auto; }
+  .video-wrap { position: relative; padding-bottom: 56.25%; background: #080807; overflow: hidden; border-radius: 6px; }
+  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; display: block; }
+  /* CONTENT */
+  .content-section { padding: clamp(48px,6vw,80px) var(--inset); max-width: 1200px; margin: 0 auto; }
+  .content-grid { display: grid; grid-template-columns: 1fr 300px; gap: clamp(40px,5vw,72px); align-items: start; }
+  .section-eyebrow {
+    display: inline-flex; align-items: center; gap: 14px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.75rem; font-style: italic; letter-spacing: 0.2em;
+    color: var(--gold); margin-bottom: 20px;
+  }
+  .section-eyebrow::before { content: ''; display: block; width: 42px; height: 1px; background: linear-gradient(to right, transparent, var(--gold)); }
+  .content-main h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem,3.5vw,3.2rem); font-weight: 400; line-height: 1.1;
+    letter-spacing: -0.01em; color: var(--cream); margin-bottom: 28px;
+  }
+  .content-main p { font-family: 'EB Garamond', Georgia, serif; font-size: clamp(15px,1.05vw,17px); line-height: 1.85; color: rgba(242,237,230,0.82); margin-bottom: 20px; }
+  .content-main p a { color: var(--gold); }
+  /* SIDEBAR */
+  .content-sidebar { padding-top: 8px; }
+  .sidebar-block { border-top: 1px solid rgba(212,168,67,0.15); padding: 20px 0; }
+  .sidebar-block:last-child { border-bottom: 1px solid rgba(212,168,67,0.15); }
+  .sidebar-label { font-family: 'EB Garamond', Georgia, serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--grey); margin-bottom: 8px; }
+  .sidebar-link { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(17px,1.3vw,22px); font-weight: 400; color: var(--cream); text-decoration: none; transition: color 0.3s; display: block; }
+  .sidebar-link:hover { color: var(--gold); text-decoration: none; }
+  .sidebar-text { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(17px,1.3vw,22px); font-weight: 400; color: var(--grey); }
+  /* CTA */
+  .cta-section {
+    background: rgba(212,168,67,0.04); border-top: 1px solid rgba(212,168,67,0.12); border-bottom: 1px solid rgba(212,168,67,0.12);
+    padding: clamp(56px,7vw,96px) var(--inset); text-align: center;
+  }
+  .cta-eyebrow { font-family: 'EB Garamond', Georgia, serif; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-style: italic; margin-bottom: 20px; }
+  .cta-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.2rem,4vw,3.8rem); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 20px; }
+  .cta-section p { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: clamp(15px,1.05vw,17px); color: rgba(242,237,230,0.6); max-width: 520px; margin: 0 auto 36px; line-height: 1.7; }
+  .btn-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+  .btn-primary { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); background: var(--gold); padding: 14px 32px; text-decoration: none; border-radius: 1px; transition: opacity 0.25s; }
+  .btn-primary:hover { opacity: 0.88; text-decoration: none; }
+  .btn-ghost { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream); border: 1px solid rgba(242,237,230,0.3); padding: 14px 32px; text-decoration: none; border-radius: 1px; transition: border-color 0.25s, color 0.25s; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
+  /* RELATED */
+  .related-section { padding: clamp(48px,6vw,80px) var(--inset); }
+  .related-section .section-eyebrow { display: flex; margin-bottom: 32px; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+  .related-card { border: 1px solid rgba(212,168,67,0.15); padding: 28px 24px; text-decoration: none; display: block; transition: border-color 0.3s, background 0.3s; }
+  .related-card:hover { border-color: rgba(212,168,67,0.45); background: rgba(212,168,67,0.04); text-decoration: none; }
+  .related-num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 12px; font-style: italic; letter-spacing: 0.18em; color: var(--gold); display: block; margin-bottom: 8px; }
+  .related-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(17px,1.3vw,21px); font-weight: 400; color: var(--cream); display: block; line-height: 1.2; }
+  .related-loc { font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey); display: block; margin-top: 8px; }
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+  .reveal.visible { opacity: 1; transform: none; }
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .content-sidebar { border-top: 1px solid rgba(212,168,67,0.15); padding-top: 20px; }
+    .content-sidebar .sidebar-block:first-child { border-top: none; }
+  }
+  @media (max-width: 480px) {
+    .hero-content h1 { font-size: 2.6rem; }
+    .btn-row { flex-direction: column; align-items: center; }
+  }
+
+</style>
+</head>
+<body>
+
+<script src="/content/nav.js?v=3"></script>
+
+<section class="project-hero" aria-label="Newport Oceanfront Residence hero">
+  <div class="hero-video-bg">
+    <iframe class="hero-bg-iframe"
+      src="https://player.vimeo.com/video/275662746?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;dnt=1"
+      allow="autoplay" frameborder="0" title="Newport Oceanfront Residence background video"></iframe>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/featured-homes/">Featured Homes</a>
+      <span>/</span>
+      Newport Oceanfront Residence
+    </nav>
+    <div class="hero-num">No. 11</div>
+    <h1>Newport Oceanfront Residence</h1>
+    <a href="/custom-cabinets/newport-beach/" class="hero-location-link">Newport Beach</a>
+  </div>
+</section>
+
+<div class="video-section reveal">
+  <div class="video-wrap">
+    <iframe src="https://player.vimeo.com/video/275662746?dnt=1&amp;title=0&amp;byline=0&amp;portrait=0"
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+      loading="lazy" title="Newport Oceanfront Residence"></iframe>
+  </div>
+</div>
+
+<section class="content-section reveal">
+  <div class="content-grid">
+    <div class="content-main">
+      <div class="section-eyebrow">About This Residence</div>
+      <h2>Where the Pacific Informs the Palette</h2>
+      <p>An oceanfront address in <a href="/custom-cabinets/newport-beach/">Newport Beach</a> sets expectations at a different level — the natural environment outside demands a response from the interior, and the cabinetry is no exception. This residence answers that challenge with a warm walnut stain applied to rift white oak, a combination that brings the warmth of land into a home defined by water and sky.</p>
+        <p>The <a href="/custom-cabinets/contemporary/">contemporary cabinetry</a> throughout this home is notable for its serene, unhurried quality. There are no distracting details — only the controlled beauty of grain, the warmth of stain, and the precision of construction. H &amp; J's production process allows finishes of this caliber to be achieved consistently across every surface, from the kitchen cabinetry to the bathroom vanities and built-in storage throughout.</p>
+        <p>Rift white oak stained in warm walnut tones is a sophisticated material choice that ages gracefully — the stain deepens slightly over time while the wood beneath becomes more stable and beautiful. H &amp; J's understanding of <a href="/insights/why-material-selection-matters/">how wood behaves over time</a> informs every material specification, ensuring that what looks exceptional today continues to perform and look beautiful for decades.</p>
+        <p>For clients planning oceanfront homes or high-exposure residences anywhere along the <a href="/custom-cabinets/newport-beach/">Newport Beach</a> coast, H &amp; J's knowledge of coastal environments and material longevity is a distinct advantage. We build cabinets that are worthy of the views they frame.</p>
+    </div>
+    <aside class="content-sidebar">
+      <div class="sidebar-block">
+        <div class="sidebar-label">Cabinet Style</div>
+        <a href="/custom-cabinets/contemporary/" class="sidebar-link">Contemporary Cabinetry</a>
+      </div>
+      <div class="sidebar-block">
+        <div class="sidebar-label">Location</div>
+        <a href="/custom-cabinets/newport-beach/" class="sidebar-link">Newport Beach</a>
+      </div>
+      <div class="sidebar-block">
+        <div class="sidebar-label">Project</div>
+        <span class="sidebar-text">No. 11 of 23</span>
+      </div>
+      <div class="sidebar-block">
+        <div class="sidebar-label">More</div>
+        <a href="/difference/" class="sidebar-link" style="font-size:clamp(15px,1.05vw,17px)">The H &amp; J Difference</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <div class="cta-eyebrow">Begin Your Project</div>
+  <h2>Work with H &amp; J Cabinets</h2>
+  <p>Every H &amp; J project is built exclusively for the client's space — no catalogue, no compromises. If you are planning a home of similar ambition, we welcome the conversation.</p>
+  <div class="btn-row">
+    <a href="/difference/" class="btn-primary">What Makes Us Different</a>
+    <a href="/contact/" class="btn-ghost">Start a Conversation</a>
+  </div>
+</section>
+
+<section class="related-section reveal">
+  <div class="section-eyebrow">More Featured Residences</div>
+  <div class="related-grid">
+    
+    <a href="../balboa-peninsula-residence/" class="related-card">
+      <span class="related-num">No. 09</span>
+      <span class="related-title">Balboa Peninsula Residence</span>
+      <span class="related-loc">Newport Beach</span>
+    </a>
+    <a href="../newport-beach-residence/" class="related-card">
+      <span class="related-num">No. 10</span>
+      <span class="related-title">Newport Beach Residence</span>
+      <span class="related-loc">Newport Beach</span>
+    </a>
+    <a href="../berry-residence/" class="related-card">
+      <span class="related-num">No. 12</span>
+      <span class="related-title">Berry Residence</span>
+      <span class="related-loc">Corona del Mar</span>
+    </a>
+    <a href="../port-margate-residence/" class="related-card">
+      <span class="related-num">No. 13</span>
+      <span class="related-title">Port Margate Residence</span>
+      <span class="related-loc">Newport Beach</span>
+    </a>
+  </div>
+</section>
+
+<script src="/content/footer.js?v=1"></script>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
