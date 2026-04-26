@@ -211,7 +211,7 @@
 
   var links = [
     { href: '/',                label: 'Home'           },
-    { href: '/difference/',     label: 'The Difference' },
+    { href: '/difference/',     label: 'Difference' },
     { href: '/featured-homes/', label: 'Projects'       },
     { href: '/contact/',        label: 'Contact'        },
     { href: '/careers/',        label: 'Careers'        },
