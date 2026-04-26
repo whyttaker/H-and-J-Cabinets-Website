@@ -10,3 +10,6 @@ handjcabinets.com/content/videos/hero-showcase-video.mp4
 # Playwright MCP dev artifacts
 .playwright-mcp/
 partners-full.png
+
+# Git worktrees
+.worktrees/
