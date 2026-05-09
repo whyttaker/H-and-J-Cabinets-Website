@@ -479,7 +479,17 @@
     flex-wrap: wrap;
     margin-top: 4px;
   }
-  .contact-btn { position: relative; }
+  .contact-btn {
+    position: relative;
+    padding: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+  }
   .contact-tip {
     position: absolute;
     bottom: calc(100% + 10px);
@@ -537,11 +547,12 @@
   }
 
   @media (max-width: 480px) {
-    .cta-group, .contact-btn-row, .btn-row {
+    .cta-group, .btn-row {
       flex-direction: column;
       align-items: flex-start;
     }
     .btn-primary, .btn-ghost { width: auto; align-self: flex-start; }
+    .contact-btn-row { flex-direction: row; align-items: center; }
   }
 </style>
 </head>
@@ -579,9 +590,9 @@
       <span class="contact-block-label">Contact</span>
       <h3>Let's Get Started</h3>
       <div class="contact-btn-row">
-        <a id="contact-call" href="#" class="btn-primary contact-btn">Call<span class="contact-tip"></span></a>
-        <a id="contact-sms" href="#" class="btn-ghost contact-btn">Text<span class="contact-tip"></span></a>
-        <a href="mailto:inquiries@handjcabinets.com" class="btn-ghost contact-btn">Email<span class="contact-tip">inquiries@handjcabinets.com</span></a>
+        <a id="contact-call" href="#" class="btn-ghost contact-btn" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.68 11.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="contact-tip"></span></a>
+        <a id="contact-sms" href="#" class="btn-ghost contact-btn" aria-label="Text us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="contact-tip"></span></a>
+        <a href="mailto:inquiries@handjcabinets.com" class="btn-ghost contact-btn" aria-label="Email us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span class="contact-tip">inquiries@handjcabinets.com</span></a>
       </div>
     </div>
 

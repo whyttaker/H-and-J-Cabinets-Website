@@ -127,15 +127,15 @@
   .cta-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.2rem,4vw,3.8rem); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 20px; }
   .cta-section p { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: clamp(15px,1.05vw,17px); color: rgba(242,237,230,0.6); max-width: 520px; margin: 0 auto 36px; line-height: 1.7; }
   .btn-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
-  .btn-primary { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); background: var(--gold); padding: 14px 32px; text-decoration: none; border-radius: 1px; transition: opacity 0.25s; }
+  .btn-primary { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); background: var(--gold); padding: 14px 32px; text-decoration: none; border-radius: 999px; transition: opacity 0.25s; }
   .btn-primary:hover { opacity: 0.88; text-decoration: none; }
-  .btn-ghost { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream); border: 1px solid rgba(242,237,230,0.3); padding: 14px 32px; text-decoration: none; border-radius: 1px; transition: border-color 0.25s, color 0.25s; }
+  .btn-ghost { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream); border: 1px solid rgba(242,237,230,0.3); padding: 14px 32px; text-decoration: none; border-radius: 999px; transition: border-color 0.25s, color 0.25s; }
   .btn-ghost:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
   /* RELATED */
-  .related-section { padding: clamp(48px,6vw,80px) var(--inset); }
-  .related-section .section-eyebrow { display: flex; margin-bottom: 32px; }
-  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
-  .related-card { border: 1px solid rgba(212,168,67,0.15); padding: 28px 24px; text-decoration: none; display: block; transition: border-color 0.3s, background 0.3s; }
+  .related-section { padding: clamp(48px,6vw,80px) var(--inset); display: flex; flex-direction: column; align-items: center; }
+  .related-section .section-eyebrow { display: flex; margin-bottom: 32px; width: 100%; max-width: 1100px; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; width: 100%; max-width: 1100px; }
+  .related-card { border: 1px solid rgba(212,168,67,0.15); border-radius: 12px; padding: 28px 24px; text-decoration: none; display: block; transition: border-color 0.3s, background 0.3s; }
   .related-card:hover { border-color: rgba(212,168,67,0.45); background: rgba(212,168,67,0.04); text-decoration: none; }
   .related-num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 12px; font-style: italic; letter-spacing: 0.18em; color: var(--gold); display: block; margin-bottom: 8px; }
   .related-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(17px,1.3vw,21px); font-weight: 400; color: var(--cream); display: block; line-height: 1.2; }
@@ -244,12 +244,12 @@
     </a>
     <a href="../big-canyon-classic/" class="related-card">
       <span class="related-num">No. 22</span>
-      <span class="related-title">Big Canyon</span>
+      <span class="related-title">Big Canyon Residence</span>
       <span class="related-loc">Newport Beach</span>
     </a>
     <a href="../balboa-peninsula-classic/" class="related-card">
       <span class="related-num">No. 23</span>
-      <span class="related-title">Balboa Peninsula</span>
+      <span class="related-title">Balboa Residence</span>
       <span class="related-loc">Newport Beach</span>
     </a>
   </div>

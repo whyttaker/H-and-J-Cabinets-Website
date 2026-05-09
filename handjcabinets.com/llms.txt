@@ -63,6 +63,7 @@ Applications: careers@handjcabinets.com
 ## Pages
 
 - [Home](https://handjcabinets.com/): Overview of H & J Cabinets, philosophy, and featured work.
+- [About](https://handjcabinets.com/about/): Company history, founding story, and the people behind H & J Cabinets.
 - [Gallery](https://handjcabinets.com/gallery/): Photography of completed custom cabinetry projects.
 - [Featured Projects](https://handjcabinets.com/featured-homes/): In-depth project showcases.
 - [The H & J Difference](https://handjcabinets.com/difference/): Detailed explanation of our construction methods, materials, guarantees, and process philosophy.
@@ -112,8 +113,51 @@ Applications: careers@handjcabinets.com
 - [Dover Shores Residence](https://handjcabinets.com/featured-homes/dover-shores-residence/): Featured project — contemporary cabinetry with custom personal details in Dover Shores, Newport Beach.
 - [Big Canyon Classic](https://handjcabinets.com/featured-homes/big-canyon-classic/): Featured project — classic traditional hardwood cabinetry in Big Canyon, Newport Beach.
 - [Balboa Peninsula Classic](https://handjcabinets.com/featured-homes/balboa-peninsula-classic/): Featured project — contemporary cabinetry with inset finger pulls on the Balboa Peninsula, Newport Beach.
+- [Brown Family Testimonial](https://handjcabinets.com/testimonials/brown-family/): Jeff and Diane Brown — Harbor Ridge, Newport Beach — solid wood drawer fronts, Mozambique and reclaimed white oak.
+- [Weiland Family Testimonial](https://handjcabinets.com/testimonials/weiland-family/): Michael and Denise Weiland — Port Streets, Newport Beach — dark aged cabinetry and distinctive fireplace millwork.
+- [Maguire Family Testimonial](https://handjcabinets.com/testimonials/maguire-family/): Lisa Maguire — Cameo Highlands, Corona del Mar — reclaimed lumber cabinetry with views of the coastline.
+- [Ogden Family Testimonial](https://handjcabinets.com/testimonials/ogden-family/): Katie Ogden — Yacht Streets, Newport Beach — white-finished cabinetry and white granite countertops.
+- [Bauer Family Testimonial](https://handjcabinets.com/testimonials/bauer-family/): Doug and Kathleen Bauer — Newport Beach — traditional custom cabinetry with elegant white finishes.
 - [Contact](https://handjcabinets.com/contact/): Inquiry form and contact information.
 - [Careers](https://handjcabinets.com/careers/): Current job openings at H & J Cabinets.
 - [Cabinet Installer](https://handjcabinets.com/careers/cabinet-installer/): Role details and application questions for the installer position.
 - [Cabinet Builder](https://handjcabinets.com/careers/cabinet-builder/): Role details and application questions for the shop builder position.
 - [Cabinet Drafter](https://handjcabinets.com/careers/cabinet-drafter/): Role details and application questions for the drafter position (Cabinet Vision required).
+
+## Insights
+
+Editorial articles on custom cabinetry, design, materials, and the H & J process.
+
+- [Framed vs. Frameless Cabinets](https://handjcabinets.com/insights/framed-vs-frameless-cabinets/): Explains the structural and aesthetic differences between face-frame and frameless cabinet construction.
+- [Why Material Selection Matters](https://handjcabinets.com/insights/why-material-selection-matters/): Why the choice of wood, plywood, and finish materials determines how cabinets look and perform for decades.
+- [The Custom Cabinet Process](https://handjcabinets.com/insights/custom-cabinet-process/): What to expect from first conversation through final installation on a custom cabinet project.
+- [Built-In Storage Solutions That Elevate the Luxury Home](https://handjcabinets.com/insights/built-in-storage-solutions-luxury-homes/): How custom built-ins integrate into the architecture rather than simply being added to it.
+- [Cabinet Finish Options for Luxury Kitchens](https://handjcabinets.com/insights/cabinet-finish-options-luxury-kitchens/): Every finish option from raw wood to lacquer — durability, appearance, and how each ages.
+- [Cabinet Hardware for Luxury Kitchens](https://handjcabinets.com/insights/cabinet-hardware-guide-luxury-kitchens/): Guide to choosing pulls, knobs, and hinges for a luxury kitchen.
+- [Custom Bathroom Vanity Design](https://handjcabinets.com/insights/custom-bathroom-vanity-design-guide/): A complete buyer's guide covering size, material, configuration, and finish for custom bathroom vanities.
+- [Custom Cabinets in Corona del Mar](https://handjcabinets.com/insights/custom-cabinets-corona-del-mar/): Custom cabinetry for Corona del Mar homes — designed for the coastal environment and luxury design standards.
+- [Custom Cabinetry for Interior Designers](https://handjcabinets.com/insights/custom-cabinets-for-interior-designers/): How H & J works with interior designers — shop drawings, working to spec, and delivering to the standard their projects demand.
+- [Custom Cabinets in Irvine](https://handjcabinets.com/insights/custom-cabinets-irvine/): Custom kitchen cabinets, bathroom vanities, and built-ins for Irvine homes.
+- [Custom Cabinets in Mission Viejo](https://handjcabinets.com/insights/custom-cabinets-mission-viejo/): Custom cabinetry built for the quality and longevity Mission Viejo homeowners expect.
+- [Custom Cabinets in Santa Ana](https://handjcabinets.com/insights/custom-cabinets-santa-ana/): H & J's home workshop and base of operations since 1988, serving Santa Ana and Orange County.
+- [Custom Cabinets Across Southern California](https://handjcabinets.com/insights/custom-cabinets-southern-california-whole-home/): What H & J brings to luxury projects throughout Southern California, from Orange County to Los Angeles and beyond.
+- [Custom Closet Systems](https://handjcabinets.com/insights/custom-closet-systems-luxury-homes/): Fully custom closet rooms built to exact wardrobe and space specifications, in the same materials as the kitchen.
+- [Custom Kitchen Cabinets in Newport Beach](https://handjcabinets.com/insights/custom-kitchen-cabinets-newport-beach/): Fully custom kitchen cabinetry for Newport Beach homes, shop-built at the Santa Ana workshop since 1988.
+- [Custom Wine Cellar Design](https://handjcabinets.com/insights/custom-wine-cellar-design-orange-county/): Designing and building custom wine cellars for Orange County homes, from intimate collections to full rooms.
+- [Do Custom Cabinets Increase Home Value?](https://handjcabinets.com/insights/do-custom-cabinets-increase-home-value/): The financial case for custom cabinets and why the ROI calculation is different in the luxury market.
+- [European vs. American Cabinet Construction](https://handjcabinets.com/insights/european-vs-american-cabinet-construction/): Two distinct construction philosophies explained — and why H & J chooses face-frame construction.
+- [How Long Does Custom Cabinet Installation Take?](https://handjcabinets.com/insights/how-long-does-cabinet-installation-take/): Every phase of the custom cabinet timeline explained, from first call to finished kitchen.
+- [How Much Do Custom Cabinets Cost?](https://handjcabinets.com/insights/how-much-do-custom-cabinets-cost/): Real cost drivers and what luxury homeowners should expect to budget, from $15,000 to $150,000+.
+- [How to Choose the Right Custom Cabinet Maker](https://handjcabinets.com/insights/how-to-choose-a-custom-cabinet-maker/): What to look for, what to ask, and what the right cabinet maker process looks like in Orange County.
+- [Kitchen Cabinet Trends for 2025](https://handjcabinets.com/insights/kitchen-cabinet-trends-2025/): What Orange County luxury homeowners are choosing — natural wood, warm finishes, and architectural simplicity.
+- [Luxury Bathroom Cabinet Design Trends](https://handjcabinets.com/insights/luxury-bathroom-cabinets-design-trends/): What is defining luxury bathroom design in Orange County in 2025 — warmth, natural materials, spa-quality detail.
+- [Luxury Custom Kitchen Cabinets in Orange County](https://handjcabinets.com/insights/luxury-custom-kitchen-cabinets-orange-county/): Shop-built, fully custom kitchen cabinetry for Orange County homes that demand more than a catalogue.
+- [Modern vs. Traditional Kitchen Cabinets](https://handjcabinets.com/insights/modern-vs-traditional-kitchen-cabinets/): A design guide walking through both approaches and how each shapes a kitchen renovation.
+- [Painted vs. Stained Cabinets](https://handjcabinets.com/insights/painted-vs-stained-cabinets/): An honest guide to one of the most consequential design decisions in a kitchen renovation.
+- [Plywood vs. MDF Cabinet Box Construction](https://handjcabinets.com/insights/plywood-vs-mdf-cabinet-box-construction/): Why plywood — not MDF or particle board — is the correct material for a cabinet built to last.
+- [12 Questions to Ask Your Cabinet Maker](https://handjcabinets.com/insights/questions-to-ask-your-cabinet-maker/): The 12 questions that reveal whether a custom cabinet maker is right for your project, before you sign.
+- [Why Shaker Cabinets Remain the Gold Standard](https://handjcabinets.com/insights/shaker-cabinets-for-luxury-kitchens/): Why the Shaker door has endured for over a century and why it remains the right choice for luxury kitchens.
+- [Sustainable Wood for Custom Cabinets](https://handjcabinets.com/insights/sustainable-wood-for-custom-cabinets/): Responsible wood sourcing, durable construction, and long-lasting finishes — what sustainable cabinetry actually means.
+- [Transitional Style Kitchen Cabinets](https://handjcabinets.com/insights/transitional-kitchen-cabinet-design/): How to get the most versatile and enduring kitchen design approach right — blending classic and contemporary.
+- [Whole-Home Cabinetry Design](https://handjcabinets.com/insights/whole-home-cabinetry-design/): Creating a coherent material language that flows through every room of a home without feeling repetitive.
+- [Wood Species Guide for Custom Cabinetry](https://handjcabinets.com/insights/wood-species-guide-for-custom-cabinetry/): How walnut, white oak, and other species differ in hardness, grain, finishing, and long-term appearance.

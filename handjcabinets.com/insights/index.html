@@ -130,21 +130,51 @@
 
   /* ─── HERO ───────────────────────────────── */
   .page-hero {
-    padding: clamp(140px, 18vw, 220px) var(--inset) clamp(64px, 8vw, 100px);
     position: relative;
-    animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+    height: 100vh;
+    min-height: 640px;
+    max-height: 980px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
   }
 
-  .page-hero::after {
+  .hero-img-wrap { position: absolute; inset: 0; }
+
+  .hero-img-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    animation: heroZoom 9s ease-out forwards;
+  }
+
+  @keyframes heroZoom {
+    from { transform: scale(1.07); }
+    to   { transform: scale(1.00); }
+  }
+
+  .hero-img-wrap::after {
     content: '';
-    position: absolute;
-    bottom: 0; left: var(--inset); right: var(--inset);
-    height: 1px;
-    background: rgba(212,168,67,0.15);
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      170deg,
+      rgba(0,0,0,0.08) 0%,
+      rgba(0,0,0,0.0) 35%,
+      rgba(0,0,0,0.55) 70%,
+      rgba(0,0,0,0.96) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 56px 80px;
+    max-width: 820px;
+    animation: fadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
   }
 
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
+    from { opacity: 0; transform: translateY(28px); }
     to   { opacity: 1; transform: none; }
   }
 
@@ -167,28 +197,68 @@
     background: linear-gradient(to right, transparent, var(--gold));
   }
 
-  .page-hero h1 {
+  .hero-content h1 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: clamp(3.2rem, 6vw, 6rem);
+    font-size: clamp(3.4rem, 6.5vw, 6.2rem);
     font-weight: 300;
-    line-height: 1.05;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
     color: var(--cream);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
-  .page-hero p {
-    font-family: 'EB Garamond', Georgia, serif;
-    font-size: clamp(1rem, 1.2vw, 1.15rem);
+  .hero-content h1 em {
     font-style: italic;
-    color: rgba(242,237,230,0.6);
-    max-width: 520px;
-    line-height: 1.75;
+    font-weight: 400;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: rgba(242,237,230,0.7);
+    letter-spacing: 0.03em;
+    max-width: 480px;
+    line-height: 1.7;
+  }
+
+  .hero-scroll-hint {
+    position: absolute;
+    bottom: 36px; right: 52px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: fadeUp 1s ease 1s both;
+  }
+
+  .scroll-label {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--gold);
+    writing-mode: vertical-rl;
+    font-style: italic;
+  }
+
+  .scroll-line {
+    width: 1px; height: 56px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.25; }
+    60%       { opacity: 0.9; }
   }
 
   /* ─── ARTICLE LIST ────────────────────────── */
   .article-list {
     padding: var(--gap) var(--inset);
-    max-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -197,9 +267,9 @@
 
   .article-card {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 0 32px;
-    padding: 40px 0;
+    grid-template-columns: 100px 1fr;
+    gap: 0 48px;
+    padding: 52px 0;
     border-bottom: 1px solid rgba(212,168,67,0.1);
     text-decoration: none;
     transition: opacity 0.3s;
@@ -327,17 +397,28 @@
 
   @media (max-width: 768px) {
     .site-nav { display: none; }
-    .article-card { grid-template-columns: 1fr; gap: 12px; }
+    .hero-content { padding: 0 28px 60px; }
+    .hero-scroll-hint { right: 10px; }
+    .article-card { grid-template-columns: 1fr; gap: 12px; padding: 36px 0; }
     .article-num { font-size: 2rem; }
   }
 </style>
 </head>
 <body>
 <script src="/content/nav.js?v=3"></script>
-<section class="page-hero">
-  <div class="hero-eyebrow">H &amp; J Cabinets</div>
-  <h1>Insights</h1>
-  <p>Thoughtful perspectives on custom cabinetry, materials, and construction.</p>
+<section class="page-hero" aria-label="Insights hero">
+  <div class="hero-img-wrap">
+    <img src="/content/pictures/hj-3.png" alt="H &amp; J Cabinets custom cabinetry craftsmanship" fetchpriority="high">
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">H &amp; J Cabinets</div>
+    <h1>Insights &amp;<br><em>Perspectives</em></h1>
+    <p class="hero-sub">Thoughtful writing on custom cabinetry, materials, construction, and the decisions that shape exceptional homes.</p>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span class="scroll-label">Read</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
 <div class="article-list">
