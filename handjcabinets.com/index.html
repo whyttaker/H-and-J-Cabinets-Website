@@ -402,16 +402,15 @@
     break-inside: avoid;
     margin-bottom: clamp(6px, 1vw, 12px);
     overflow: hidden;
+    border-radius: 10px;
   }
 
   .masonry-item img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
   }
 
-  .masonry-item:hover img { transform: scale(1.04); }
 
   .gallery-cta { text-align: center; }
 
@@ -465,9 +464,10 @@
   /* ─── CONTACT STRIP ───────────────────────────────────── */
   .contact-strip {
     position: relative;
-    min-height: 62vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
   }
 
@@ -487,12 +487,7 @@
   .contact-strip-img::after {
     content: '';
     position: absolute; inset: 0;
-    background: linear-gradient(
-      100deg,
-      rgba(0,0,0,0.88) 0%,
-      rgba(0,0,0,0.6) 55%,
-      rgba(0,0,0,0.2) 100%
-    );
+    background: rgba(0,0,0,0.62);
   }
 
   .contact-strip-content {
@@ -500,6 +495,7 @@
     z-index: 2;
     padding: clamp(60px, 8vw, 100px) var(--inset);
     max-width: 620px;
+    text-align: center;
   }
 
   .contact-strip-content h2 {
@@ -556,7 +552,17 @@
   .contact-links a:hover::before { width: 36px; }
 
   /* Contact buttons with hover tooltip */
-  .contact-btn { position: relative; }
+  .contact-btn {
+    position: relative;
+    padding: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+  }
   .contact-tip {
     position: absolute;
     bottom: calc(100% + 10px);
@@ -675,14 +681,16 @@
     transition: opacity 0.25s;
     width: clamp(110px, 11vw, 150px);
     padding: 12px 10px;
+    overflow: hidden;
   }
 
   .partner-item:hover { opacity: 1; }
 
   .partner-logo-img {
+    max-width: 100%;
     width: auto;
-    height: 60px;
-    max-width: 120px;
+    height: auto;
+    max-height: 60px;
     object-fit: contain;
     filter: brightness(0) invert(1);
   }
@@ -753,6 +761,23 @@
     text-transform: uppercase;
   }
 
+  .partner-logo-text--house-beautiful {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
+  }
+
+  .partner-logo-text--ad {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 4.2rem;
+    height: auto;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
   .partner-logo-img--press {
     filter: invert(1);
   }
@@ -764,7 +789,15 @@
     .partner-category-inner { display: flex; flex-direction: column; align-items: flex-start; padding-left: 0 !important; }
     .partner-category-label { width: auto; margin-bottom: 2px; margin-left: 0 !important; }
     .partner-item { width: calc(33.33% - 4px); padding: 8px 6px; }
-    .partner-logo-img { height: 40px; }
+    .partner-logo-img { max-height: 40px; height: auto; }
+  }
+
+  @media (min-width: 769px) {
+    .press-partner-list .partner-item:nth-child(1) { order: 1; }
+    .press-partner-list .partner-item:nth-child(2) { order: 3; }
+    .press-partner-list .partner-item:nth-child(3) { order: 2; }
+    .press-partner-list .partner-item:nth-child(4) { order: 4; }
+    .press-partner-list .partner-item:nth-child(5) { order: 5; }
   }
 
   /* ─── FOOTER ──────────────────────────────────────────── */
@@ -843,11 +876,96 @@
   }
 
   @media (max-width: 480px) {
-    .masonry { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; columns: unset; }
-    .masonry-item { margin-bottom: 0; }
+    .masonry { display: block; columns: 2; column-gap: 8px; }
+    .masonry-item { margin-bottom: 8px; }
     .cta-group { flex-direction: column; align-items: flex-start; }
     .btn-primary, .btn-ghost { width: auto; align-self: flex-start; }
+    .contact-strip .cta-group { flex-direction: row; align-items: center; justify-content: center; }
+    .partner-item { padding: 6px 4px; }
+    .partner-logo-img { height: 32px; }
+    .partner-logo-text { height: 44px; font-size: 0.85em; }
+    .partner-logo-text--ad { font-size: 3.2rem; height: auto; }
+    .partner-logo-text--traditional-home { letter-spacing: 0.06em; }
+    .partner-name { font-size: 0.62rem; }
   }
+
+  /* ─── LIGHTBOX ────────────────────────────────────────── */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0,0,0,0.96);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox.open {
+    display: flex;
+    animation: lbIn 0.22s ease;
+  }
+
+  @keyframes lbIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .lightbox-img {
+    max-width: 92vw;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+    cursor: default;
+    user-select: none;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 32px;
+    background: none; border: none;
+    color: var(--cream);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    padding: 8px;
+  }
+
+  .lightbox-close:hover { opacity: 1; }
+
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; border: none;
+    color: var(--cream);
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 20px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    user-select: none;
+  }
+
+  .lightbox-nav:hover { opacity: 1; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+
+  .lightbox-counter {
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(242,237,230,0.4);
+  }
+
+  .masonry-item { cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .masonry-item:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(0,0,0,0.5); z-index: 1; position: relative; }
 </style>
 <script type="application/ld+json">
 {
@@ -936,7 +1054,7 @@
   </div>
   <div class="hero-content">
     <div class="eyebrow">Fine Custom Cabinetry</div>
-    <h1>Custom Cabinetry<br>Built the <em>Right Way</em></h1>
+    <h1>Custom Cabinets<br>Built the <em>Right Way</em></h1>
     <p class="hero-sub">With intention, premium materials, and the finest craftsmanship. From initial design through final installation, every detail is executed to perform beautifully for years to come. Serving California and the greater area for over 30 years.</p>
     <div class="cta-group">
       <a href="difference/" class="btn-primary">Our Work</a>
@@ -1028,15 +1146,15 @@
   </div>
   <div class="contact-strip-content reveal">
     <div class="eyebrow" style="margin-bottom:24px">Begin Your Project</div>
-    <div style="display: inline-flex; flex-direction: column; align-items: stretch;">
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <h2><em style="white-space: nowrap;">Ready to Build?</em></h2>
       <p style="max-width: none;">Every exceptional home starts with a conversation. Whether you have a clear vision or are just beginning to dream, we're here to listen, advise, and create your perfect <a href="custom-cabinets/" style="color:var(--gold);text-decoration:none;">custom cabinets</a>.</p>
     </div>
     <div style="height: 28px;"></div>
-    <div class="cta-group">
-      <a id="home-call" href="#" class="btn-primary contact-btn">Call<span class="contact-tip"></span></a>
-      <a id="home-sms" href="#" class="btn-ghost contact-btn">Text<span class="contact-tip"></span></a>
-      <a href="mailto:inquiries@handjcabinets.com" class="btn-ghost contact-btn">Email<span class="contact-tip">inquiries@handjcabinets.com</span></a>
+    <div class="cta-group" style="justify-content: center;">
+      <a id="home-call" href="#" class="btn-ghost contact-btn" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.68 11.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="contact-tip"></span></a>
+      <a id="home-sms" href="#" class="btn-ghost contact-btn" aria-label="Text us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="contact-tip"></span></a>
+      <a href="mailto:inquiries@handjcabinets.com" class="btn-ghost contact-btn" aria-label="Email us"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span class="contact-tip">inquiries@handjcabinets.com</span></a>
     </div>
   </div>
 </section>
@@ -1051,16 +1169,16 @@
   <div class="partner-category" style="border-bottom: none; padding-bottom: 0;">
     <div class="partner-category-inner">
     <div class="partner-category-label">Press</div>
-    <div class="partner-list">
+    <div class="partner-list press-partner-list">
 
       <a href="https://www.californiahomedesign.com/" class="partner-item" target="_blank" rel="noopener">
         <img class="partner-logo-img partner-logo-img--press" src="https://www.californiahomedesign.com/wp-content/uploads/2022/12/97x140.jpg" alt="California Home+Design logo">
         <span class="partner-name">California Home+Design</span>
       </a>
 
-      <a href="https://www.housebeautiful.com/" class="partner-item" target="_blank" rel="noopener">
-        <img class="partner-logo-img" src="https://www.housebeautiful.com/_assets/design-tokens/housebeautiful/static/images/logos/logo.d4c2c6d.svg?primary=%2523ffffff" alt="House Beautiful logo">
-        <span class="partner-name">House Beautiful</span>
+      <a href="https://www.architecturaldigest.com/story/a-laguna-beach-home-designed-by-studio-gutow" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--ad">AD</span>
+        <span class="partner-name">Architectural Digest</span>
       </a>
 
       <a href="https://www.instagram.com/coastal_living/" class="partner-item" target="_blank" rel="noopener">
@@ -1071,6 +1189,11 @@
       <a href="https://www.instagram.com/traditionalhome/" class="partner-item" target="_blank" rel="noopener">
         <span class="partner-logo-text partner-logo-text--traditional-home">Traditional Home</span>
         <span class="partner-name">Traditional Home</span>
+      </a>
+
+      <a href="https://www.housebeautiful.com/" class="partner-item" target="_blank" rel="noopener">
+        <span class="partner-logo-text partner-logo-text--house-beautiful">House Beautiful</span>
+        <span class="partner-name">House Beautiful</span>
       </a>
 
     </div>
@@ -1221,7 +1344,52 @@
   _sms.querySelector('.contact-tip').textContent = _label;
 </script>
 
+<!-- ─── LIGHTBOX ──────────────────────────────────────── -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lb-close" class="lightbox-close" aria-label="Close">&#x2715;</button>
+  <button id="lb-prev" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#x2039;</button>
+  <img id="lb-img" class="lightbox-img" src="" alt="">
+  <button id="lb-next" class="lightbox-nav lightbox-next" aria-label="Next image">&#x203A;</button>
+  <span id="lb-counter" class="lightbox-counter"></span>
+</div>
 
+<script>
+(function () {
+  const items = Array.from(document.querySelectorAll('.masonry-item img'));
+  const lb    = document.getElementById('lightbox');
+  const img   = document.getElementById('lb-img');
+  const ctr   = document.getElementById('lb-counter');
+  let cur = 0;
+
+  function show(i) {
+    cur = (i + items.length) % items.length;
+    img.src = items[cur].src;
+    img.alt = items[cur].alt;
+    ctr.textContent = (cur + 1) + ' / ' + items.length;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  items.forEach((el, i) => el.closest('.masonry-item').addEventListener('click', () => show(i)));
+
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', function(e) { e.stopPropagation(); show(cur - 1); });
+  document.getElementById('lb-next').addEventListener('click', function(e) { e.stopPropagation(); show(cur + 1); });
+  lb.addEventListener('click', function(e) { if (e.target === lb) close(); });
+
+  document.addEventListener('keydown', function(e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  show(cur - 1);
+    if (e.key === 'ArrowRight') show(cur + 1);
+  });
+})();
+</script>
 
 </body>
 </html>
