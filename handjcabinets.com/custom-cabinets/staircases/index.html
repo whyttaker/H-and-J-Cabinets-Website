@@ -41,14 +41,14 @@
   .article-section p { font-family: 'EB Garamond', Georgia, serif; font-size: clamp(16px,1.1vw,18px); color: rgba(242,237,230,0.75); line-height: 1.85; margin-bottom: 18px; }
   .article-section p:last-child { margin-bottom: 0; }
   .img-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px; }
-  .img-trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 40px; align-items: start; }
-  .img-trio img { aspect-ratio: 4/3; object-fit: cover; }
+  .img-trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 40px; align-items: start; overflow: hidden; }
+  .img-trio img { aspect-ratio: 4/3; object-fit: cover; width: 100%; max-width: 100%; min-width: 0; display: block; }
   .img-feature { margin-top: 40px; }
   .img-feature--side { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 40px; }
   .img-feature--side.reverse { direction: rtl; }
   .img-feature--side.reverse > * { direction: ltr; }
   .img-caption { font-family: 'EB Garamond', Georgia, serif; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(212,168,67,0.55); margin-top: 10px; }
-  .img-pair img, .img-feature img, .img-feature--side img { width: 100%; display: block; }
+  .img-pair img, .img-trio img, .img-feature img, .img-feature--side img { width: 100%; display: block; }
   .feature-list-labeled { list-style: none; display: flex; flex-direction: column; margin-top: 8px; }
   .feature-list-labeled li { display: flex; flex-direction: column; gap: 6px; padding: 22px 0; border-bottom: 1px solid rgba(212,168,67,0.1); font-family: 'EB Garamond', Georgia, serif; font-size: clamp(15px,1.05vw,17px); color: rgba(242,237,230,0.7); line-height: 1.7; }
   .feature-list-labeled li:first-child { border-top: 1px solid rgba(212,168,67,0.1); }
@@ -66,16 +66,17 @@
   .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
   .reveal.visible { opacity: 1; transform: none; }
-  @media (max-width: 900px) { .img-pair, .img-trio { grid-template-columns: 1fr; } .img-feature--side { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .img-pair, .img-trio { grid-template-columns: 1fr; } .img-trio img { aspect-ratio: 16/9; object-fit: cover; } .img-feature--side { grid-template-columns: 1fr; } }
   @media (max-width: 768px) { .hero-content { padding: 0 28px 60px; } }
+  @media (max-width: 480px) { .img-trio { grid-template-columns: 1fr; } .article-section img { aspect-ratio: 16/9; object-fit: cover; } }
 
   /* ─── BACKLINK SECTION ─── */
-  .services-nav { padding: clamp(40px,6vw,72px) var(--inset); border-top: 1px solid rgba(212,168,67,0.1); }
-  .services-nav-label { font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
-  .services-nav-label::after { content: ''; flex: 1; height: 1px; background: rgba(212,168,67,0.2); }
-  .services-tag-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-  .services-tag { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(212,168,67,0.25); padding: 7px 16px; text-decoration: none; transition: background 0.25s, border-color 0.25s; white-space: nowrap; }
-  .services-tag:hover { background: rgba(212,168,67,0.08); border-color: rgba(212,168,67,0.5); }
+  .services-nav { padding: clamp(40px,6vw,72px) var(--inset); border-top: 1px solid rgba(212,168,67,0.1); text-align: center; }
+  .services-nav-label { font-family: 'EB Garamond', Georgia, serif; font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--grey); margin-bottom: 20px; display: block; }
+  .services-nav-label::after { display: none; }
+  .services-tag-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .services-tag { font-family: 'EB Garamond', Georgia, serif; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(212,168,67,0.35); border-radius: 999px; padding: 10px 22px; text-decoration: none; transition: background 0.25s, border-color 0.25s, color 0.25s; white-space: nowrap; display: inline-block; }
+  .services-tag:hover { background: rgba(212,168,67,0.1); border-color: var(--gold); }
   .services-tag.parent { color: var(--cream); border-color: rgba(242,237,230,0.2); font-size: 11px; letter-spacing: 0.22em; }
   .services-tag.parent:hover { border-color: var(--gold); color: var(--gold); }
 </style>
@@ -131,10 +132,6 @@
     </div>
     <div class="img-trio reveal"><img src="../../content/pictures/mg_5131.jpg" alt="Custom staircase with white oak treads, wrought iron balusters, and painted newel posts, Newport Beach"><img src="../../content/pictures/mg_5136.jpg" alt="Custom open-riser staircase with premium hardwood treads and custom railing, Corona del Mar"><img src="../../content/pictures/img_5451.jpg" alt="Custom staircase installation with curved stringer and architectural millwork detail, Laguna Beach"></div>
   </div>
-
-  <div class="article-section reveal" style="border-top:1px solid rgba(212,168,67,0.1);padding-top:clamp(32px,4vw,56px);">
-    <p style="font-family:'EB Garamond',Georgia,serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey);">Serving Newport Beach, Corona del Mar, Irvine, Laguna Beach, and Orange County.</p>
-  </div>
 </main>
 
 
@@ -159,6 +156,22 @@
       <a href="../interior-doors/" class="services-tag">Interior Doors</a>
       <a href="../bed-frames/" class="services-tag">Bed Frames</a>
       <a href="../coffee-tables/" class="services-tag">Coffee Tables</a>
+  </div>
+</section>
+
+
+<section class="services-nav reveal">
+  <div class="services-nav-label">Where We Serve</div>
+  <div class="services-tag-grid">
+    <a href="../newport-beach/" class="services-tag">Newport Beach</a>
+    <a href="../corona-del-mar/" class="services-tag">Corona Del Mar</a>
+    <a href="../irvine/" class="services-tag">Irvine</a>
+    <a href="../laguna-beach/" class="services-tag">Laguna Beach</a>
+    <div style="width:100%;height:0;"></div>
+    <a href="../huntington-beach/" class="services-tag">Huntington Beach</a>
+    <a href="../mission-viejo/" class="services-tag">Mission Viejo</a>
+    <a href="../orange-county/" class="services-tag">Orange County</a>
+    <a href="../southern-california/" class="services-tag">Southern California</a>
   </div>
 </section>
 

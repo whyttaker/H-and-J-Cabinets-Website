@@ -48,13 +48,13 @@
   .article-section p:last-child { margin-bottom: 0; }
 
   .img-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px; }
-  .img-trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 40px; }
+  .img-trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 40px; overflow: hidden; }
   .img-feature { margin-top: 40px; }
   .img-feature--side { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 40px; }
   .img-feature--side.reverse { direction: rtl; }
   .img-feature--side.reverse > * { direction: ltr; }
   .img-caption { font-family: 'EB Garamond', Georgia, serif; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(212,168,67,0.55); margin-top: 10px; }
-  .img-pair img, .img-trio img, .img-feature img { width: 100%; display: block; }
+  .img-pair img, .img-trio img, .img-feature img { width: 100%; max-width: 100%; min-width: 0; display: block; }
   .img-feature--side img { width: 100%; display: block; }
 
   /* Scope grid — collage layout */
@@ -68,8 +68,9 @@
   .scope-item:nth-child(2) img { height: 340px; }
   .scope-item:nth-child(3) img,
   .scope-item:nth-child(4) img { height: 260px; }
-  .scope-item img { width: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
-  .scope-item:hover img { transform: scale(1.04); }
+  .scope-item img { width: 100%; object-fit: cover; display: block; }
+  .scope-item { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .scope-item:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(0,0,0,0.5); z-index: 1; }
   .scope-item-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 24px; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; font-weight: 300; font-style: italic; color: var(--cream); letter-spacing: 0.03em; }
 
   .feature-list-labeled { list-style: none; display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
@@ -111,6 +112,7 @@
     .img-feature--side { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) { .hero-content { padding: 0 28px 60px; } }
+  @media (max-width: 480px) { .article-section img { aspect-ratio: 16/9; object-fit: cover; } }
 </style>
 </head>
 <body>
@@ -193,6 +195,22 @@
   </div>
 
 </main>
+
+
+<section class="services-nav reveal">
+  <div class="services-nav-label">Where We Serve</div>
+  <div class="services-tag-grid">
+    <a href="../newport-beach/" class="services-tag">Newport Beach</a>
+    <a href="../corona-del-mar/" class="services-tag">Corona Del Mar</a>
+    <a href="../irvine/" class="services-tag">Irvine</a>
+    <a href="../laguna-beach/" class="services-tag">Laguna Beach</a>
+    <div style="width:100%;height:0;"></div>
+    <a href="../huntington-beach/" class="services-tag">Huntington Beach</a>
+    <a href="../mission-viejo/" class="services-tag">Mission Viejo</a>
+    <a href="../orange-county/" class="services-tag">Orange County</a>
+    <a href="../southern-california/" class="services-tag">Southern California</a>
+  </div>
+</section>
 
 <section class="cta-strip">
   <h2>Planning a built-in for your home?</h2>
