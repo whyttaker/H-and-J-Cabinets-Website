@@ -913,7 +913,7 @@
 
   .lightbox-img {
     max-width: 92vw;
-    max-height: 90vh;
+    max-height: calc(100vh - 120px);
     object-fit: contain;
     display: block;
     cursor: default;
@@ -954,16 +954,39 @@
   .lightbox-prev { left: 8px; }
   .lightbox-next { right: 8px; }
 
-  .lightbox-counter {
+  .lightbox-meta {
     position: absolute;
-    bottom: 20px; left: 50%;
+    bottom: 18px; left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .lightbox-counter {
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(242,237,230,0.4);
   }
+  .lightbox-gallery-link {
+    display: inline-block;
+    padding: 10px 26px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 999px;
+    color: var(--cream, #f2ede6);
+    border: 1px solid rgba(242,237,230,0.35);
+    background: transparent;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  .lightbox-gallery-link:hover { border-color: var(--gold, #d4a84b); color: var(--gold, #d4a84b); }
 
   .masonry-item { cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .masonry-item:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(0,0,0,0.5); z-index: 1; position: relative; }
@@ -1109,22 +1132,22 @@
 <section class="gallery-preview" aria-label="Gallery preview">
   <div class="masonry reveal">
     <div class="masonry-item">
-      <img src="/content/pictures/hj-2.png" alt="Luxury custom kitchen cabinets Orange County California" loading="lazy">
+      <img src="/content/pictures/gallery/white-kitchen-butcher-block-island-casement-window.png" alt="Luxury custom kitchen cabinets Orange County California" loading="lazy">
     </div>
     <div class="masonry-item">
-      <img src="/content/pictures/hj-3.png" alt="Modern custom cabinetry Newport Beach luxury home" loading="lazy">
+      <img src="/content/pictures/gallery/charcoal-gray-panel-wall-arched-mirror-niche.png" alt="Modern custom cabinetry Newport Beach luxury home" loading="lazy">
     </div>
     <div class="masonry-item">
-      <img src="/content/pictures/hj-4.png" alt="High-end custom kitchen cabinet design Orange County CA" loading="lazy">
+      <img src="/content/pictures/gallery/white-kitchen-dark-island-coffered-beams-city-view.png" alt="High-end custom kitchen cabinet design Orange County CA" loading="lazy">
     </div>
     <div class="masonry-item">
-      <img src="/content/pictures/hj-5.png" alt="Bespoke custom cabinet installation Southern California" loading="lazy">
+      <img src="/content/pictures/gallery/white-oak-bathroom-floating-vanity-polka-dot-tile.png" alt="Bespoke custom cabinet installation Southern California" loading="lazy">
     </div>
     <div class="masonry-item">
-      <img src="/content/pictures/hj-6.png" alt="Premium handcrafted kitchen cabinets Newport Beach CA" loading="lazy">
+      <img src="/content/pictures/gallery/natural-oak-kitchen-double-island-hardwood-floor.png" alt="Premium handcrafted kitchen cabinets Newport Beach CA" loading="lazy">
     </div>
     <div class="masonry-item">
-      <img src="/content/pictures/hj-7.png" alt="Custom built-in cabinetry Orange County luxury home" loading="lazy">
+      <img src="/content/pictures/gallery/white-kitchen-inset-cabinet-brass-knob-marble-counter.png" alt="Custom built-in cabinetry Orange County luxury home" loading="lazy">
     </div>
   </div>
   <div class="gallery-cta reveal">
@@ -1351,7 +1374,10 @@
   <button id="lb-prev" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#x2039;</button>
   <img id="lb-img" class="lightbox-img" src="" alt="">
   <button id="lb-next" class="lightbox-nav lightbox-next" aria-label="Next image">&#x203A;</button>
-  <span id="lb-counter" class="lightbox-counter"></span>
+  <div class="lightbox-meta">
+    <span id="lb-counter" class="lightbox-counter"></span>
+    <a href="/gallery/" class="lightbox-gallery-link">See the Full Gallery &rarr;</a>
+  </div>
 </div>
 
 <script>

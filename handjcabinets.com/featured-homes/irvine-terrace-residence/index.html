@@ -154,6 +154,63 @@
     .btn-row { flex-direction: column; align-items: center; }
   }
 
+
+  /* Gallery Teaser */
+  .gallery-gap { height: clamp(40px, 5vw, 72px); }
+  .gallery-teaser {
+    position: relative;
+    min-height: 480px;
+    background: url('/content/pictures/gallery/eric-olsen-kitchen-dark-charcoal-navy-tile-island.jpg') center 40% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2px;
+  }
+  .gallery-teaser::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+      #0c0c0c 0%,
+      rgba(0, 0, 0, 0.38) 32%,
+      rgba(0, 0, 0, 0.38) 68%,
+      #0c0c0c 100%
+    );
+    z-index: 0;
+  }
+  .gallery-teaser-inner {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1.5rem 3.5rem;
+  }
+  .gallery-teaser-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0.9rem;
+  }
+  .gallery-teaser-inner h2 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin: 0 0 2rem;
+    line-height: 1.15;
+  }
+  .gallery-teaser-inner h2 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .gallery-teaser-inner .btn-ghost {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #fff;
+  }
+  .gallery-teaser-inner .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
 </style>
 </head>
 <body>
@@ -252,6 +309,16 @@
       <span class="related-title">Cameo Shores Residence</span>
       <span class="related-loc">Corona del Mar</span>
     </a>
+  </div>
+</section>
+
+<!-- ─── Gallery Teaser ──────────────────────────────── -->
+<div class="gallery-gap"></div>
+<section class="gallery-teaser" aria-label="Explore our gallery">
+  <div class="gallery-teaser-inner">
+    <p class="gallery-teaser-eyebrow">Our Portfolio</p>
+    <h2>See the Work<br><em>Up Close</em></h2>
+    <a href="/gallery/" class="btn-ghost">Explore the Gallery &rarr;</a>
   </div>
 </section>
 
