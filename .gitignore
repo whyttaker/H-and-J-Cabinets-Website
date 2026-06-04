@@ -7,9 +7,13 @@ handjcabinets.com/content/videos/hero-showcase-video.mp4
 # OS files
 .DS_Store
 
-# Playwright MCP dev artifacts
+# Dev/verification screenshots
 .playwright-mcp/
-partners-full.png
+*.png
+*.jpg
+!handjcabinets.com/**/*.png
+!handjcabinets.com/**/*.jpg
+!handjcabinets.com/**/*.jpeg
 
 # Git worktrees
 .worktrees/
