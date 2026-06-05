@@ -260,7 +260,12 @@
   }
 
   .masonry-grid {
+    columns: 4 200px;
+    column-gap: var(--gap);
+  }
+  .masonry-grid.js-built {
     display: flex;
+    columns: unset;
     align-items: flex-start;
     gap: var(--gap);
   }
@@ -270,10 +275,11 @@
     flex-direction: column;
     gap: var(--gap);
   }
+  .js-built .gallery-item { margin-bottom: 0; }
 
   .gallery-item {
     break-inside: avoid;
-    margin-bottom: 0;
+    margin-bottom: var(--gap);
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -1386,6 +1392,7 @@ window.__revealReady = true;
 
     grid.innerHTML = '';
     colDivs.forEach(function (c) { grid.appendChild(c); });
+    grid.classList.add('js-built');
   }
 
   build();
@@ -1536,140 +1543,140 @@ window.__revealReady = true;
   ];
 
   var links = [
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    {l:'Entry Doors',h:'/custom-cabinets/entry-doors/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'TV Cabinets',h:'/custom-cabinets/tv-cabinets/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    null,
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    null,
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Transitional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    null,
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    null,
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    null,
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
+    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'},
+    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Traditional'},
+    null,
+    {l:'Cottage Cabinets',h:'/custom-cabinets/cottage/',s:'Cottage'},
+    null,
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
+    null,
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    null,
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
+    null,
+    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
+    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
+    null,
+    null,
+    null,
+    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
     {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    {l:'Entry Doors',h:'/custom-cabinets/entry-doors/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'TV Cabinets',h:'/custom-cabinets/tv-cabinets/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    null
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    null
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Transitional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    null
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    null
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    null
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'}
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'}
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'}
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Traditional'}
-    null
-    {l:'Cottage Cabinets',h:'/custom-cabinets/cottage/',s:'Cottage'}
-    null
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'}
-    null
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    null
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'}
-    null
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'}
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'}
-    null
-    null
-    null
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'}
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-  ];
+    ];
 
   var lb      = document.getElementById('lightbox');
   var lbImg   = document.getElementById('lb-img');
