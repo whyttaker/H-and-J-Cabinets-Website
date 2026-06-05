@@ -291,6 +291,8 @@
   .gallery-item img {
     width: 100%;
     height: auto;
+    max-height: 28vw;
+    object-fit: cover;
     display: block;
   }
 
@@ -1291,13 +1293,8 @@
       </div>
 
       <div class="gallery-item" role="listitem" tabindex="0" data-index="131">
-        <img src="../content/pictures/gallery/harbor-isle-powder-room-dark-walnut-vanity.jpg" alt="Custom dark walnut powder room vanity Harbor Isle" loading="eager" decoding="async" width="4000" height="6000">
-        <div class="overlay"><div class="overlay-content"><span class="item-num-label">No. 132</span><div class="view-circle"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div></div>
-      </div>
-
-      <div class="gallery-item" role="listitem" tabindex="0" data-index="132">
         <img src="../content/pictures/gallery/traditional-wine-cellar-mahogany-diamond-rack-carved.jpg" alt="Traditional mahogany wine cellar diamond rack carved cabinetry" loading="eager" decoding="async" width="900" height="500">
-        <div class="overlay"><div class="overlay-content"><span class="item-num-label">No. 133</span><div class="view-circle"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div></div>
+        <div class="overlay"><div class="overlay-content"><span class="item-num-label">No. 132</span><div class="view-circle"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div></div>
       </div>
 
     </div><!-- .masonry-grid -->
@@ -1315,7 +1312,7 @@
       <img id="lb-img" src="" alt="Cabinet photo">
     </div>
     <div class="lb-meta">
-      <span class="lb-counter" id="lb-counter">1 / 133</span>
+      <span class="lb-counter" id="lb-counter">1 / 132</span>
       <div class="lb-actions">
         <a id="lb-style" class="lb-style" href="" hidden></a>
         <a id="lb-learn" class="lb-learn" href="" hidden></a>
@@ -1378,21 +1375,74 @@ window.__revealReady = true;
     var gap = getComputedStyle(grid).gap || '4px';
 
     /* create column divs */
-    var colDivs = [];
+    var colDivs = [], colHeights = [];
     for (var i = 0; i < n; i++) {
       var d = document.createElement('div');
       d.className = 'masonry-col';
       colDivs.push(d);
+      colHeights.push(0);
     }
 
-    /* round-robin: item 0→col0, 1→col1, 2→col2, 3→col3, 4→col0 … */
-    items.forEach(function (item, i) {
-      colDivs[i % n].appendChild(item);
+    /* shortest-column-first: each item goes into the shortest column,
+       using the image's width/height attributes to estimate rendered height */
+    var gapPx = parseFloat(getComputedStyle(grid).gap) || 4;
+    var colW = (grid.offsetWidth - gapPx * (n - 1)) / n;
+    var maxItemH = window.innerWidth * 0.28; /* matches max-height: 28vw */
+
+    items.forEach(function (item) {
+      /* pick the shortest column */
+      var minH = colHeights[0], minIdx = 0;
+      for (var j = 1; j < n; j++) {
+        if (colHeights[j] < minH) { minH = colHeights[j]; minIdx = j; }
+      }
+      colDivs[minIdx].appendChild(item);
+
+      /* estimate rendered height — capped at max-height: 28vw */
+      var img = item.querySelector('img');
+      var iw = img ? parseInt(img.getAttribute('width'))  || 1 : 1;
+      var ih = img ? parseInt(img.getAttribute('height')) || 1 : 1;
+      var renderedH = Math.min((ih / iw) * colW, maxItemH);
+      colHeights[minIdx] += renderedH + gapPx;
     });
 
+    /* add to DOM so we can measure actual rendered heights */
     grid.innerHTML = '';
     colDivs.forEach(function (c) { grid.appendChild(c); });
     grid.classList.add('js-built');
+
+    /* correction: repeatedly try every pair of columns — swap their
+       last items if the swap reduces the spread. Stop when no swap
+       improves things or spread is within half a column-width. */
+    var improved = true;
+    while (improved) {
+      improved = false;
+      var h = colDivs.map(function (c) { return c.offsetHeight; });
+      var spread = Math.max.apply(null, h) - Math.min.apply(null, h);
+      if (spread <= colW * 0.5) break;
+
+      for (var a = 0; a < n && !improved; a++) {
+        for (var b = a + 1; b < n && !improved; b++) {
+          var elA = colDivs[a].lastElementChild;
+          var elB = colDivs[b].lastElementChild;
+          if (!elA || !elB || elA === elB) continue;
+
+          /* try the swap */
+          colDivs[b].appendChild(elA);
+          colDivs[a].appendChild(elB);
+
+          var newH = colDivs.map(function (c) { return c.offsetHeight; });
+          var newSpread = Math.max.apply(null, newH) - Math.min.apply(null, newH);
+
+          if (newSpread < spread) {
+            improved = true;   /* keep the swap, restart */
+          } else {
+            /* undo */
+            colDivs[a].appendChild(elA);
+            colDivs[b].appendChild(elB);
+          }
+        }
+      }
+    }
   }
 
   build();
@@ -1538,7 +1588,6 @@ window.__revealReady = true;
     '../content/pictures/gallery/luxury-leather-chair-fur-throw-detail-interior.jpg',
     '../content/pictures/gallery/newport-cliff-residence-front-exterior-stone-glass-garage-night.jpg',
     '../content/pictures/gallery/newport-cliff-residence-exterior-stone-wall-wood-slat-night.jpg',
-    '../content/pictures/gallery/harbor-isle-powder-room-dark-walnut-vanity.jpg',
     '../content/pictures/gallery/traditional-wine-cellar-mahogany-diamond-rack-carved.jpg',
   ];
 
@@ -1674,7 +1723,6 @@ window.__revealReady = true;
     null,
     null,
     null,
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
     {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
     ];
 
