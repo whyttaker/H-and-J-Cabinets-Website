@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gallery &#8212; H &amp; J Cabinets</title>
 <meta name="description" content="Browse our gallery of custom cabinetry, from modern masterpieces to timeless classics, each piece reflects our dedication to excellence.">
 <link rel="canonical" href="https://handjcabinets.com/gallery/">
@@ -41,7 +41,7 @@
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 17px;
     line-height: 1.65;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100); min-height: 100svh; height: 100svh;
     overflow-x: hidden;
   }
 
@@ -62,7 +62,7 @@
   /* ── Hero ────────────────────────────────────────────── */
   .gallery-hero {
     position: relative;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100); height: 100svh;
     min-height: 640px;
     max-height: 980px;
     overflow: hidden;

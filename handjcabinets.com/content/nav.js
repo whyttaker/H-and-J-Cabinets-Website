@@ -13,13 +13,15 @@
     '.site-header {',
     '  position: fixed;',
     '  top: 0; left: 0; right: 0;',
-    '  z-index: 200;',
+    '  z-index: 10000;',
     '  display: flex;',
     '  align-items: center;',
     '  justify-content: space-between;',
     '  padding: 22px var(--inset, clamp(24px, 5vw, 72px));',
     '  background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%);',
     '  transition: background 0.4s, backdrop-filter 0.4s;',
+    '  -webkit-transform: translateZ(0);',
+    '  transform: translateZ(0);',
     '}',
     '.site-header.scrolled {',
     '  background: rgba(0,0,0,0.92);',
@@ -275,7 +277,10 @@
     btn.classList.add('open');
     btn.setAttribute('aria-expanded', 'true');
     overlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    /* Use position:fixed on body to prevent scroll on iOS Safari
+       (overflow:hidden breaks position:fixed on iOS) */
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
   }
 
   function closeMenu() {
@@ -283,7 +288,8 @@
     btn.classList.remove('open');
     btn.setAttribute('aria-expanded', 'false');
     overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
     setTimeout(function () { overlay.classList.remove('open'); }, 350);
   }
 
@@ -308,6 +314,21 @@
   window.addEventListener('scroll', function () {
     hdr.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
+
+  /* ── iOS Safari viewport height lock ─────────────────────────────────────
+     Prevents the ~60px jump when the address bar shows/hides by caching
+     the initial viewport height in --vh and only updating on orientation
+     change (not on every scroll-triggered resize). Hero sections use
+     height: calc(var(--vh, 1vh) * 100) as a non-jumping alternative. */
+  function setVH() {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', vh + 'px');
+  }
+  setVH();
+  /* Only re-measure on orientation change, not on scroll-resize */
+  window.addEventListener('orientationchange', function () {
+    setTimeout(setVH, 200);
+  });
 
   /* ── Scroll reveal (only if page hasn't set up its own observer) ─────── */
   function _navSetupReveal() {
