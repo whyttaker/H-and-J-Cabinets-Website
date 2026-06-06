@@ -11,27 +11,15 @@
 <link rel="icon" href="/content/pictures/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/content/pictures/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/content/pictures/apple-touch-icon.png">
+<link rel="preload" as="script" href="/content/gallery-data.js">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="/content/common.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --gold:       #d4a843;
-    --gold-light: #ead472;
-    --gold-dim:   rgba(212, 168, 67, 0.1);
-    --bg:         #000000;
-    --bg-mid:     #161410;
-    --bg-card:    #1a1815;
-    --text:       #f2ede3;
-    --text-mute:  #8a8278;
-    --gap:        4px;
-    --cream:      #f2ede3;
-    --grey:       #8a8278;
-    --inset:      clamp(24px, 5vw, 72px);
-  }
 
   html { scroll-behavior: smooth; }
 
@@ -79,10 +67,6 @@
     animation: heroZoom 9s ease-out forwards;
   }
 
-  @keyframes heroZoom {
-    from { transform: scale(1.07); }
-    to   { transform: scale(1.00); }
-  }
 
   .hero-img-wrap::after {
     content: '';
@@ -176,10 +160,6 @@
     animation: scrollPulse 3s ease-in-out infinite;
   }
 
-  @keyframes scrollPulse {
-    0%, 100% { opacity: 0.25; }
-    60%       { opacity: 0.9; }
-  }
 
   /* ── Section Label ───────────────────────────────────── */
   .section-label {
@@ -1348,7 +1328,7 @@
 })();
 </script>
 
-
+<script src="/content/gallery-data.js"></script>
 
 <!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
@@ -1409,275 +1389,8 @@ window.__revealReady = true;
 
 
   /* Lightbox */
-  var images = [
-    '../content/pictures/gallery/hj-cabinets-kitchen-design-sketch-sun-residence.jpg',
-    '../content/pictures/gallery/bel-air-white-glass-front-kitchen-cabinets-brass-hardware.jpg',
-    '../content/pictures/gallery/big-canyon-custom-bunk-room-white-built-ins.jpg',
-    '../content/pictures/gallery/master-bathroom-walnut-vanity-cathedral-beam-ceiling.jpg',
-    '../content/pictures/gallery/white-kitchen-inset-cabinet-brass-knob-marble-counter.png',
-    '../content/pictures/gallery/kapiolani-estate-hawaii-master-retreat-design-sketch.jpg',
-    '../content/pictures/gallery/white-bar-cabinet-glass-shelving-wine-storage-steel-doors.jpg',
-    '../content/pictures/gallery/white-built-in-sideboard-cubby-storage-staircase.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-column-brass-hardware-detail.jpg',
-    '../content/pictures/gallery/harbor-isle-his-master-closet-white-glass-front-cabinetry.jpg',
-    '../content/pictures/gallery/harbor-isle-bar-traditional-wood-green-granite.jpg',
-    '../content/pictures/gallery/entry-hall-arched-wood-louvered-panel-doors.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinetry-installation-angle.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-installation-diamond-floor.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-upper-glass-cabinet-installation.jpg',
-    '../content/pictures/gallery/white-kitchen-butcher-block-island-casement-window.png',
-    '../content/pictures/gallery/traditional-entertainment-cabinet-carved-arched-niche.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-panel-glass-upper-install.jpg',
-    '../content/pictures/gallery/kapiolani-estate-hawaii-kitchen-design-sketch.jpg',
-    '../content/pictures/gallery/natural-oak-kitchen-double-island-hardwood-floor.png',
-    '../content/pictures/gallery/white-kitchen-glass-upper-cabinets-range-hood-detail.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-overview-diamond-floor.jpg',
-    '../content/pictures/gallery/big-canyon-butler-pantry-white-glass-cabinet.jpg',
-    '../content/pictures/gallery/harbor-isle-her-master-closet-white-glass-front-island.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-door-brass-tee-knob-close-up.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-wall-diamond-floor-install.jpg',
-    '../content/pictures/gallery/bel-air-wet-bar-glass-shelving-marble-counter-brass.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinetry-installation-progress.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-panel-brass-tee-knob.jpg',
-    '../content/pictures/gallery/newport-beach-marina-dock-planks-black-white-aerial.jpg',
-    '../content/pictures/gallery/white-oak-bathroom-floating-vanity-polka-dot-tile.png',
-    '../content/pictures/gallery/big-canyon-classic-kitchen-cream-wide-arched-doorway.jpg',
-    '../content/pictures/gallery/newport-beach-marina-dock-planks-black-white.jpg',
-    '../content/pictures/gallery/white-kitchen-dark-island-coffered-beams-city-view.png',
-    '../content/pictures/gallery/white-oak-kitchen-open-shelving-ceramic-dishes.jpg',
-    '../content/pictures/gallery/white-oak-cabinet-niche-cactus-styling.jpg',
-    '../content/pictures/gallery/big-canyon-classic-kitchen-wide-view-double-island.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-la-cornue-range-cabinet-wall.jpg',
-    '../content/pictures/gallery/white-oak-floating-vanity-polka-dot-tile-bathroom.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-cabinet-panel-overview-install.jpg',
-    '../content/pictures/gallery/ornate-traditional-dining-room-carved-chairs-arched-windows.jpg',
-    '../content/pictures/gallery/white-oak-modern-kitchen-open-plan-fluted-tile-backsplash.jpg',
-    '../content/pictures/gallery/modern-white-oak-kitchen-open-plan-island.jpg',
-    '../content/pictures/gallery/white-oak-cabinet-niche-overhead-cactus-pottery.jpg',
-    '../content/pictures/gallery/white-oak-kitchen-pantry-wall-cabinet-artwork-niche.jpg',
-    '../content/pictures/gallery/berry-residence-kitchen-walnut-hutch-oceanfront-view.jpg',
-    '../content/pictures/gallery/modern-staircase-pendant-lights-black-railing.jpg',
-    '../content/pictures/gallery/white-oak-built-in-dresser-upper-cabinet-display-niche.jpg',
-    '../content/pictures/gallery/white-oak-bench-end-panel-painting-fluted-wall.jpg',
-    '../content/pictures/gallery/white-bathroom-cabinets-brass-knobs-zellige-tile.jpg',
-    '../content/pictures/gallery/modern-living-room-white-oak-details-fireplace.jpg',
-    '../content/pictures/gallery/modern-stairwell-glass-bead-pendant-lights.jpg',
-    '../content/pictures/gallery/white-oak-floor-ceiling-bookcase-hallway-library.jpg',
-    '../content/pictures/gallery/white-kitchen-large-island-brass-hardware-bar-stools.jpg',
-    '../content/pictures/gallery/white-oak-built-in-banquette-dining-area-seating.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bench-cabinet-end-close-up.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bookcase-colorful-books-close-up.jpg',
-    '../content/pictures/gallery/white-oak-kitchen-drawer-base-open-shelving.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bookcase-full-width-library.jpg',
-    '../content/pictures/gallery/white-oak-floor-to-ceiling-bookcase-front-view.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-outdoor-stone-fireplace-burning.jpg',
-    '../content/pictures/gallery/white-oak-bookcase-hallway-with-room-beyond.jpg',
-    '../content/pictures/gallery/white-laundry-room-custom-cabinets-open-shelving-brass.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bench-cabinet-fluted-wall-panel.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-exterior-balcony-panoramic-city-view.jpg',
-    '../content/pictures/gallery/big-canyon-classic-kitchen-dark-walnut-cream-island.jpg',
-    '../content/pictures/gallery/big-canyon-living-room-white-built-in-bookshelves.jpg',
-    '../content/pictures/gallery/white-oak-bench-end-panel-plaid-cushion-detail.jpg',
-    '../content/pictures/gallery/modern-dark-floating-cabinet-open-wood-shelving.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-exterior-dusk-pool-stone-walls.jpg',
-    '../content/pictures/gallery/white-oak-built-in-banquette-overhead-lamp-view.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-range-wall-cabinet-install-detail.jpg',
-    '../content/pictures/gallery/white-oak-bookcase-staircase-overhead-view.jpg',
-    '../content/pictures/gallery/charcoal-gray-wood-panel-door-circular-arched-mirror.jpg',
-    '../content/pictures/gallery/white-oak-modern-open-plan-kitchen-living-room.jpg',
-    '../content/pictures/gallery/modern-stairwell-pendant-lights-close-up.jpg',
-    '../content/pictures/gallery/cream-kitchen-cabinets-herringbone-hardwood-floor.jpg',
-    '../content/pictures/gallery/white-oak-kitchen-island-upper-cabinetry.jpg',
-    '../content/pictures/gallery/modern-lit-niche-dark-floating-cabinet-backlit.jpg',
-    '../content/pictures/gallery/eric-olsen-kitchen-dark-charcoal-navy-tile-island.jpg',
-    '../content/pictures/gallery/traditional-bedroom-dark-carved-arched-doorway-fireplace.jpg',
-    '../content/pictures/gallery/ornate-carved-dark-wood-credenza-geometric-panel.jpg',
-    '../content/pictures/gallery/modern-built-in-banquette-fluted-wood-wall-panel.jpg',
-    '../content/pictures/gallery/white-oak-kitchen-counter-floral-arrangement-mug-rack.jpg',
-    '../content/pictures/gallery/modern-dark-kitchen-island-rainbow-light-herringbone-floor.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bookcase-middle-section.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bookcase-section-detail.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-kitchen-reclaimed-wood-island-cowhide.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-stone-block-feature-wall-bedroom.jpg',
-    '../content/pictures/gallery/traditional-dark-wood-bar-panel-doors-cabinetry.jpg',
-    '../content/pictures/gallery/traditional-kitchen-dark-island-barley-twist-beamed-ceiling.jpg',
-    '../content/pictures/gallery/ornate-carved-wood-cabinet-dramatic-shadow-detail.jpg',
-    '../content/pictures/gallery/living-room-lit-built-in-shelving-niche.jpg',
-    '../content/pictures/gallery/modern-lit-built-in-shelving-niche-living-room.jpg',
-    '../content/pictures/gallery/white-oak-built-in-bookcase-hallway-angle-view.jpg',
-    '../content/pictures/gallery/white-kitchen-diamond-floor-marble-island-glass-cabinets.jpg',
-    '../content/pictures/gallery/bel-air-white-kitchen-wide-view-marble-island-diamond-floor.jpg',
-    '../content/pictures/gallery/wood-paneled-study-built-in-entertainment-coffered-ceiling.jpg',
-    '../content/pictures/gallery/bel-air-wet-bar-glass-shelving-counter-level-view.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-bedroom-walnut-wall-soaking-tub.jpg',
-    '../content/pictures/gallery/modern-dark-oak-cabinet-door-sputnik-chandelier-detail.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-bathroom-dark-wood-reed-plants.jpg',
-    '../content/pictures/gallery/charcoal-gray-panel-wall-arched-mirror-niche.png',
-    '../content/pictures/gallery/custom-arched-doors-dark-mahogany-carved-fretwork.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-terrace-concrete-planter-wood-louvered.jpg',
-    '../content/pictures/gallery/cottage-residence-kitchen-white-painted-black-island.jpg',
-    '../content/pictures/gallery/kapiolani-estate-hawaii-outdoor-pavilion-pool-ocean.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-built-in-bar-glass-shelving-stone-wall.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-industrial-kitchen-reclaimed-wood-island.jpg',
-    '../content/pictures/gallery/ornate-carved-bar-corner-molding-egg-dart-detail.jpg',
-    '../content/pictures/gallery/big-canyon-fluted-cabinet-panel-powder-room-detail.jpg',
-    '../content/pictures/gallery/berry-residence-kitchen-cream-distressed-walnut-fridge-red-island.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-bathroom-walnut-cabinet-soaking-tub.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-kitchen-open-plan-reclaimed-wood.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-wine-cellar-dining-aerial-concrete.jpg',
-    '../content/pictures/gallery/traditional-kitchen-sage-green-cabinets-tile-backsplash.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-patio-stone-fireplace-outdoor-furniture.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-open-kitchen-living-dark-wood-island.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-bedroom-stone-wall-wood-slat-headboard.jpg',
-    '../content/pictures/gallery/kapiolani-estate-hawaii-bathroom-dark-mahogany-double-sink.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-black-steel-kitchen-professional-range.jpg',
-    '../content/pictures/gallery/luxury-gold-leather-dining-chair-detail.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-wine-cellar-dining-table-concrete-walls.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-living-room-wood-beam-city-lights.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-wine-cellar-barrel-island-tasting-room.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-patio-night-wood-slat-stone-seating.jpg',
-    '../content/pictures/gallery/serra-family-room-dark-floating-cabinet-open-shelving.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-reclaimed-wood-dining-city-view.jpg',
-    '../content/pictures/gallery/luxury-leather-chair-fur-throw-detail-interior.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-front-exterior-stone-glass-garage-night.jpg',
-    '../content/pictures/gallery/newport-cliff-residence-exterior-stone-wall-wood-slat-night.jpg',
-    '../content/pictures/gallery/traditional-wine-cellar-mahogany-diamond-rack-carved.jpg',
-  ];
-
-  var links = [
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    {l:'Entry Doors',h:'/custom-cabinets/entry-doors/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'TV Cabinets',h:'/custom-cabinets/tv-cabinets/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Closet Systems',h:'/custom-cabinets/closet-systems/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    null,
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    null,
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Transitional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    null,
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    null,
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    null,
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Staircases',h:'/custom-cabinets/staircases/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Transitional'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Modern'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Modern'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Contemporary'},
-    {l:'Interior Doors',h:'/custom-cabinets/interior-doors/',s:'Traditional'},
-    null,
-    {l:'Cottage Cabinets',h:'/custom-cabinets/cottage/',s:'Cottage'},
-    null,
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    {l:'Baroque Cabinets',h:'/custom-cabinets/baroque/',s:'Baroque'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Traditional'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Traditional Cabinets',h:'/custom-cabinets/traditional/',s:'Traditional'},
-    null,
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Bathroom Cabinets',h:'/custom-cabinets/bathroom/',s:'Traditional'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    null,
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Contemporary'},
-    null,
-    {l:'Modern Cabinets',h:'/custom-cabinets/modern/',s:'Contemporary'},
-    {l:'Kitchen Cabinets',h:'/custom-cabinets/kitchen/',s:'Contemporary'},
-    null,
-    null,
-    null,
-    {l:'Built-In Storage',h:'/custom-cabinets/built-in-storage/',s:'Traditional'}
-    ];
+  var images = galleryData.images;
+  var links  = galleryData.links;
 
   var lb      = document.getElementById('lightbox');
   var lbImg   = document.getElementById('lb-img');

@@ -1,0 +1,32 @@
+/* Shared CSS injected on every page via <link> in <head>.
+   Only rules that are byte-for-byte identical across all applicable pages. */
+
+:root {
+  --black:   #000000;
+  --gold:    #d4a843;
+  --cream:   #f2ede6;
+  --grey:    #7a7672;
+  --gap:     clamp(48px, 6vw, 80px);
+  --inset:   clamp(24px, 5vw, 72px);
+}
+
+/* Film grain overlay — NOT applied to gallery page (has its own z-index/opacity variant) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1.07); }
+  to   { transform: scale(1.00); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.25; }
+  60%      { opacity: 0.9; }
+}

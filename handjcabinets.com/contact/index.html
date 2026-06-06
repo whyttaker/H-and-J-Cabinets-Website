@@ -13,17 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<link rel="stylesheet" href="/content/common.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --black:   #000000;
-    --gold:    #d4a843;
-    --cream:   #f2ede6;
-    --grey:    #7a7672;
-    --gap:     clamp(48px, 6vw, 80px);
-    --inset:   clamp(24px, 5vw, 72px);
-  }
 
   html { scroll-behavior: smooth; }
 
@@ -37,15 +30,6 @@
     overflow-x: hidden;
   }
 
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  }
 
   /* ─── HERO ───────────────────────────────────────────────────── */
   .page-hero {
@@ -67,10 +51,6 @@
     animation: heroZoom 9s ease-out forwards;
   }
 
-  @keyframes heroZoom {
-    from { transform: scale(1.07); }
-    to   { transform: scale(1.00); }
-  }
 
   .hero-img-wrap::after {
     content: '';
@@ -169,10 +149,6 @@
     animation: scrollPulse 3s ease-in-out infinite;
   }
 
-  @keyframes scrollPulse {
-    0%, 100% { opacity: 0.25; }
-    60%       { opacity: 0.9; }
-  }
 
   /* ─── SECTION LABEL ──────────────────────────────────────────── */
   .section-label {

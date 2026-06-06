@@ -12,12 +12,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/content/common.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root { --black: #000000; --gold: #d4a843; --cream: #f2ede6; --grey: #7a7672; --gap: clamp(48px, 6vw, 80px); --inset: clamp(24px, 5vw, 72px); }
   html { scroll-behavior: smooth; }
   body { background: var(--black); color: var(--cream); font-family: 'EB Garamond', Georgia, serif; font-size: clamp(16px, 1.1vw, 18px); line-height: 1.75; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-  body::before { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E"); }
 
   .page-header { padding: clamp(120px, 14vw, 180px) var(--inset) clamp(48px, 6vw, 72px); border-bottom: 1px solid rgba(212,168,67,0.12); }
   .back-link { display: inline-flex; align-items: center; gap: 10px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--grey); text-decoration: none; margin-bottom: 40px; transition: color 0.25s; }
