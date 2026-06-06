@@ -667,7 +667,7 @@
       </div>
 
       <div class="gallery-item" role="listitem" tabindex="0" data-index="7">
-        <img srcset="../content/pictures/gallery/mobile/white-built-in-sideboard-cubby-storage-staircase.jpg 800w, ../content/pictures/gallery/desktop/white-built-in-sideboard-cubby-storage-staircase.jpg 1800w" sizes="(max-width: 560px) 50vw, (max-width: 900px) 33vw, 25vw" src="../content/pictures/gallery/desktop/white-built-in-sideboard-cubby-storage-staircase.jpg" alt="Custom white built-in sideboard with cubby openings" loading="lazy" decoding="async" width="4000" height="6000">
+        <img srcset="../content/pictures/gallery/mobile/white-built-in-sideboard-cubby-storage-staircase.jpg 800w, ../content/pictures/gallery/desktop/white-built-in-sideboard-cubby-storage-staircase.jpg 1800w" sizes="(max-width: 560px) 50vw, (max-width: 900px) 33vw, 25vw" src="../content/pictures/gallery/desktop/white-built-in-sideboard-cubby-storage-staircase.jpg" alt="Custom white built-in sideboard with cubby openings" loading="eager" decoding="async" width="4000" height="6000">
         <div class="overlay"><div class="overlay-content"><span class="item-num-label">No. 08</span><div class="view-circle"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div></div>
       </div>
 
@@ -1291,9 +1291,77 @@
         <div class="overlay"><div class="overlay-content"><span class="item-num-label">No. 132</span><div class="view-circle"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div></div>
       </div>
 
+
     </div><!-- .masonry-grid -->
   </div><!-- .gallery-section -->
 </section>
+
+<!-- Masonry builder runs immediately so columns are set before images load -->
+<script>
+(function () {
+  var grid = document.getElementById('gallery-grid');
+  if (!grid) return;
+
+  function numCols() {
+    var w = window.innerWidth;
+    return w < 560 ? 2 : w < 900 ? 3 : 4;
+  }
+
+  function build() {
+    var items = Array.from(grid.querySelectorAll('.gallery-item'));
+    var n = numCols();
+    var gapPx = n < 3 ? 8 : 4;
+    var colW = (grid.offsetWidth || window.innerWidth) / n - gapPx;
+
+    var colDivs = [], colH = [];
+    for (var i = 0; i < n; i++) {
+      var d = document.createElement('div');
+      d.className = 'masonry-col';
+      colDivs.push(d); colH.push(0);
+    }
+
+    items.forEach(function (item) {
+      var minH = colH[0], minI = 0;
+      for (var j = 1; j < n; j++) { if (colH[j] < minH) { minH = colH[j]; minI = j; } }
+      colDivs[minI].appendChild(item);
+      var img = item.querySelector('img');
+      var iw = img ? (parseInt(img.getAttribute('width'))  || 1) : 1;
+      var ih = img ? (parseInt(img.getAttribute('height')) || 1) : 1;
+      colH[minI] += (ih / iw) * colW + gapPx;
+    });
+
+    grid.innerHTML = '';
+    colDivs.forEach(function (c) { grid.appendChild(c); });
+    grid.classList.add('js-built');
+
+    /* correction pass — desktop only (mobile skip to avoid reflows) */
+    if (window.innerWidth < 560) return;
+    var ok = true;
+    while (ok) {
+      ok = false;
+      var heights = colDivs.map(function (c) { return c.offsetHeight; });
+      var spread  = Math.max.apply(null, heights) - Math.min.apply(null, heights);
+      if (spread <= colW * 0.5) break;
+      for (var a = 0; a < n && !ok; a++) {
+        for (var b = a + 1; b < n && !ok; b++) {
+          var eA = colDivs[a].lastElementChild, eB = colDivs[b].lastElementChild;
+          if (!eA || !eB || eA === eB) continue;
+          colDivs[b].appendChild(eA); colDivs[a].appendChild(eB);
+          var ns = Math.max.apply(null, colDivs.map(function(c){return c.offsetHeight;})) -
+                   Math.min.apply(null, colDivs.map(function(c){return c.offsetHeight;}));
+          if (ns < spread) { ok = true; } else { colDivs[a].appendChild(eA); colDivs[b].appendChild(eB); }
+        }
+      }
+    }
+  }
+
+  build();
+  var t;
+  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(build, 150); });
+})();
+</script>
+
+
 
 <!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
@@ -1352,98 +1420,6 @@ window.__revealReady = true;
     obs.observe(el);
   });
 
-
-/* ── Masonry column builder ── */
-(function () {
-  var grid = document.getElementById('gallery-grid');
-  if (!grid) return;
-
-  function cols() {
-    var w = window.innerWidth;
-    return w < 560 ? 2 : w < 900 ? 3 : 4;
-  }
-
-  function build() {
-    var items = Array.from(grid.querySelectorAll('.gallery-item'));
-    var n = cols();
-    var gap = getComputedStyle(grid).gap || '4px';
-
-    /* create column divs */
-    var colDivs = [], colHeights = [];
-    for (var i = 0; i < n; i++) {
-      var d = document.createElement('div');
-      d.className = 'masonry-col';
-      colDivs.push(d);
-      colHeights.push(0);
-    }
-
-    /* shortest-column-first: each item goes into the shortest column,
-       using the image's width/height attributes to estimate rendered height */
-    var gapPx = parseFloat(getComputedStyle(grid).gap) || 4;
-    var colW = (grid.offsetWidth - gapPx * (n - 1)) / n;
-    items.forEach(function (item) {
-      /* pick the shortest column */
-      var minH = colHeights[0], minIdx = 0;
-      for (var j = 1; j < n; j++) {
-        if (colHeights[j] < minH) { minH = colHeights[j]; minIdx = j; }
-      }
-      colDivs[minIdx].appendChild(item);
-
-      /* estimate rendered height from intrinsic aspect ratio */
-      var img = item.querySelector('img');
-      var iw = img ? parseInt(img.getAttribute('width'))  || 1 : 1;
-      var ih = img ? parseInt(img.getAttribute('height')) || 1 : 1;
-      colHeights[minIdx] += (ih / iw) * colW + gapPx;
-    });
-
-    /* add to DOM so we can measure actual rendered heights */
-    grid.innerHTML = '';
-    colDivs.forEach(function (c) { grid.appendChild(c); });
-    grid.classList.add('js-built');
-
-    /* correction: try pair swaps to balance column heights.
-       Skip on mobile — too many reflows hurt perf. */
-    var improved = window.innerWidth >= 560;
-    while (improved) {
-      improved = false;
-      var h = colDivs.map(function (c) { return c.offsetHeight; });
-      var spread = Math.max.apply(null, h) - Math.min.apply(null, h);
-      if (spread <= colW * 0.5) break;
-
-      for (var a = 0; a < n && !improved; a++) {
-        for (var b = a + 1; b < n && !improved; b++) {
-          var elA = colDivs[a].lastElementChild;
-          var elB = colDivs[b].lastElementChild;
-          if (!elA || !elB || elA === elB) continue;
-
-          /* try the swap */
-          colDivs[b].appendChild(elA);
-          colDivs[a].appendChild(elB);
-
-          var newH = colDivs.map(function (c) { return c.offsetHeight; });
-          var newSpread = Math.max.apply(null, newH) - Math.min.apply(null, newH);
-
-          if (newSpread < spread) {
-            improved = true;   /* keep the swap, restart */
-          } else {
-            /* undo */
-            colDivs[a].appendChild(elA);
-            colDivs[b].appendChild(elB);
-          }
-        }
-      }
-    }
-  }
-
-  build();
-
-  /* rebuild on orientation change / resize */
-  var t;
-  window.addEventListener('resize', function () {
-    clearTimeout(t);
-    t = setTimeout(build, 150);
-  });
-})();
 
   /* Lightbox */
   var images = [
