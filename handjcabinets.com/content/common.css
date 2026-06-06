@@ -2,12 +2,13 @@
    Only rules that are byte-for-byte identical across all applicable pages. */
 
 :root {
-  --black:   #000000;
-  --gold:    #d4a843;
-  --cream:   #f2ede6;
-  --grey:    #7a7672;
-  --gap:     clamp(48px, 6vw, 80px);
-  --inset:   clamp(24px, 5vw, 72px);
+  --black:    #000000;
+  --gold:     #d4a843;
+  --gold-dim: rgba(212,168,67,0.15);
+  --cream:    #f2ede6;
+  --grey:     #7a7672;
+  --gap:      clamp(48px, 6vw, 80px);
+  --inset:    clamp(24px, 5vw, 72px);
 }
 
 /* Film grain overlay — NOT applied to gallery page (has its own z-index/opacity variant) */
