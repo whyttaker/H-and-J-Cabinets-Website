@@ -205,6 +205,12 @@
     '  .site-nav { display: none; }',
     '  .nav-hamburger { display: flex; }',
     '}',
+    /* Disable CSS smooth scrolling on touch devices — it conflicts with
+       iOS Safari's native momentum scrolling and causes a visible
+       stutter/jump when the user changes scroll direction */
+    '@media (hover: none) and (pointer: coarse) {',
+    '  html { scroll-behavior: auto !important; }',
+    '}',
   ].join('\n');
   document.head.appendChild(style);
 

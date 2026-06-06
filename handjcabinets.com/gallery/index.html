@@ -387,7 +387,7 @@
 
   #lb-img {
     width: 100%;
-    max-height: calc(100vh - 160px);
+    max-height: calc(var(--vh, 1vh) * 100 - 160px);
     object-fit: contain;
     display: block;
     transition: opacity 0.22s ease;
@@ -511,7 +511,7 @@
     .intro-count { display: none; }
     .lb-nav { display: none; }
     .lb-prev, .lb-next { display: none; }
-    #lb-img { max-width: 98vw; max-height: calc(100vh - 160px); }
+    #lb-img { max-width: 98vw; max-height: calc(var(--vh, 1vh) * 100 - 160px); }
   }
 
   /* ─── CTA Strip ────────────────────────────────────────── */
