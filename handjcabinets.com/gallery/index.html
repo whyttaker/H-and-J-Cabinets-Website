@@ -287,8 +287,6 @@
   .gallery-item img {
     width: 100%;
     height: auto;
-    max-height: 28vw;
-    object-fit: cover;
     display: block;
   }
 
@@ -1383,8 +1381,6 @@ window.__revealReady = true;
        using the image's width/height attributes to estimate rendered height */
     var gapPx = parseFloat(getComputedStyle(grid).gap) || 4;
     var colW = (grid.offsetWidth - gapPx * (n - 1)) / n;
-    var maxItemH = window.innerWidth * 0.28; /* matches max-height: 28vw */
-
     items.forEach(function (item) {
       /* pick the shortest column */
       var minH = colHeights[0], minIdx = 0;
@@ -1393,12 +1389,11 @@ window.__revealReady = true;
       }
       colDivs[minIdx].appendChild(item);
 
-      /* estimate rendered height — capped at max-height: 28vw */
+      /* estimate rendered height from intrinsic aspect ratio */
       var img = item.querySelector('img');
       var iw = img ? parseInt(img.getAttribute('width'))  || 1 : 1;
       var ih = img ? parseInt(img.getAttribute('height')) || 1 : 1;
-      var renderedH = Math.min((ih / iw) * colW, maxItemH);
-      colHeights[minIdx] += renderedH + gapPx;
+      colHeights[minIdx] += (ih / iw) * colW + gapPx;
     });
 
     /* add to DOM so we can measure actual rendered heights */
@@ -1761,14 +1756,26 @@ window.__revealReady = true;
     }
   }
 
+  function loadImg(src, onReady) {
+    /* Clear old image immediately so nothing stale shows while loading */
+    lbImg.src = '';
+    lbImg.classList.add('fading');
+    var tmp = new Image();
+    tmp.onload = function () {
+      lbImg.src = src;
+      lbImg.classList.remove('fading');
+      if (onReady) onReady();
+    };
+    tmp.src = src;
+  }
+
   function show(i) {
     cur = ((i % images.length) + images.length) % images.length;
-    lbImg.src = images[cur];
     lbCount.textContent = (cur + 1) + ' / ' + images.length;
     setLink(cur);
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
-    lbClose.focus();
+    loadImg(images[cur], function () { lbClose.focus(); });
   }
 
   function close() {
@@ -1777,14 +1784,10 @@ window.__revealReady = true;
   }
 
   function nav(d) {
-    lbImg.classList.add('fading');
-    setTimeout(function () {
-      cur = ((cur + d) + images.length) % images.length;
-      lbImg.src = images[cur];
-      lbCount.textContent = (cur + 1) + ' / ' + images.length;
-      setLink(cur);
-      lbImg.classList.remove('fading');
-    }, 200);
+    cur = ((cur + d) + images.length) % images.length;
+    lbCount.textContent = (cur + 1) + ' / ' + images.length;
+    setLink(cur);
+    loadImg(images[cur]);
   }
 
   document.querySelectorAll('.gallery-item').forEach(function (item) {
