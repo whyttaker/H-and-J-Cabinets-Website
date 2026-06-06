@@ -17,14 +17,19 @@
     '  display: flex;',
     '  align-items: center;',
     '  justify-content: space-between;',
+    /* Safe-area-inset-top covers the Dynamic Island / notch on iPhone.
+       With viewport-fit=cover the CSS viewport extends behind it —
+       padding-top pushes the nav content below it while the background
+       fills the full area so no page content bleeds through. */
     '  padding: 22px var(--inset, clamp(24px, 5vw, 72px));',
-    '  background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%);',
+    '  padding-top: max(22px, calc(env(safe-area-inset-top) + 10px));',
+    '  background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0) 100%);',
     '  transition: background 0.4s, backdrop-filter 0.4s;',
     '  -webkit-transform: translateZ(0);',
     '  transform: translateZ(0);',
     '}',
     '.site-header.scrolled {',
-    '  background: rgba(0,0,0,0.92);',
+    '  background: rgba(0,0,0,0.96);',
     '  backdrop-filter: blur(12px);',
     '  -webkit-backdrop-filter: blur(12px);',
     '  border-bottom: 1px solid rgba(212,168,67,0.12);',
