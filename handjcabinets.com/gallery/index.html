@@ -1334,7 +1334,17 @@
 
   build();
   var t;
-  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(build, 150); });
+  /* Only rebuild when the column COUNT changes (viewport width crosses a
+     breakpoint). Ignore height-only changes — those are iOS Safari showing/
+     hiding the address bar and would cause a visible grid flash. */
+  var lastCols = numCols();
+  window.addEventListener('resize', function () {
+    var c = numCols();
+    if (c === lastCols) return;
+    lastCols = c;
+    clearTimeout(t);
+    t = setTimeout(build, 150);
+  });
 })();
 </script>
 
